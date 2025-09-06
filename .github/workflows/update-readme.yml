@@ -1,0 +1,69 @@
+name: Update profile README
+
+on:
+  schedule:
+    # GitHub Actions usa UTC. Para cubrir cambios de horario (CET/CEST),
+    # disparamos a 07:11 y 08:11 UTC y filtramos por TZ=Europe/Madrid.
+    - cron: "11 7 * * 1"   # Lunes 07:11 UTC
+    - cron: "11 8 * * 1"   # Lunes 08:11 UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/update-readme.yml"
+      - "scripts/build_readme.ts"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      USERNAME: "GonxKZ"
+      CONTACT_EMAIL: "gonzalo_kzz@hotmail.com"
+      DO_RUN: "true"
+
+    steps:
+      - name: Gate to 09:11 Europe/Madrid on scheduled runs
+        if: ${{ github.event_name == 'schedule' }}
+        run: |
+          if [ "$(TZ=Europe/Madrid date +'%H:%M')" = "09:11" ]; then
+            echo "OK: Europe/Madrid 09:11"
+          else
+            echo "No es 09:11 Europe/Madrid. Se omite ejecución."
+            echo "DO_RUN=false" >> $GITHUB_ENV
+          fi
+
+      - name: Checkout
+        if: env.DO_RUN == 'true'
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        if: env.DO_RUN == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run build_readme.ts (ts-node)
+        if: env.DO_RUN == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ env.USERNAME }}
+          CONTACT_EMAIL: ${{ env.CONTACT_EMAIL }}
+        run: |
+          npx -y -p ts-node -p typescript -p @types/node ts-node \
+            --transpile-only \
+            --compiler-options '{"target":"ES2020","module":"commonjs","lib":["ES2020","DOM"],"types":["node"]}' \
+            scripts/build_readme.ts
+
+      - name: Commit changes if any
+        if: env.DO_RUN == 'true'
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore(readme): auto-update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push
+          else
+            echo "No changes in README.md"
+          fi
