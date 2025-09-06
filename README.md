@@ -82,4 +82,4 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 - Email: <a href="mailto:gonzalo_kzz@hotmail.com">gonzalo_kzz@hotmail.com</a>
 - GitHub: [GonxKZ](https://github.com/GonxKZ)
 
-<sub>Actualizado automáticamente el 6/9/2025, 19:33:22 (Europe/Madrid).</sub>
+<sub>Actualizado automáticamente el 6/9/2025, 19:39:14 (Europe/Madrid).</sub>
