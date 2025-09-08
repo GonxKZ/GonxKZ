@@ -32,8 +32,8 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 ### 🛠️ En curso (últimos 5 repos)
 | Repo | Lenguaje | Último commit | Commits/mes | Tamaño |
 |---|---|---|---|---|
-| [compiler-cpp](https://github.com/GonxKZ/compiler-cpp) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/compiler-cpp?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/compiler-cpp?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/compiler-cpp?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/compiler-cpp?style=flat-square&label=size) |
 | [ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/ecc-learning-engine?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/ecc-learning-engine?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/ecc-learning-engine?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/ecc-learning-engine?style=flat-square&label=size) |
+| [compiler-cpp](https://github.com/GonxKZ/compiler-cpp) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/compiler-cpp?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/compiler-cpp?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/compiler-cpp?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/compiler-cpp?style=flat-square&label=size) |
 | [disksense64](https://github.com/GonxKZ/disksense64) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/disksense64?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/disksense64?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/disksense64?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/disksense64?style=flat-square&label=size) |
 | [memory-web](https://github.com/GonxKZ/memory-web) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/memory-web?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/memory-web?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/memory-web?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/memory-web?style=flat-square&label=size) |
 | [pointer-quest-web](https://github.com/GonxKZ/pointer-quest-web) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/pointer-quest-web?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/pointer-quest-web?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/pointer-quest-web?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/pointer-quest-web?style=flat-square&label=size) |
@@ -50,13 +50,11 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 ---
 
 ### 📝 Commits recientes
-- [feat: Significant progress on C++20 compiler framework with layered architectur… ](https://github.com/GonxKZ/compiler-cpp/commit/05533293d0f8b8913bd516715e5e5865faba8221) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [feat: Completed Capa 0 implementation with ABI contract and core systems, deliv… ](https://github.com/GonxKZ/compiler-cpp/commit/57c2c5be3060ad69109ac106ae6cf3a7bf2c5457) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [feat(compiler): establish modular C++20 compiler framework with CMake presets, … ](https://github.com/GonxKZ/compiler-cpp/commit/22c2342606069a29310418a8872b10d9ef7c65c6) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [Merge pull request #1 from GonxKZ/feature/framework-base
-
-feat(compiler): estab… ](https://github.com/GonxKZ/compiler-cpp/commit/2cf1554eb435ec9476d4446771b66e2f0dd16dd6) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [feat(compiler): establish modular C++20 compiler framework with CMake presets, … ](https://github.com/GonxKZ/compiler-cpp/commit/22c2342606069a29310418a8872b10d9ef7c65c6) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [test: Fix and validate all test files, resolving compilation issues with std::f… ](https://github.com/GonxKZ/compiler-cpp/commit/00f38d72417b260a74cce0cb389815303b7a4e52) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [feat: Complete Capa 6 – C++20 constexpr system with full VM, ConstexprValue for… ](https://github.com/GonxKZ/compiler-cpp/commit/912c3d6376b02202a4152921707ffe382ac2004c) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [feat: Complete Capa 5 – C++20 template system with concepts, TemplateAST, insta… ](https://github.com/GonxKZ/compiler-cpp/commit/7b440a7c78f1bfb052e6dd7dea278cb2a0c21e48) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [feat: Implement Capa 4 front-end with full C++20 lexer, preprocessor, and recur… ](https://github.com/GonxKZ/compiler-cpp/commit/6144e437f7b578c58b76fe1a8d93c9756b2e84fd) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [test: Implement full testing framework with GoogleTest, covering type system, A… ](https://github.com/GonxKZ/compiler-cpp/commit/555525e711b8e2db4c92789428ea767b5491b139) — `GonxKZ/compiler-cpp` — 08 sept 2025
 
 ---
 
@@ -65,14 +63,14 @@ feat(compiler): estab… ](https://github.com/GonxKZ/compiler-cpp/commit/2cf1554
 
 | Lenguaje | % | Bytes |
 |---|---:|---:|
-| TypeScript | 48.9% | 15,049,017 |
-| C++ | 40.1% | 12,330,099 |
-| JavaScript | 5.4% | 1,658,160 |
-| C | 2.5% | 775,503 |
-| Makefile | 1.2% | 368,939 |
+| TypeScript | 46.7% | 15,049,017 |
+| C++ | 42.8% | 13,771,847 |
+| JavaScript | 5.1% | 1,658,160 |
+| C | 2.4% | 775,503 |
+| Makefile | 1.1% | 368,939 |
 | Python | 0.8% | 241,855 |
-| CMake | 0.4% | 124,820 |
-| Shell | 0.2% | 62,833 |
+| CMake | 0.4% | 127,676 |
+| Shell | 0.2% | 59,692 |
 | HTML | 0.2% | 57,924 |
 | CSS | 0.2% | 54,583 |
 
@@ -82,4 +80,4 @@ feat(compiler): estab… ](https://github.com/GonxKZ/compiler-cpp/commit/2cf1554
 - Email: <a href="mailto:gonzalo_kzz@hotmail.com">gonzalo_kzz@hotmail.com</a>
 - GitHub: [GonxKZ](https://github.com/GonxKZ)
 
-<sub>Actualizado automáticamente el 8/9/2025, 9:50:39 (Europe/Madrid).</sub>
+<sub>Actualizado automáticamente el 8/9/2025, 15:54:44 (Europe/Madrid).</sub>
