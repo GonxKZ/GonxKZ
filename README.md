@@ -32,31 +32,31 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 ### 🛠️ En curso (últimos 5 repos)
 | Repo | Lenguaje | Último commit | Commits/mes | Tamaño |
 |---|---|---|---|---|
+| [compiler-cpp](https://github.com/GonxKZ/compiler-cpp) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/compiler-cpp?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/compiler-cpp?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/compiler-cpp?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/compiler-cpp?style=flat-square&label=size) |
 | [ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/ecc-learning-engine?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/ecc-learning-engine?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/ecc-learning-engine?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/ecc-learning-engine?style=flat-square&label=size) |
 | [disksense64](https://github.com/GonxKZ/disksense64) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/disksense64?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/disksense64?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/disksense64?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/disksense64?style=flat-square&label=size) |
 | [memory-web](https://github.com/GonxKZ/memory-web) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/memory-web?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/memory-web?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/memory-web?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/memory-web?style=flat-square&label=size) |
 | [pointer-quest-web](https://github.com/GonxKZ/pointer-quest-web) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/pointer-quest-web?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/pointer-quest-web?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/pointer-quest-web?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/pointer-quest-web?style=flat-square&label=size) |
-| [machine-learning-master](https://github.com/GonxKZ/machine-learning-master) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/machine-learning-master?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/machine-learning-master?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/machine-learning-master?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/machine-learning-master?style=flat-square&label=size) |
 
 ---
 
 ### 🔀 PRs recientes
+- [#1 feat(compiler): establish modular C++20 compiler framework with CMake…](https://github.com/GonxKZ/compiler-cpp/pull/1) — `GonxKZ/compiler-cpp` — CLOSED — 08 sept 2025
 - [#3 Add React pointer demo with Framer Motion](https://github.com/GonxKZ/curso-cpp/pull/3) — `GonxKZ/curso-cpp` — CLOSED — 11 ago 2025
 - [#2 Add SPA explaining pointer basics](https://github.com/GonxKZ/curso-cpp/pull/2) — `GonxKZ/curso-cpp` — OPEN — 03 jun 2025
 - [#1 Fix existence check in Dogs and Cat project](https://github.com/GonxKZ/curso-cpp/pull/1) — `GonxKZ/curso-cpp` — OPEN — 03 jun 2025
 - [#4 modificacion](https://github.com/GonxKZ/django-ecommerce-electrodomesticos/pull/4) — `GonxKZ/django-ecommerce-electrodomesticos` — CLOSED — 21 abr 2025
-- [#3 Traer workflows a main](https://github.com/GonxKZ/django-ecommerce-electrodomesticos/pull/3) — `GonxKZ/django-ecommerce-electrodomesticos` — CLOSED — 20 abr 2025
 
 ---
 
 ### 📝 Commits recientes
-- [feat: 📁 Repository Organization & Documentation Restructure
+- [feat: Significant progress on C++20 compiler framework with layered architectur… ](https://github.com/GonxKZ/compiler-cpp/commit/05533293d0f8b8913bd516715e5e5865faba8221) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [feat: Completed Capa 0 implementation with ABI contract and core systems, deliv… ](https://github.com/GonxKZ/compiler-cpp/commit/57c2c5be3060ad69109ac106ae6cf3a7bf2c5457) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [feat(compiler): establish modular C++20 compiler framework with CMake presets, … ](https://github.com/GonxKZ/compiler-cpp/commit/22c2342606069a29310418a8872b10d9ef7c65c6) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [Merge pull request #1 from GonxKZ/feature/framework-base
 
-  - Move all docu… ](https://github.com/GonxKZ/ecc-learning-engine/commit/9121d952dc8a054622996271f0c2cc43cc461cbc) — `GonxKZ/ecc-learning-engine` — 06 sept 2025
-- [fix: 🔧 Complete GitHub Actions Workflow Repair - Cross-Platform CI/CD Resoluti… ](https://github.com/GonxKZ/ecc-learning-engine/commit/87decbb9e12a4504b0dc6302a9a1cf40ddc5e290) — `GonxKZ/ecc-learning-engine` — 06 sept 2025
-- [Trigger GitHub contributors refresh and bugs](https://github.com/GonxKZ/ecc-learning-engine/commit/d2b03537ce222bc27949f86e689a1a62f452f568) — `GonxKZ/ecc-learning-engine` — 06 sept 2025
-- [Trigger GitHub contributors refresh and bugs](https://github.com/GonxKZ/ecc-learning-engine/commit/d2b03537ce222bc27949f86e689a1a62f452f568) — `GonxKZ/ecc-learning-engine` — 06 sept 2025
-- [feat: 🧪 Comprehensive Testing Suite - Complete Quality Assurance Implementatio… ](https://github.com/GonxKZ/ecc-learning-engine/commit/e1d9299ed27d55ea9aee9a35b345f7a5dde8d67d) — `GonxKZ/ecc-learning-engine` — 06 sept 2025
+feat(compiler): estab… ](https://github.com/GonxKZ/compiler-cpp/commit/2cf1554eb435ec9476d4446771b66e2f0dd16dd6) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [feat(compiler): establish modular C++20 compiler framework with CMake presets, … ](https://github.com/GonxKZ/compiler-cpp/commit/22c2342606069a29310418a8872b10d9ef7c65c6) — `GonxKZ/compiler-cpp` — 08 sept 2025
 
 ---
 
@@ -65,16 +65,16 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 
 | Lenguaje | % | Bytes |
 |---|---:|---:|
-| TypeScript | 51.0% | 15,049,017 |
-| C++ | 38.8% | 11,443,854 |
-| JavaScript | 4.6% | 1,366,223 |
-| C | 2.6% | 775,503 |
-| Makefile | 1.3% | 368,939 |
-| Python | 0.9% | 259,950 |
-| CMake | 0.3% | 97,369 |
-| Shell | 0.2% | 53,925 |
-| CSS | 0.1% | 27,277 |
-| HTML | 0.1% | 19,473 |
+| TypeScript | 48.9% | 15,049,017 |
+| C++ | 40.1% | 12,330,099 |
+| JavaScript | 5.4% | 1,658,160 |
+| C | 2.5% | 775,503 |
+| Makefile | 1.2% | 368,939 |
+| Python | 0.8% | 241,855 |
+| CMake | 0.4% | 124,820 |
+| Shell | 0.2% | 62,833 |
+| HTML | 0.2% | 57,924 |
+| CSS | 0.2% | 54,583 |
 
 ---
 
@@ -82,4 +82,4 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 - Email: <a href="mailto:gonzalo_kzz@hotmail.com">gonzalo_kzz@hotmail.com</a>
 - GitHub: [GonxKZ](https://github.com/GonxKZ)
 
-<sub>Actualizado automáticamente el 6/9/2025, 19:39:14 (Europe/Madrid).</sub>
+<sub>Actualizado automáticamente el 8/9/2025, 9:50:39 (Europe/Madrid).</sub>
