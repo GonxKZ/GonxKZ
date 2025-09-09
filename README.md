@@ -32,11 +32,11 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 ### 🛠️ En curso (últimos 5 repos)
 | Repo | Lenguaje | Último commit | Commits/mes | Tamaño |
 |---|---|---|---|---|
-| [ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/ecc-learning-engine?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/ecc-learning-engine?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/ecc-learning-engine?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/ecc-learning-engine?style=flat-square&label=size) |
+| [transcriptor-video-audio](https://github.com/GonxKZ/transcriptor-video-audio) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/transcriptor-video-audio?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/transcriptor-video-audio?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/transcriptor-video-audio?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/transcriptor-video-audio?style=flat-square&label=size) |
 | [compiler-cpp](https://github.com/GonxKZ/compiler-cpp) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/compiler-cpp?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/compiler-cpp?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/compiler-cpp?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/compiler-cpp?style=flat-square&label=size) |
 | [disksense64](https://github.com/GonxKZ/disksense64) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/disksense64?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/disksense64?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/disksense64?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/disksense64?style=flat-square&label=size) |
+| [ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/ecc-learning-engine?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/ecc-learning-engine?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/ecc-learning-engine?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/ecc-learning-engine?style=flat-square&label=size) |
 | [memory-web](https://github.com/GonxKZ/memory-web) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/memory-web?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/memory-web?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/memory-web?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/memory-web?style=flat-square&label=size) |
-| [pointer-quest-web](https://github.com/GonxKZ/pointer-quest-web) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/pointer-quest-web?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/pointer-quest-web?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/pointer-quest-web?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/pointer-quest-web?style=flat-square&label=size) |
 
 ---
 
@@ -50,11 +50,13 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 ---
 
 ### 📝 Commits recientes
-- [test: Fix and validate all test files, resolving compilation issues with std::f… ](https://github.com/GonxKZ/compiler-cpp/commit/00f38d72417b260a74cce0cb389815303b7a4e52) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [feat: Complete Capa 6 – C++20 constexpr system with full VM, ConstexprValue for… ](https://github.com/GonxKZ/compiler-cpp/commit/912c3d6376b02202a4152921707ffe382ac2004c) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [feat: Complete Capa 5 – C++20 template system with concepts, TemplateAST, insta… ](https://github.com/GonxKZ/compiler-cpp/commit/7b440a7c78f1bfb052e6dd7dea278cb2a0c21e48) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [feat: Implement Capa 4 front-end with full C++20 lexer, preprocessor, and recur… ](https://github.com/GonxKZ/compiler-cpp/commit/6144e437f7b578c58b76fe1a8d93c9756b2e84fd) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [test: Implement full testing framework with GoogleTest, covering type system, A… ](https://github.com/GonxKZ/compiler-cpp/commit/555525e711b8e2db4c92789428ea767b5491b139) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [feat(app): full transcription workflow with interactive UI and export support
+
+… ](https://github.com/GonxKZ/transcriptor-video-audio/commit/cfe19825d192a2933ace6e63cf30f6a9e8d698bd) — `GonxKZ/transcriptor-video-audio` — 09 sept 2025
+- [feat(ecs): Add comprehensive scheduler with dependency management and parallel … ](https://github.com/GonxKZ/ecc-learning-engine/commit/d99f6db79fdf152a8ca44cfd2b47107f4c48f06b) — `GonxKZ/ecc-learning-engine` — 08 sept 2025
+- [refactor: Complete cleanup and optimization of C++20 compiler codebase, simplif… ](https://github.com/GonxKZ/compiler-cpp/commit/130e5da8bc742c25d4f380f6bc84bbfd908d7bd5) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [refactor: Test and improvements in code](https://github.com/GonxKZ/compiler-cpp/commit/324e3114944c9fc42cab1dfe9201a2539cd89625) — `GonxKZ/compiler-cpp` — 08 sept 2025
+- [feat(ecs): Establish foundational ECS architecture from scratch—entity ID model… ](https://github.com/GonxKZ/ecc-learning-engine/commit/0b9b41fd57f204001dd04279e24d13216cfdc6ab) — `GonxKZ/ecc-learning-engine` — 08 sept 2025
 
 ---
 
@@ -63,14 +65,14 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 
 | Lenguaje | % | Bytes |
 |---|---:|---:|
-| TypeScript | 46.7% | 15,049,017 |
-| C++ | 42.8% | 13,771,847 |
+| TypeScript | 46.0% | 15,049,017 |
+| C++ | 43.1% | 14,086,223 |
 | JavaScript | 5.1% | 1,658,160 |
 | C | 2.4% | 775,503 |
+| Python | 1.4% | 445,292 |
 | Makefile | 1.1% | 368,939 |
-| Python | 0.8% | 241,855 |
-| CMake | 0.4% | 127,676 |
-| Shell | 0.2% | 59,692 |
+| CMake | 0.4% | 126,809 |
+| Shell | 0.2% | 59,967 |
 | HTML | 0.2% | 57,924 |
 | CSS | 0.2% | 54,583 |
 
@@ -80,4 +82,4 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 - Email: <a href="mailto:gonzalo_kzz@hotmail.com">gonzalo_kzz@hotmail.com</a>
 - GitHub: [GonxKZ](https://github.com/GonxKZ)
 
-<sub>Actualizado automáticamente el 8/9/2025, 15:54:44 (Europe/Madrid).</sub>
+<sub>Actualizado automáticamente el 9/9/2025, 17:56:56 (Europe/Madrid).</sub>
