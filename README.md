@@ -14,12 +14,9 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 
 ---
 
-### 📈 GitHub Stats (commits + PRs)
+### 📈 GitHub Stats
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GonxKZ&layout=compact&langs_count=8&theme=tokyonight&card_width=720" height="190" alt="Most used languages"/>
-</p>
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=GonxKZ&show_icons=true&include_all_commits=true&hide_title=true&theme=tokyonight&hide=stars,issues,contribs&card_width=720" height="190" alt="Stats (commits + PRs)"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=GonxKZ&show_icons=true&include_all_commits=true&hide_title=true&theme=tokyonight&hide=stars,issues,contribs&card_width=720" height="190" alt="GitHub stats"/>
 </p>
 
 ### 🐍 Snake
@@ -32,49 +29,51 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 ### 🛠️ En curso (últimos 5 repos)
 | Repo | Lenguaje | Último commit | Commits/mes | Tamaño |
 |---|---|---|---|---|
-| [transcriptor-video-audio](https://github.com/GonxKZ/transcriptor-video-audio) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/transcriptor-video-audio?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/transcriptor-video-audio?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/transcriptor-video-audio?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/transcriptor-video-audio?style=flat-square&label=size) |
-| [compiler-cpp](https://github.com/GonxKZ/compiler-cpp) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/compiler-cpp?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/compiler-cpp?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/compiler-cpp?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/compiler-cpp?style=flat-square&label=size) |
-| [disksense64](https://github.com/GonxKZ/disksense64) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/disksense64?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/disksense64?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/disksense64?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/disksense64?style=flat-square&label=size) |
-| [ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/ecc-learning-engine?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/ecc-learning-engine?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/ecc-learning-engine?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/ecc-learning-engine?style=flat-square&label=size) |
-| [memory-web](https://github.com/GonxKZ/memory-web) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/memory-web?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/memory-web?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/memory-web?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/memory-web?style=flat-square&label=size) |
+| [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/atllashabita?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/atllashabita?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/atllashabita?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/atllashabita?style=flat-square&label=size) |
+| [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/MACARENA-IAJ?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/MACARENA-IAJ?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/MACARENA-IAJ?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/MACARENA-IAJ?style=flat-square&label=size) |
+| [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/ecc-learning-engine?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/ecc-learning-engine?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/ecc-learning-engine?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/ecc-learning-engine?style=flat-square&label=size) |
+| [GonxKZ/transcriptor-video-audio](https://github.com/GonxKZ/transcriptor-video-audio) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/transcriptor-video-audio?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/transcriptor-video-audio?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/transcriptor-video-audio?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/transcriptor-video-audio?style=flat-square&label=size) |
+| [GonxKZ/compiler-cpp](https://github.com/GonxKZ/compiler-cpp) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/compiler-cpp?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/compiler-cpp?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/compiler-cpp?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/compiler-cpp?style=flat-square&label=size) |
 
 ---
 
 ### 🔀 PRs recientes
-- [#1 feat(compiler): establish modular C++20 compiler framework with CMake…](https://github.com/GonxKZ/compiler-cpp/pull/1) — `GonxKZ/compiler-cpp` — CLOSED — 08 sept 2025
-- [#3 Add React pointer demo with Framer Motion](https://github.com/GonxKZ/curso-cpp/pull/3) — `GonxKZ/curso-cpp` — CLOSED — 11 ago 2025
-- [#2 Add SPA explaining pointer basics](https://github.com/GonxKZ/curso-cpp/pull/2) — `GonxKZ/curso-cpp` — OPEN — 03 jun 2025
-- [#1 Fix existence check in Dogs and Cat project](https://github.com/GonxKZ/curso-cpp/pull/1) — `GonxKZ/curso-cpp` — OPEN — 03 jun 2025
-- [#4 modificacion](https://github.com/GonxKZ/django-ecommerce-electrodomesticos/pull/4) — `GonxKZ/django-ecommerce-electrodomesticos` — CLOSED — 21 abr 2025
+- [#100 fix(web): mapa real MapLibre + routing sin shell duplicado](https://github.com/GonxKZ/atllashabita/pull/100) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
+- [#124 fix(api): sustituir elipsis por docstrings en Protocol SPARQL (cierra CodeQL #10-#13)](https://github.com/GonxKZ/atllashabita/pull/124) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
+- [#142 refactor: simplificar duplicacion y dead code v0.5.1 (#135)](https://github.com/GonxKZ/atllashabita/pull/142) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
+- [#141 docs(review): segunda opinion cross-stack v0.5.1 (#134)](https://github.com/GonxKZ/atllashabita/pull/141) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
+- [#140 refactor(rdf): ultrareview ontologia, shapes y consultas (#133)](https://github.com/GonxKZ/atllashabita/pull/140) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
 
 ---
 
 ### 📝 Commits recientes
-- [feat(app): full transcription workflow with interactive UI and export support
-
-… ](https://github.com/GonxKZ/transcriptor-video-audio/commit/cfe19825d192a2933ace6e63cf30f6a9e8d698bd) — `GonxKZ/transcriptor-video-audio` — 09 sept 2025
-- [feat(ecs): Add comprehensive scheduler with dependency management and parallel … ](https://github.com/GonxKZ/ecc-learning-engine/commit/d99f6db79fdf152a8ca44cfd2b47107f4c48f06b) — `GonxKZ/ecc-learning-engine` — 08 sept 2025
-- [refactor: Complete cleanup and optimization of C++20 compiler codebase, simplif… ](https://github.com/GonxKZ/compiler-cpp/commit/130e5da8bc742c25d4f380f6bc84bbfd908d7bd5) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [refactor: Test and improvements in code](https://github.com/GonxKZ/compiler-cpp/commit/324e3114944c9fc42cab1dfe9201a2539cd89625) — `GonxKZ/compiler-cpp` — 08 sept 2025
-- [feat(ecs): Establish foundational ECS architecture from scratch—entity ID model… ](https://github.com/GonxKZ/ecc-learning-engine/commit/0b9b41fd57f204001dd04279e24d13216cfdc6ab) — `GonxKZ/ecc-learning-engine` — 08 sept 2025
+- [release: v0.5.6 ficha territorial visible](https://github.com/GonxKZ/atllashabita/commit/82ec54fc0239fd19838769230e9fb73d6fe370ef) — `GonxKZ/atllashabita` — 26 abr 2026
+- [fix(ui): evitar recortes en ficha territorial](https://github.com/GonxKZ/atllashabita/commit/2da1b31fea4d2d384ef8da6f2ee7bb1ea0b77f74) — `GonxKZ/atllashabita` — 26 abr 2026
+- [release: v0.5.5 mini mapa real](https://github.com/GonxKZ/atllashabita/commit/671ac7041c9fe208aa2dcdad7e21b4263e24d9d7) — `GonxKZ/atllashabita` — 26 abr 2026
+- [fix(ui): usar mini mapa real de España](https://github.com/GonxKZ/atllashabita/commit/96083f0cfc8a85e1927aab482837633111e9d25a) — `GonxKZ/atllashabita` — 26 abr 2026
+- [release: v0.5.4 despliegue en Vercel](https://github.com/GonxKZ/atllashabita/commit/df60314f89d9fb9c96b7e4a7b758da9a5595a6df) — `GonxKZ/atllashabita` — 26 abr 2026
 
 ---
 
 ### 🧠 Lenguajes más usados
-> Agregado de **bytes por lenguaje** en tus repos (GitHub no cuenta líneas).
+> Agregado de **bytes por lenguaje** en 18 repos propios, contribuidos y/o accesibles por organización.
+> Fuentes detectadas: 12 repos propios, 0 repos accesibles por token, 10 repos con PRs, 16 repos con commits y 1 repos por eventos públicos.
+> Organizaciones detectadas/configuradas: _sin organizaciones públicas detectadas_.
 
 | Lenguaje | % | Bytes |
 |---|---:|---:|
-| TypeScript | 46.0% | 15,049,017 |
-| C++ | 43.1% | 14,086,223 |
-| JavaScript | 5.1% | 1,658,160 |
-| C | 2.4% | 775,503 |
-| Python | 1.4% | 445,292 |
-| Makefile | 1.1% | 368,939 |
-| CMake | 0.4% | 126,809 |
-| Shell | 0.2% | 59,967 |
-| HTML | 0.2% | 57,924 |
-| CSS | 0.2% | 54,583 |
+| C++ | 31.5% | 18.509.225 |
+| TypeScript | 31.4% | 18.465.233 |
+| Hack | 26.5% | 15.582.761 |
+| Python | 3.6% | 2.089.105 |
+| JavaScript | 3.2% | 1.910.987 |
+| C | 1.3% | 775.503 |
+| Java | 1.0% | 561.105 |
+| Makefile | 0.6% | 372.502 |
+| CSS | 0.3% | 185.329 |
+| HTML | 0.3% | 165.942 |
+| CMake | 0.2% | 96.205 |
+| Shell | 0.1% | 81.061 |
 
 ---
 
@@ -82,4 +81,4 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 - Email: <a href="mailto:gonzalo_kzz@hotmail.com">gonzalo_kzz@hotmail.com</a>
 - GitHub: [GonxKZ](https://github.com/GonxKZ)
 
-<sub>Actualizado automáticamente el 9/9/2025, 17:56:56 (Europe/Madrid).</sub>
+<sub>Actualizado automáticamente el 3/5/2026, 16:54:12 (Europe/Madrid).</sub>
