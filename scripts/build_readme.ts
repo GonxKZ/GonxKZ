@@ -82,6 +82,12 @@ const MAX_LANGUAGE_REPOS = Number(process.env.MAX_LANGUAGE_REPOS ?? 140);
 const SEARCH_PAGES = Number(process.env.SEARCH_PAGES ?? 3);
 const INCLUDE_FORKS = /^true$/i.test(process.env.INCLUDE_FORKS ?? "");
 const INCLUDE_PRIVATE_REPOS = /^true$/i.test(process.env.INCLUDE_PRIVATE_REPOS ?? "");
+const EXCLUDED_LANGUAGES = new Set(
+  (process.env.EXCLUDED_LANGUAGES ?? "Hack")
+    .split(",")
+    .map((x) => x.trim().toLowerCase())
+    .filter(Boolean)
+);
 const CONFIGURED_ORGS = (process.env.GITHUB_ORGS ?? process.env.ORGANIZATIONS ?? "")
   .split(",")
   .map((x) => x.trim())
@@ -626,6 +632,7 @@ async function main() {
     try {
       const langs = await getRepoLanguages(r.languages_url);
       for (const [lang, bytes] of Object.entries(langs)) {
+        if (EXCLUDED_LANGUAGES.has(lang.toLowerCase())) continue;
         langTotals[lang] = (langTotals[lang] ?? 0) + Number(bytes);
       }
       analyzed++;

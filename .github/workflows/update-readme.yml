@@ -23,6 +23,7 @@ jobs:
       GITHUB_ORGS: "GPIC-Software,gii-is-DP1,IISSI2-IS-2021-2022,natillas-hub,ISPP-Grupo-7,SSIIGrupo7"
       SEARCH_PAGES: "5"
       MAX_LANGUAGE_REPOS: "180"
+      EXCLUDED_LANGUAGES: "Hack"
       DO_RUN: "true"
 
     steps:
@@ -56,6 +57,7 @@ jobs:
           GITHUB_USERNAME: ${{ env.GITHUB_USERNAME }}
           GITHUB_ORGS: ${{ env.GITHUB_ORGS }}
           INCLUDE_PRIVATE_REPOS: "true"
+          EXCLUDED_LANGUAGES: ${{ env.EXCLUDED_LANGUAGES }}
           CONTACT_EMAIL: ${{ env.CONTACT_EMAIL }}
         run: |
           npx -y -p ts-node -p typescript -p @types/node ts-node \

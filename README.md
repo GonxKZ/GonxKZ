@@ -56,24 +56,23 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 ---
 
 ### 🧠 Lenguajes más usados
-> Agregado de **bytes por lenguaje** en 18 repos públicos propios/contribuidos. Además, MCP detecta actividad privada en organizaciones con Rust y TypeScript.
+> Agregado de **bytes por lenguaje** en 18 repos públicos propios/contribuidos, excluyendo ruido de clasificación automática. Además, MCP detecta actividad privada en organizaciones con Rust y TypeScript.
 > Fuentes detectadas: 12 repos propios, 6 organizaciones por MCP, 146 PRs en `GPIC-Software`, 5 commits recientes privados revisados.
 > Organizaciones detectadas/configuradas: `GPIC-Software`, `gii-is-DP1`, `IISSI2-IS-2021-2022`, `natillas-hub`, `ISPP-Grupo-7`, `SSIIGrupo7`.
 
 | Lenguaje | % | Bytes |
 |---|---:|---:|
-| C++ | 31.5% | 18.509.225 |
-| TypeScript | 31.4% | 18.465.233 |
-| Hack | 26.5% | 15.582.761 |
-| Python | 3.6% | 2.089.105 |
-| JavaScript | 3.2% | 1.910.987 |
-| C | 1.3% | 775.503 |
-| Java | 1.0% | 561.105 |
-| Makefile | 0.6% | 372.502 |
-| CSS | 0.3% | 185.329 |
-| HTML | 0.3% | 165.942 |
+| C++ | 42.8% | 18.509.225 |
+| TypeScript | 42.7% | 18.465.233 |
+| Python | 4.8% | 2.089.105 |
+| JavaScript | 4.4% | 1.910.987 |
+| C | 1.8% | 775.503 |
+| Java | 1.3% | 561.105 |
+| Makefile | 0.9% | 372.502 |
+| CSS | 0.4% | 185.329 |
+| HTML | 0.4% | 165.942 |
 | CMake | 0.2% | 96.205 |
-| Shell | 0.1% | 81.061 |
+| Shell | 0.2% | 81.061 |
 
 ---
 
@@ -81,4 +80,4 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 - Email: <a href="mailto:gonzalo_kzz@hotmail.com">gonzalo_kzz@hotmail.com</a>
 - GitHub: [GonxKZ](https://github.com/GonxKZ)
 
-<sub>Actualizado automáticamente el 3/5/2026, 17:22:00 (Europe/Madrid).</sub>
+<sub>Actualizado automáticamente el 3/5/2026, 17:06:09 (Europe/Madrid).</sub>
