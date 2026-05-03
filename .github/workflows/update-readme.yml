@@ -20,7 +20,7 @@ jobs:
     env:
       GITHUB_USERNAME: "GonxKZ"
       CONTACT_EMAIL: "gonzalo_kzz@hotmail.com"
-      GITHUB_ORGS: ${{ vars.GITHUB_ORGS }}
+      GITHUB_ORGS: "GPIC-Software,gii-is-DP1,IISSI2-IS-2021-2022,natillas-hub,ISPP-Grupo-7,SSIIGrupo7"
       SEARCH_PAGES: "5"
       MAX_LANGUAGE_REPOS: "180"
       DO_RUN: "true"
@@ -50,11 +50,12 @@ jobs:
         if: env.DO_RUN == 'true'
         env:
           # Optional: define PROFILE_GITHUB_TOKEN as a fine-grained PAT with read-only access
-          # to organization repositories if you want private/internal org activity included.
+          # to organization repositories. Private repos stay excluded unless INCLUDE_PRIVATE_REPOS=true.
           PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ env.GITHUB_USERNAME }}
           GITHUB_ORGS: ${{ env.GITHUB_ORGS }}
+          INCLUDE_PRIVATE_REPOS: "true"
           CONTACT_EMAIL: ${{ env.CONTACT_EMAIL }}
         run: |
           npx -y -p ts-node -p typescript -p @types/node ts-node \

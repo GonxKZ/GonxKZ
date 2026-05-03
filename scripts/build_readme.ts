@@ -76,10 +76,12 @@ interface SearchCommitsResult {
 // -------- Config --------
 const USERNAME = process.env.GITHUB_USERNAME ?? (process.env.CI ? process.env.USERNAME : undefined) ?? "GonxKZ";
 const TOKEN = process.env.PROFILE_GITHUB_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
+const HAS_PERSONAL_TOKEN = Boolean(process.env.PROFILE_GITHUB_TOKEN || process.env.GH_TOKEN);
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL ?? "gonzalo_kzz@hotmail.com";
 const MAX_LANGUAGE_REPOS = Number(process.env.MAX_LANGUAGE_REPOS ?? 140);
 const SEARCH_PAGES = Number(process.env.SEARCH_PAGES ?? 3);
 const INCLUDE_FORKS = /^true$/i.test(process.env.INCLUDE_FORKS ?? "");
+const INCLUDE_PRIVATE_REPOS = /^true$/i.test(process.env.INCLUDE_PRIVATE_REPOS ?? "");
 const CONFIGURED_ORGS = (process.env.GITHUB_ORGS ?? process.env.ORGANIZATIONS ?? "")
   .split(",")
   .map((x) => x.trim())
@@ -150,9 +152,10 @@ async function getAuthenticatedRepos() {
   const perPage = 100;
   let page = 1;
   const all: GitHubRepo[] = [];
+  const visibility = INCLUDE_PRIVATE_REPOS ? "all" : "public";
   while (true) {
     const chunk = await gh<GitHubRepo[]>(
-      `https://api.github.com/user/repos?per_page=${perPage}&page=${page}&sort=updated&direction=desc&visibility=all&affiliation=owner,collaborator,organization_member`
+      `https://api.github.com/user/repos?per_page=${perPage}&page=${page}&sort=updated&direction=desc&visibility=${visibility}&affiliation=owner,collaborator,organization_member`
     );
     all.push(...chunk);
     if (chunk.length < perPage) break;
@@ -201,7 +204,7 @@ async function getRepoLanguages(languages_url: string) {
 }
 
 function filterRepos(repos: GitHubRepo[]) {
-  return repos.filter((r) => (INCLUDE_FORKS || !r.fork) && !r.archived);
+  return repos.filter((r) => (INCLUDE_FORKS || !r.fork) && !r.archived && (INCLUDE_PRIVATE_REPOS || !r.private));
 }
 
 function mergeRepos(target: Map<string, GitHubRepo>, repos: GitHubRepo[]) {
@@ -212,7 +215,7 @@ function mergeRepos(target: Map<string, GitHubRepo>, repos: GitHubRepo[]) {
 
 async function searchPRs(login: string, pages = SEARCH_PAGES) {
   const items: SearchIssuesResult["items"] = [];
-  const visibilityQualifier = process.env.PROFILE_GITHUB_TOKEN || process.env.GH_TOKEN ? "" : "+is:public";
+  const visibilityQualifier = INCLUDE_PRIVATE_REPOS && (process.env.PROFILE_GITHUB_TOKEN || process.env.GH_TOKEN) ? "" : "+is:public";
   for (let page = 1; page <= pages; page++) {
     const url = `https://api.github.com/search/issues?q=is:pr+author:${encodeURIComponent(
       login
@@ -314,6 +317,7 @@ async function discoverActivityUniverse(login: string) {
   for (const item of prItems) fullNamesToHydrate.add(prRepoFullName(item));
   for (const fullName of eventRepoNames) fullNamesToHydrate.add(fullName);
   for (const repo of await hydrateRepos(fullNamesToHydrate)) repos.set(repoKey(repo.full_name), repo);
+  const allowedRepoKeys = new Set(repos.keys());
 
   const organizations = Array.from(new Set([...CONFIGURED_ORGS, ...publicOrgs, ...authenticatedOrgs])).sort((a, b) =>
     a.localeCompare(b)
@@ -328,15 +332,15 @@ async function discoverActivityUniverse(login: string) {
     sourceCounts: {
       ownedRepos: ownedRepos.length,
       authenticatedRepos: authenticatedRepos.length,
-      prRepos: new Set(prItems.map(prRepoFullName).map(repoKey)).size,
-      commitRepos: new Set(commitItems.map((item) => item.repository.full_name).map(repoKey)).size,
+      prRepos: new Set(prItems.map(prRepoFullName).map(repoKey).filter((key) => allowedRepoKeys.has(key))).size,
+      commitRepos: new Set(commitItems.map((item) => item.repository.full_name).map(repoKey).filter((key) => allowedRepoKeys.has(key))).size,
       eventRepos: new Set(eventRepoNames.map(repoKey)).size,
     },
   };
 }
 
 // PRs recientes (todos los repos públicos accesibles, incluidas organizaciones)
-function getRecentPRs(login: string, prItems: SearchIssuesResult["items"], n = 5) {
+function getRecentPRs(login: string, prItems: SearchIssuesResult["items"], allowedRepoKeys: Set<string>, n = 5) {
   const profileFull = profileRepoFullName(login);
 
   return prItems
@@ -352,15 +356,17 @@ function getRecentPRs(login: string, prItems: SearchIssuesResult["items"], n = 5
       };
     })
     .filter((p) => p.repo.toLowerCase() !== profileFull)
+    .filter((p) => allowedRepoKeys.has(repoKey(p.repo)))
     .slice(0, n);
 }
 
 // Commits recientes (busqueda global por autor) — excluye repo de perfil
-function getRecentCommits(login: string, commitItems: SearchCommitsResult["items"], n = 5) {
+function getRecentCommits(login: string, commitItems: SearchCommitsResult["items"], allowedRepoKeys: Set<string>, n = 5) {
   const profileFull = profileRepoFullName(login);
 
   return commitItems
     .filter((item) => item.repository.full_name.toLowerCase() !== profileFull)
+    .filter((item) => allowedRepoKeys.has(repoKey(item.repository.full_name)))
     .slice(0, n)
     .map((item) => ({
       repo: item.repository.full_name,
@@ -430,6 +436,11 @@ function latestReposTable(repos: GitHubRepo[], login: string): string {
 
   const rows = latest.map((r) => {
     const repo = mdLink(r.full_name, r.html_url);
+    if (r.private) {
+      const desc = r.description ? esc(r.description) : "Repositorio privado/accesible por organización.";
+      return `| ${repo}<br/><sub>${desc}</sub> | ${esc(r.language ?? "Privado")} | ${fmtDate(r.pushed_at)} | Privado | Privado |`;
+    }
+
     const encodedFullName = r.full_name.split("/").map(encodeURIComponent).join("/");
     const langBadge = `![lang](https://img.shields.io/github/languages/top/${encodedFullName}?style=flat-square)`;
     const lastCommit = `![last](https://img.shields.io/github/last-commit/${encodedFullName}?style=flat-square&label=%C3%BAltimo%20commit)`;
@@ -587,12 +598,20 @@ ${langTable}
 
 // -------- Main --------
 async function main() {
+  if (INCLUDE_PRIVATE_REPOS && !HAS_PERSONAL_TOKEN) {
+    console.warn(
+      "INCLUDE_PRIVATE_REPOS=true requiere PROFILE_GITHUB_TOKEN o GH_TOKEN. Se omite la regeneracion para no perder la actividad privada ya publicada."
+    );
+    return;
+  }
+
   console.log(`Generando README para ${USERNAME}…`);
   const activity = await discoverActivityUniverse(USERNAME);
   const { user, organizations, prItems, commitItems, sourceCounts } = activity;
   const repos = activity.repos
     .sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
     .slice(0, MAX_LANGUAGE_REPOS);
+  const allowedRepoKeys = new Set(repos.map((repo) => repoKey(repo.full_name)));
 
   console.log(
     `Repos detectados: ${activity.repos.length}. Analizando lenguajes en ${repos.length}. Organizaciones: ${
@@ -627,8 +646,8 @@ async function main() {
     .sort((a, b) => b.bytes - a.bytes);
 
   // PRs y commits recientes
-  const prs = getRecentPRs(USERNAME, prItems, 5);
-  const commits = getRecentCommits(USERNAME, commitItems, 5);
+  const prs = getRecentPRs(USERNAME, prItems, allowedRepoKeys, 5);
+  const commits = getRecentCommits(USERNAME, commitItems, allowedRepoKeys, 5);
 
   const next = buildReadme({
     user,

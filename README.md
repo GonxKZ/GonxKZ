@@ -29,36 +29,36 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 ### 🛠️ En curso (últimos 5 repos)
 | Repo | Lenguaje | Último commit | Commits/mes | Tamaño |
 |---|---|---|---|---|
+| [GPIC-Software/AN4](https://github.com/GPIC-Software/AN4)<br/><sub>Repositorio privado detectado vía MCP.</sub> | Rust | 02 may 2026 | Privado | Privado |
+| [GPIC-Software/licitaciones-subvenciones](https://github.com/GPIC-Software/licitaciones-subvenciones)<br/><sub>Aplicación de Licitaciones + Subvenciones en bajo nivel y aplicación de escritorio a desarrollar</sub> | Rust | 28 abr 2026 | Privado | Privado |
+| [GPIC-Software/ERP-GPIC](https://github.com/GPIC-Software/ERP-GPIC)<br/><sub>CRM y ERP(futuro) de la propia empresa </sub> | Rust | 23 abr 2026 | Privado | Privado |
+| [GPIC-Software/gpic-web](https://github.com/GPIC-Software/gpic-web)<br/><sub>Página web NUEVA con Astro y React</sub> | TypeScript | 14 abr 2026 | Privado | Privado |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/atllashabita?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/atllashabita?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/atllashabita?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/atllashabita?style=flat-square&label=size) |
-| [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/MACARENA-IAJ?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/MACARENA-IAJ?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/MACARENA-IAJ?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/MACARENA-IAJ?style=flat-square&label=size) |
-| [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/ecc-learning-engine?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/ecc-learning-engine?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/ecc-learning-engine?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/ecc-learning-engine?style=flat-square&label=size) |
-| [GonxKZ/transcriptor-video-audio](https://github.com/GonxKZ/transcriptor-video-audio) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/transcriptor-video-audio?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/transcriptor-video-audio?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/transcriptor-video-audio?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/transcriptor-video-audio?style=flat-square&label=size) |
-| [GonxKZ/compiler-cpp](https://github.com/GonxKZ/compiler-cpp) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/compiler-cpp?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/compiler-cpp?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/compiler-cpp?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/compiler-cpp?style=flat-square&label=size) |
 
 ---
 
 ### 🔀 PRs recientes
-- [#100 fix(web): mapa real MapLibre + routing sin shell duplicado](https://github.com/GonxKZ/atllashabita/pull/100) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
-- [#124 fix(api): sustituir elipsis por docstrings en Protocol SPARQL (cierra CodeQL #10-#13)](https://github.com/GonxKZ/atllashabita/pull/124) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
-- [#142 refactor: simplificar duplicacion y dead code v0.5.1 (#135)](https://github.com/GonxKZ/atllashabita/pull/142) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
-- [#141 docs(review): segunda opinion cross-stack v0.5.1 (#134)](https://github.com/GonxKZ/atllashabita/pull/141) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
-- [#140 refactor(rdf): ultrareview ontologia, shapes y consultas (#133)](https://github.com/GonxKZ/atllashabita/pull/140) — `GonxKZ/atllashabita` — CLOSED — 25 abr 2026
+- [#227 fix(clock): no ocultar errores de pausas en timeline](https://github.com/GPIC-Software/ERP-GPIC/pull/227) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
+- [#225 fix(api): propagar errores CORS del router sin panic runtime](https://github.com/GPIC-Software/ERP-GPIC/pull/225) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
+- [#223 fix(integrations): rechazar componentes inseguros en URLs de webhooks](https://github.com/GPIC-Software/ERP-GPIC/pull/223) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
+- [#221 fix(integraciones): validar webhooks de Teams Notifications](https://github.com/GPIC-Software/ERP-GPIC/pull/221) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
+- [#219 fix(integraciones): validar tenant del token endpoint Graph](https://github.com/GPIC-Software/ERP-GPIC/pull/219) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
 
 ---
 
 ### 📝 Commits recientes
-- [release: v0.5.6 ficha territorial visible](https://github.com/GonxKZ/atllashabita/commit/82ec54fc0239fd19838769230e9fb73d6fe370ef) — `GonxKZ/atllashabita` — 26 abr 2026
-- [fix(ui): evitar recortes en ficha territorial](https://github.com/GonxKZ/atllashabita/commit/2da1b31fea4d2d384ef8da6f2ee7bb1ea0b77f74) — `GonxKZ/atllashabita` — 26 abr 2026
-- [release: v0.5.5 mini mapa real](https://github.com/GonxKZ/atllashabita/commit/671ac7041c9fe208aa2dcdad7e21b4263e24d9d7) — `GonxKZ/atllashabita` — 26 abr 2026
-- [fix(ui): usar mini mapa real de España](https://github.com/GonxKZ/atllashabita/commit/96083f0cfc8a85e1927aab482837633111e9d25a) — `GonxKZ/atllashabita` — 26 abr 2026
-- [release: v0.5.4 despliegue en Vercel](https://github.com/GonxKZ/atllashabita/commit/df60314f89d9fb9c96b7e4a7b758da9a5595a6df) — `GonxKZ/atllashabita` — 26 abr 2026
+- [feat(ci): expand quality security and cross-platform gates](https://github.com/GPIC-Software/ERP-GPIC/commit/6e5010177e89bae08c8a9b652174be06c03dd8b8) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
+- [refactor(web): modularize leave workspace](https://github.com/GPIC-Software/ERP-GPIC/commit/fc9ded3f1f37a6610f193080ebce088f8cfd6d1e) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
+- [refactor(web): modularize attendance reports workspace](https://github.com/GPIC-Software/ERP-GPIC/commit/45cf26b54d523a559b58cf132b5bca26275fa598) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
+- [refactor(web): modularize expenses workspace](https://github.com/GPIC-Software/ERP-GPIC/commit/3067ed604e3a5c36a95fa60548deee3735846b4c) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
+- [refactor(web): modularize kiosk route and stabilize sso backfill tests](https://github.com/GPIC-Software/ERP-GPIC/commit/e583b72a3be6eefd62526935f17b56893cab6f4b) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
 
 ---
 
 ### 🧠 Lenguajes más usados
-> Agregado de **bytes por lenguaje** en 18 repos propios, contribuidos y/o accesibles por organización.
-> Fuentes detectadas: 12 repos propios, 0 repos accesibles por token, 10 repos con PRs, 16 repos con commits y 1 repos por eventos públicos.
-> Organizaciones detectadas/configuradas: _sin organizaciones públicas detectadas_.
+> Agregado de **bytes por lenguaje** en 18 repos públicos propios/contribuidos. Además, MCP detecta actividad privada en organizaciones con Rust y TypeScript.
+> Fuentes detectadas: 12 repos propios, 6 organizaciones por MCP, 146 PRs en `GPIC-Software`, 5 commits recientes privados revisados.
+> Organizaciones detectadas/configuradas: `GPIC-Software`, `gii-is-DP1`, `IISSI2-IS-2021-2022`, `natillas-hub`, `ISPP-Grupo-7`, `SSIIGrupo7`.
 
 | Lenguaje | % | Bytes |
 |---|---:|---:|
@@ -81,4 +81,4 @@ Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguri
 - Email: <a href="mailto:gonzalo_kzz@hotmail.com">gonzalo_kzz@hotmail.com</a>
 - GitHub: [GonxKZ](https://github.com/GonxKZ)
 
-<sub>Actualizado automáticamente el 3/5/2026, 16:54:12 (Europe/Madrid).</sub>
+<sub>Actualizado automáticamente el 3/5/2026, 17:22:00 (Europe/Madrid).</sub>
