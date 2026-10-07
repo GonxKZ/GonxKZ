@@ -15,8 +15,8 @@ const stats = {
   totalPullRequestContributions: 4, totalIssueContributions: 2, totalPullRequestReviewContributions: 1,
   restrictedContributionsCount: 30, contributionCalendar: { totalContributions: 57 },
 };
-const publicRepo = repo('public-demo');
-const privateRepo = repo('secret-project', true);
+const publicRepo = { ...repo('public-demo'), fork: true };
+const privateRepo = { ...repo('secret-project', true), archived: true };
 const commit = (repository) => ({ sha: repository.full_name, repository,
   html_url: `${repository.html_url}/commit/123`, commit: { message: 'Mensaje ' + repository.full_name, author: { date: now.toISOString() } } });
 const pr = (repository) => ({ title: 'PR ' + repository.full_name, number: 1, state: 'open',
@@ -156,7 +156,7 @@ function collectionClient({ incomplete = false, badBytes = false, mismatch = fal
   });
 }
 
-test('consulta todos los lenguajes y conserva actividad pública con agregados privados', async () => {
+test('incluye forks y archivados al agregar todos los lenguajes sin publicar detalles privados', async () => {
   const personal = { ...config, personal: true, maxRepos: 500 };
   const result = await collect(personal, collectionClient(), now);
   assert.equal(result.analyzed, 2);
