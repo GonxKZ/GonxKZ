@@ -1,390 +1,219 @@
-/// <reference lib="dom" />
-/// <reference types="node" />
+import { readFileSync, existsSync, writeFileSync } from 'node:fs';
+import { pathToFileURL } from 'node:url';
 
-/**
- * README “bonito”:
- * - Header animado (typing)
- * - Stats (sin stars/issues/contribs) → commits + PRs
- * - 🐍 Snake (SVG generado en assets/snake.svg)
- * - En curso: tabla últimos 5 repos (excluye repo del perfil)
- * - Lenguajes más usados: oculta 0.0% (pct < 0.05)
- * - PRs recientes (5) — excluye repo de perfil
- * - Commits recientes (5) — excluye repo de perfil
- * - Skills en GRID 6×4 (24 iconos)
- * - Stats en columna: primero “Most Used Languages”, debajo “stats”
- */
+class ProfileError extends Error {}
 
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
-
-// -------- Tipos mínimos --------
-interface GitHubUser {
-  login: string;
-  name: string | null;
-  bio: string | null;
-  public_repos: number;
-  html_url: string;
-  blog: string | null;
-  company: string | null;
-  location: string | null;
-}
-
-interface GitHubRepo {
-  name: string;
+export interface Repo {
   full_name: string;
-  owner?: { login: string; type?: string };
-  fork: boolean;
-  description: string | null;
   html_url: string;
   languages_url: string;
-  pushed_at: string; // ISO
+  private: boolean;
+  fork: boolean;
   archived: boolean;
+  description: string | null;
   language: string | null;
-  private?: boolean;
+  pushed_at: string;
 }
-
-type LanguagesMap = Record<string, number>;
-
-interface GitHubOrg {
+interface User { login: string; name: string | null; bio: string | null; html_url: string }
+interface PullRequest {
+  html_url: string; title: string; number: number; state: string;
+  repository_url: string; updated_at: string;
+}
+interface Commit {
+  sha: string; html_url: string; repository: Pick<Repo, 'full_name' | 'html_url' | 'private'>;
+  commit: { message: string; author: { date: string } };
+}
+export interface Contributions {
+  startedAt: string;
+  endedAt: string;
+  totalCommitContributions: number;
+  totalPullRequestContributions: number;
+  totalIssueContributions: number;
+  totalPullRequestReviewContributions: number;
+  restrictedContributionsCount: number;
+  contributionCalendar: { totalContributions: number };
+}
+export interface Config {
   login: string;
+  token: string;
+  personal: boolean;
+  includePrivate: boolean;
+  maxRepos: number;
+  searchPages: number;
+  excludedLanguages: Set<string>;
+  email: string;
 }
-
-interface SearchIssuesResult {
-  items: Array<{
-    html_url: string;
-    title: string;
-    state: "open" | "closed";
-    number: number;
-    repository_url: string;
-    updated_at: string;
-    created_at: string;
-  }>;
-}
-
-interface SearchCommitsResult {
-  items: Array<{
-    sha: string;
-    html_url: string;
-    commit: {
-      message: string;
-      author: { date: string; name?: string; email?: string | null };
-      committer?: { date: string };
-    };
-    repository: GitHubRepo;
-  }>;
-}
-
-// -------- Config --------
-const USERNAME = process.env.GITHUB_USERNAME ?? (process.env.CI ? process.env.USERNAME : undefined) ?? "GonxKZ";
-const TOKEN = process.env.PROFILE_GITHUB_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
-const HAS_PERSONAL_TOKEN = Boolean(process.env.PROFILE_GITHUB_TOKEN || process.env.GH_TOKEN);
-const CONTACT_EMAIL = process.env.CONTACT_EMAIL ?? "gonzalo_kzz@hotmail.com";
-const MAX_LANGUAGE_REPOS = Number(process.env.MAX_LANGUAGE_REPOS ?? 140);
-const SEARCH_PAGES = Number(process.env.SEARCH_PAGES ?? 3);
-const INCLUDE_FORKS = /^true$/i.test(process.env.INCLUDE_FORKS ?? "");
-const INCLUDE_PRIVATE_REPOS = /^true$/i.test(process.env.INCLUDE_PRIVATE_REPOS ?? "");
-const EXCLUDED_LANGUAGES = new Set(
-  (process.env.EXCLUDED_LANGUAGES ?? "Hack")
-    .split(",")
-    .map((x) => x.trim().toLowerCase())
-    .filter(Boolean)
-);
-const CONFIGURED_ORGS = (process.env.GITHUB_ORGS ?? process.env.ORGANIZATIONS ?? "")
-  .split(",")
-  .map((x) => x.trim())
-  .filter(Boolean);
-
-if (!TOKEN) {
-  console.warn("GITHUB_TOKEN no definido. Se usara la API publica con limites de rate-limit mas estrictos.");
-}
-
-const HEADERS: Record<string, string> = {
-  Accept: "application/vnd.github+json",
-  "X-GitHub-Api-Version": "2022-11-28",
-};
-if (TOKEN) HEADERS.Authorization = `Bearer ${TOKEN}`;
-
-// -------- Utils --------
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-const mdLink = (text: string, url: string) => `[${text}](${url})`;
-const fmtPct = (n: number) => `${n.toFixed(1)}%`;
-const esc = (s: unknown) => (s ?? "").toString().replace(/\|/g, "\\|");
-const fmtDate = (iso: string) =>
-  new Date(iso).toLocaleDateString("es-ES", { year: "numeric", month: "short", day: "2-digit" });
-const truncate = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1) + "… " : s);
-const repoKey = (fullName: string) => fullName.toLowerCase();
-const profileRepoFullName = (login: string) => `${login}/${login}`.toLowerCase();
-
-// -------- API --------
-async function gh<T>(url: string, init: RequestInit = {}, retries = 3): Promise<T> {
-  const res = await fetch(url, { headers: HEADERS, ...init });
-  if (res.status === 403 && retries > 0) {
-    const reset = res.headers.get("x-ratelimit-reset");
-    const now = Math.floor(Date.now() / 1000);
-    const waitSec = reset ? Math.max(0, Number(reset) - now) + 1 : 30;
-    console.warn(`Rate-limited. Esperando ${waitSec}s…`);
-    await sleep(waitSec * 1000);
-    return gh<T>(url, init, retries - 1);
-  }
-  if (!res.ok) {
-    const txt = await res.text().catch(() => "");
-    throw new Error(`${res.status} ${res.statusText} :: ${url}\n${txt}`);
-  }
-  return (await res.json()) as T;
-}
-
-async function getUser(login: string) {
-  return gh<GitHubUser>(`https://api.github.com/users/${login}`);
-}
-
-async function getOwnedRepos(login: string) {
-  const perPage = 100;
-  let page = 1;
-  const all: GitHubRepo[] = [];
-  while (true) {
-    const chunk = await gh<GitHubRepo[]>(
-      `https://api.github.com/users/${login}/repos?per_page=${perPage}&page=${page}&sort=updated&direction=desc`
-    );
-    all.push(...chunk);
-    if (chunk.length < perPage) break;
-    page++;
-    await sleep(100);
-  }
-  return filterRepos(all);
-}
-
-async function getAuthenticatedRepos() {
-  if (!process.env.PROFILE_GITHUB_TOKEN && !process.env.GH_TOKEN) return [];
-
-  const perPage = 100;
-  let page = 1;
-  const all: GitHubRepo[] = [];
-  const visibility = INCLUDE_PRIVATE_REPOS ? "all" : "public";
-  while (true) {
-    const chunk = await gh<GitHubRepo[]>(
-      `https://api.github.com/user/repos?per_page=${perPage}&page=${page}&sort=updated&direction=desc&visibility=${visibility}&affiliation=owner,collaborator,organization_member`
-    );
-    all.push(...chunk);
-    if (chunk.length < perPage) break;
-    page++;
-    await sleep(100);
-  }
-  return filterRepos(all);
-}
-
-async function getPublicOrganizations(login: string) {
-  const perPage = 100;
-  let page = 1;
-  const all: GitHubOrg[] = [];
-  while (true) {
-    const chunk = await gh<GitHubOrg[]>(`https://api.github.com/users/${login}/orgs?per_page=${perPage}&page=${page}`);
-    all.push(...chunk);
-    if (chunk.length < perPage) break;
-    page++;
-    await sleep(100);
-  }
-  return all.map((org) => org.login);
-}
-
-async function getAuthenticatedOrganizations() {
-  if (!process.env.PROFILE_GITHUB_TOKEN && !process.env.GH_TOKEN) return [];
-
-  const perPage = 100;
-  let page = 1;
-  const all: GitHubOrg[] = [];
-  while (true) {
-    const chunk = await gh<GitHubOrg[]>(`https://api.github.com/user/orgs?per_page=${perPage}&page=${page}`);
-    all.push(...chunk);
-    if (chunk.length < perPage) break;
-    page++;
-    await sleep(100);
-  }
-  return all.map((org) => org.login);
-}
-
-async function getRepo(fullName: string) {
-  return gh<GitHubRepo>(`https://api.github.com/repos/${fullName}`);
-}
-
-async function getRepoLanguages(languages_url: string) {
-  return gh<LanguagesMap>(languages_url);
-}
-
-function filterRepos(repos: GitHubRepo[]) {
-  return repos.filter((r) => (INCLUDE_FORKS || !r.fork) && !r.archived && (INCLUDE_PRIVATE_REPOS || !r.private));
-}
-
-function mergeRepos(target: Map<string, GitHubRepo>, repos: GitHubRepo[]) {
-  for (const repo of filterRepos(repos)) {
-    target.set(repoKey(repo.full_name), repo);
-  }
-}
-
-async function searchPRs(login: string, pages = SEARCH_PAGES) {
-  const items: SearchIssuesResult["items"] = [];
-  const visibilityQualifier = INCLUDE_PRIVATE_REPOS && (process.env.PROFILE_GITHUB_TOKEN || process.env.GH_TOKEN) ? "" : "+is:public";
-  for (let page = 1; page <= pages; page++) {
-    const url = `https://api.github.com/search/issues?q=is:pr+author:${encodeURIComponent(
-      login
-    )}${visibilityQualifier}&sort=updated&order=desc&per_page=100&page=${page}`;
-    const res = await gh<SearchIssuesResult>(url);
-    items.push(...res.items);
-    if (res.items.length < 100) break;
-    await sleep(100);
-  }
-  return items;
-}
-
-async function searchCommits(login: string, pages = SEARCH_PAGES) {
-  const items: SearchCommitsResult["items"] = [];
-  for (let page = 1; page <= pages; page++) {
-    const url = `https://api.github.com/search/commits?q=author:${encodeURIComponent(
-      login
-    )}&sort=author-date&order=desc&per_page=100&page=${page}`;
-    const res = await gh<SearchCommitsResult>(url);
-    items.push(...res.items);
-    if (res.items.length < 100) break;
-    await sleep(100);
-  }
-  return items;
-}
-
-async function getPublicEventRepos(login: string) {
-  type EventsResp = Array<{
-    type: string;
-    repo: { name: string };
-    created_at: string;
-    payload?: { commits?: Array<{ sha: string; message: string; url?: string }> };
-  }>;
-  const events = await gh<EventsResp>(`https://api.github.com/users/${login}/events/public`);
-  return events.map((ev) => ev.repo.name);
-}
-
-function prRepoFullName(item: SearchIssuesResult["items"][number]) {
-  return item.repository_url.split("/").slice(-2).join("/");
-}
-
-async function hydrateRepos(fullNames: Iterable<string>) {
-  const repos: GitHubRepo[] = [];
-  const uniqueFullNames = Array.from(new Set(Array.from(fullNames).map((name) => name.trim()).filter(Boolean)));
-  for (const fullName of uniqueFullNames) {
-    try {
-      repos.push(await getRepo(fullName));
-      await sleep(60);
-    } catch (e) {
-      const msg = e instanceof Error ? e.message : String(e);
-      console.warn(`Repositorio no leído ${fullName}: ${msg}`);
-    }
-  }
-  return filterRepos(repos);
-}
-
-async function discoverActivityUniverse(login: string) {
-  const [user, ownedRepos, authenticatedRepos, publicOrgs, authenticatedOrgs, prItems, commitItems, eventRepoNames] =
-    await Promise.all([
-      getUser(login),
-      getOwnedRepos(login),
-      getAuthenticatedRepos().catch((e) => {
-        const msg = e instanceof Error ? e.message : String(e);
-        console.warn(`Repos autenticados no disponibles: ${msg}`);
-        return [] as GitHubRepo[];
-      }),
-      getPublicOrganizations(login).catch((e) => {
-        const msg = e instanceof Error ? e.message : String(e);
-        console.warn(`Organizaciones públicas no disponibles: ${msg}`);
-        return [] as string[];
-      }),
-      getAuthenticatedOrganizations().catch((e) => {
-        const msg = e instanceof Error ? e.message : String(e);
-        console.warn(`Organizaciones autenticadas no disponibles: ${msg}`);
-        return [] as string[];
-      }),
-      searchPRs(login),
-      searchCommits(login).catch((e) => {
-        const msg = e instanceof Error ? e.message : String(e);
-        console.warn(`Busqueda de commits no disponible: ${msg}`);
-        return [] as SearchCommitsResult["items"];
-      }),
-      getPublicEventRepos(login).catch((e) => {
-        const msg = e instanceof Error ? e.message : String(e);
-        console.warn(`Eventos publicos no disponibles: ${msg}`);
-        return [] as string[];
-      }),
-    ]);
-
-  const repos = new Map<string, GitHubRepo>();
-  mergeRepos(repos, ownedRepos);
-  mergeRepos(repos, authenticatedRepos);
-  mergeRepos(
-    repos,
-    commitItems.map((item) => item.repository)
-  );
-
-  const fullNamesToHydrate = new Set<string>();
-  for (const item of prItems) fullNamesToHydrate.add(prRepoFullName(item));
-  for (const fullName of eventRepoNames) fullNamesToHydrate.add(fullName);
-  for (const repo of await hydrateRepos(fullNamesToHydrate)) repos.set(repoKey(repo.full_name), repo);
-  const allowedRepoKeys = new Set(repos.keys());
-
-  const organizations = Array.from(new Set([...CONFIGURED_ORGS, ...publicOrgs, ...authenticatedOrgs])).sort((a, b) =>
-    a.localeCompare(b)
-  );
-
+export function loadConfig(env: NodeJS.ProcessEnv = process.env): Config {
+  const integer = (name: string, fallback: number, max: number) => {
+    const value = Number(env[name] ?? fallback);
+    if (!Number.isInteger(value) || value < 1 || value > max) throw new ProfileError(`${name} debe estar entre 1 y ${max}.`);
+    return value;
+  };
+  const login = env.GITHUB_USERNAME || 'GonxKZ';
+  if (!/^[a-z\d](?:[a-z\d-]{0,37}[a-z\d])?$/i.test(login)) throw new ProfileError('GITHUB_USERNAME no es válido.');
+  const token = env.PROFILE_GITHUB_TOKEN || env.GH_TOKEN || env.GITHUB_TOKEN || '';
+  if (!token) throw new ProfileError('Define GITHUB_TOKEN o PROFILE_GITHUB_TOKEN para consultar GitHub.');
   return {
-    user,
-    repos: Array.from(repos.values()),
-    organizations,
-    prItems,
-    commitItems,
-    sourceCounts: {
-      ownedRepos: ownedRepos.length,
-      authenticatedRepos: authenticatedRepos.length,
-      prRepos: new Set(prItems.map(prRepoFullName).map(repoKey).filter((key) => allowedRepoKeys.has(key))).size,
-      commitRepos: new Set(commitItems.map((item) => item.repository.full_name).map(repoKey).filter((key) => allowedRepoKeys.has(key))).size,
-      eventRepos: new Set(eventRepoNames.map(repoKey)).size,
-    },
+    login, token, personal: Boolean(env.PROFILE_GITHUB_TOKEN || env.GH_TOKEN),
+    includePrivate: env.INCLUDE_PRIVATE_REPOS !== 'false',
+    maxRepos: integer('MAX_LANGUAGE_REPOS', 500, 1000),
+    searchPages: integer('SEARCH_PAGES', 3, 10),
+    excludedLanguages: new Set((env.EXCLUDED_LANGUAGES ?? 'Hack').toLowerCase().split(',').map(s => s.trim())),
+    email: env.CONTACT_EMAIL || 'gonzalo_kzz@hotmail.com',
   };
 }
 
-// PRs recientes (todos los repos públicos accesibles, incluidas organizaciones)
-function getRecentPRs(login: string, prItems: SearchIssuesResult["items"], allowedRepoKeys: Set<string>, n = 5) {
-  const profileFull = profileRepoFullName(login);
+export function createClient(token: string, request = fetch, wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))) {
+  return async function api<T>(path: string, body?: unknown): Promise<T> {
+    const url = new URL(path, 'https://api.github.com');
+    if (url.origin !== 'https://api.github.com') throw new ProfileError('Origen de API no permitido.');
+    for (let attempt = 0; attempt < 3; attempt++) {
+      let response: Response;
+      try {
+        response = await request(url.href, {
+          method: body === undefined ? 'GET' : 'POST',
+          headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' },
+          ...(body === undefined ? {} : { body: JSON.stringify(body) }),
+          signal: AbortSignal.timeout(20000),
+        });
+      } catch {
+        if (attempt === 2) throw new ProfileError('No se pudo conectar con GitHub tras tres intentos.');
+        await wait(1000 * 2 ** attempt);
+        continue;
+      }
+      const throttled = response.status === 429 || (response.status === 403 &&
+        (response.headers.get('x-ratelimit-remaining') === '0' || response.headers.has('retry-after')));
+      const retryable = throttled || response.status >= 500;
+      if (!response.ok) {
+        const retryAfter = Number(response.headers.get('retry-after') ?? 2 ** attempt);
+        if (retryable && attempt < 2 && Number.isFinite(retryAfter) && retryAfter >= 0 && retryAfter <= 30) {
+          await response.body?.cancel();
+          await wait(retryAfter * 1000);
+          continue;
+        }
+        // Los errores no incluyen rutas ni respuestas que puedan contener datos privados.
+        throw new ProfileError(`GitHub respondió HTTP ${response.status}. Revisa permisos, caducidad y límites de la API.`);
+      }
+      if (response.headers.has('x-github-sso')) throw new ProfileError('GitHub requiere autorizar el token mediante SSO.');
+      const result = await response.json() as T & { errors?: unknown[] };
+      if (result.errors?.length) throw new ProfileError('La consulta GraphQL de GitHub contiene errores. No se publican datos parciales.');
+      return result;
+    }
+    throw new ProfileError('Se agotaron los reintentos de GitHub.');
+  };
+}
+type Client = ReturnType<typeof createClient>;
 
-  return prItems
-    .map((it) => {
-      const repoFull = prRepoFullName(it);
-      return {
-        title: it.title,
-        url: it.html_url,
-        repo: repoFull,
-        state: it.state,
-        updated: it.updated_at,
-        number: it.number,
-      };
-    })
-    .filter((p) => p.repo.toLowerCase() !== profileFull)
-    .filter((p) => allowedRepoKeys.has(repoKey(p.repo)))
-    .slice(0, n);
+export async function paginate<T>(api: Client, path: string): Promise<T[]> {
+  const all: T[] = [];
+  for (let page = 1; page <= 10; page++) {
+    const rows = await api<T[]>(`${path}${path.includes('?') ? '&' : '?'}per_page=100&page=${page}`);
+    all.push(...rows);
+    if (rows.length < 100) return all;
+  }
+  throw new ProfileError('La consulta supera 1000 repositorios. Acota el acceso antes de publicar un resultado incompleto.');
 }
 
-// Commits recientes (busqueda global por autor) — excluye repo de perfil
-function getRecentCommits(login: string, commitItems: SearchCommitsResult["items"], allowedRepoKeys: Set<string>, n = 5) {
-  const profileFull = profileRepoFullName(login);
-
-  return commitItems
-    .filter((item) => item.repository.full_name.toLowerCase() !== profileFull)
-    .filter((item) => allowedRepoKeys.has(repoKey(item.repository.full_name)))
-    .slice(0, n)
-    .map((item) => ({
-      repo: item.repository.full_name,
-      sha: item.sha,
-      message: item.commit.message || "(sin mensaje)",
-      created: item.commit.author?.date ?? item.commit.committer?.date ?? new Date().toISOString(),
-      url: item.html_url,
-    }));
+async function search<T>(api: Client, kind: string, query: string, sort: string, pages: number) {
+  const items: T[] = [];
+  let total = 0;
+  for (let page = 1; page <= pages; page++) {
+    const result = await api<{ items: T[]; total_count: number; incomplete_results: boolean }>(
+      `/search/${kind}?q=${encodeURIComponent(query)}&sort=${sort}&order=desc&per_page=100&page=${page}`);
+    if (result.incomplete_results) throw new ProfileError('GitHub devolvió una búsqueda incompleta. Se conserva el perfil anterior.');
+    items.push(...result.items);
+    total = result.total_count;
+    if (result.items.length < 100) break;
+  }
+  return { items, truncated: total > items.length };
 }
 
-// -------- Plantillas --------
-// Lista de iconos (24). Se renderiza en grid 6×4.
+export async function getContributions(api: Client, login: string, now: Date) {
+  const result = await api<{ data: { user: { contributionsCollection: Contributions } | null } }>('/graphql', {
+    query: `query($login: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) { contributionsCollection(from: $from, to: $to) {
+        startedAt endedAt totalCommitContributions totalPullRequestContributions
+        totalIssueContributions totalPullRequestReviewContributions restrictedContributionsCount
+        contributionCalendar { totalContributions }
+      } }
+    }`,
+    variables: { login, from: new Date(now.getTime() - 365 * 86400000).toISOString(), to: now.toISOString() },
+  });
+  if (!result.data.user) throw new ProfileError('No se ha encontrado el usuario de GitHub.');
+  const stats = result.data.user.contributionsCollection;
+  const counts = [stats.totalCommitContributions, stats.totalPullRequestContributions, stats.totalIssueContributions,
+    stats.totalPullRequestReviewContributions, stats.restrictedContributionsCount, stats.contributionCalendar.totalContributions];
+  if (counts.some(n => !Number.isSafeInteger(n) || n < 0)) throw new ProfileError('GitHub devolvió contadores no válidos.');
+  return stats;
+}
+
+export function publicRepos(repos: Repo[]) {
+  // Una visibilidad desconocida tampoco autoriza publicar detalles.
+  return repos.filter(repo => repo.private === false);
+}
+const key = (name: string) => name.toLowerCase();
+const prRepo = (pr: PullRequest) => pr.repository_url.split('/').slice(-2).join('/');
+
+export async function collect(config: Config, api: Client, now: Date) {
+  if (config.personal) {
+    const viewer = await api<{ login: string }>('/user');
+    if (key(viewer.login) !== key(config.login)) throw new ProfileError('El token personal debe pertenecer al usuario del perfil.');
+  }
+  const [user, stats, owned, accessible, prs, commits] = await Promise.all([
+    api<User>(`/users/${config.login}`), getContributions(api, config.login, now),
+    paginate<Repo>(api, `/users/${config.login}/repos?sort=pushed&direction=desc`),
+    config.personal && config.includePrivate
+      ? paginate<Repo>(api, '/user/repos?visibility=all&affiliation=owner,collaborator,organization_member&sort=pushed&direction=desc')
+      : Promise.resolve([] as Repo[]),
+    search<PullRequest>(api, 'issues', `is:pr is:public author:${config.login}`, 'updated', config.searchPages),
+    search<Commit>(api, 'commits', `is:public author:${config.login}`, 'author-date', config.searchPages),
+  ]);
+  const repos = new Map<string, Repo>();
+  for (const repo of [...owned, ...accessible]) {
+    repos.set(key(repo.full_name), repo);
+  }
+  for (const name of new Set([...prs.items.map(prRepo), ...commits.items.map(c => c.repository.full_name)])) {
+    if (!repos.has(key(name))) repos.set(key(name), await api<Repo>(`/repos/${name}`));
+  }
+  const allRepos = [...repos.values()]
+    .filter(repo => config.includePrivate || repo.private === false)
+    .sort((a, b) => b.pushed_at.localeCompare(a.pushed_at));
+  if (allRepos.length > config.maxRepos) throw new ProfileError('Se ha superado el límite de repositorios. No se publican estadísticas de una muestra parcial.');
+  const languageRepos = allRepos;
+  const totals: Record<string, number> = {};
+  for (const repo of languageRepos) {
+    const languages = await api<Record<string, number>>(repo.languages_url);
+    for (const [language, bytes] of Object.entries(languages)) {
+      if (!Number.isSafeInteger(bytes) || bytes < 0) throw new ProfileError('GitHub devolvió bytes de lenguaje no válidos.');
+      if (!config.excludedLanguages.has(language.toLowerCase())) totals[language] = (totals[language] ?? 0) + bytes;
+    }
+  }
+  const visible = publicRepos(allRepos).filter(repo => key(repo.full_name) !== key(`${config.login}/${config.login}`));
+  const allowed = new Set(visible.map(r => key(r.full_name)));
+  return {
+    user, stats, repos: visible,
+    prs: prs.items.filter(pr => allowed.has(key(prRepo(pr)))).slice(0, 5),
+    commits: commits.items.filter(c => c.repository.private === false && allowed.has(key(c.repository.full_name)))
+      .filter((c, i, all) => all.findIndex(other => other.sha === c.sha) === i).slice(0, 5),
+    languages: Object.entries(totals).sort((a, b) => b[1] - a[1]),
+    analyzed: languageRepos.length, detected: allRepos.length,
+    privateLanguages: languageRepos.filter(repo => repo.private === true).length,
+    searchTruncated: prs.truncated || commits.truncated,
+    now,
+  };
+}
+export type Activity = Awaited<ReturnType<typeof collect>>;
+
+export const escapeText = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  .replace(/[\[\]`*_\\|]/g, char => `&#${char.charCodeAt(0)};`).replace(/[\r\n]+/g, ' ');
+const count = (value: number) => value.toLocaleString('es-ES');
+const date = (value: string) => new Date(value).toLocaleDateString('es-ES', { timeZone: 'Europe/Madrid', day: '2-digit', month: 'short', year: 'numeric' });
+function link(label: string, url: string) {
+  const parsed = new URL(url);
+  if (parsed.origin !== 'https://github.com') throw new ProfileError('Enlace de GitHub no válido.');
+  return `[${escapeText(label)}](${parsed.href.replace(/[()]/g, char => encodeURIComponent(char).replace('(', '%28').replace(')', '%29'))})`;
+}
 const ICONS: Array<{ src: string; alt: string }> = [
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", alt: "C++" },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", alt: "C" },
@@ -431,254 +260,94 @@ function renderSkillsGrid(icons = ICONS, cols = 6, size = 42) {
   return `<table><tbody>${rows.join("")}</tbody></table>`;
 }
 
-// Tabla “En curso”
-function latestReposTable(repos: GitHubRepo[], login: string): string {
-  const profileFull = profileRepoFullName(login);
-  const latest = repos
-    .filter((r) => !r.archived)
-    .filter((r) => r.full_name.toLowerCase() !== profileFull)
-    .sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
-    .slice(0, 5);
+export function buildReadme(activity: Activity, config: Config) {
+  const { user, stats, languages, now } = activity;
+  const totalBytes = languages.reduce((sum, [, bytes]) => sum + bytes, 0);
+  const languageRows = languages.filter(([, bytes]) => totalBytes > 0 && bytes * 100 / totalBytes >= 0.05)
+    .map(([language, bytes]) => `| ${escapeText(language)} | ${(100 * bytes / totalBytes).toFixed(1)}% | ${count(bytes)} |`);
+  const repos = publicRepos(activity.repos);
+  const allowed = new Set(repos.map(repo => key(repo.full_name)));
+  const repoRows = repos.slice(0, 5).map(repo =>
+    `| ${link(repo.full_name, repo.html_url)} | ${escapeText(repo.language || 'Sin clasificar')} | ${date(repo.pushed_at)} |`);
+  const prs = activity.prs.filter(pr => allowed.has(key(prRepo(pr)))).map(pr =>
+    `- ${link(`#${pr.number} ${pr.title}`, pr.html_url)} · ${escapeText(prRepo(pr))} · ${pr.state === 'open' ? 'Abierta' : 'Cerrada'} · ${date(pr.updated_at)}`);
+  const commits = activity.commits.filter(c => c.repository.private === false && allowed.has(key(c.repository.full_name))).map(c =>
+    `- ${link(c.commit.message.split('\n')[0].slice(0, 100), c.html_url)} · ${escapeText(c.repository.full_name)} · ${date(c.commit.author.date)}`);
+  return `<h1>${escapeText(user.name || user.login)}</h1>
 
-  const rows = latest.map((r) => {
-    const repo = mdLink(r.full_name, r.html_url);
-    if (r.private) {
-      const desc = r.description ? esc(r.description) : "Repositorio privado/accesible por organización.";
-      return `| ${repo}<br/><sub>${desc}</sub> | ${esc(r.language ?? "Privado")} | ${fmtDate(r.pushed_at)} | Privado | Privado |`;
-    }
+${escapeText(user.bio || 'Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimiento.')}
 
-    const encodedFullName = r.full_name.split("/").map(encodeURIComponent).join("/");
-    const langBadge = `![lang](https://img.shields.io/github/languages/top/${encodedFullName}?style=flat-square)`;
-    const lastCommit = `![last](https://img.shields.io/github/last-commit/${encodedFullName}?style=flat-square&label=%C3%BAltimo%20commit)`;
-    const activity = `![act](https://img.shields.io/github/commit-activity/m/${encodedFullName}?style=flat-square&label=commits%2Fmes)`;
-    const size = `![size](https://img.shields.io/github/repo-size/${encodedFullName}?style=flat-square&label=size)`;
-    const desc = r.description ? esc(r.description) : "";
-    return `| ${repo}${desc ? `<br/><sub>${desc}</sub>` : ""} | ${langBadge} | ${lastCommit} | ${activity} | ${size} |`;
+[![Actualización del perfil](https://github.com/${config.login}/${config.login}/actions/workflows/update-readme.yml/badge.svg)](https://github.com/${config.login}/${config.login}/actions/workflows/update-readme.yml)
+
+### Tecnologías
+
+${renderSkillsGrid()}
+
+### Actividad en GitHub
+
+Del ${date(stats.startedAt)} al ${date(stats.endedAt)}. Datos del calendario de contribuciones de GitHub.
+
+| Métrica | Contribuciones |
+|---|---:|
+| Total, incluidas las privadas que GitHub permite contabilizar | ${count(stats.contributionCalendar.totalContributions)} |
+| Commits con desglose disponible | ${count(stats.totalCommitContributions)} |
+| Pull requests con desglose disponible | ${count(stats.totalPullRequestContributions)} |
+| Issues con desglose disponible | ${count(stats.totalIssueContributions)} |
+| Revisiones de PR con desglose disponible | ${count(stats.totalPullRequestReviewContributions)} |
+| Contribuciones privadas sin desglose | ${count(stats.restrictedContributionsCount)} |
+
+Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub no permite clasificarlas aquí como commits, PRs o issues. Los detalles de actividad que aparecen debajo son públicos.
+
+![Calendario de contribuciones animado](assets/snake.svg)
+
+### Repositorios públicos con actividad reciente
+
+${repoRows.length ? '| Repositorio | Lenguaje principal | Último push |\n|---|---|---|\n' + repoRows.join('\n') : 'Sin repositorios públicos disponibles.'}
+
+### PRs públicas recientes
+
+${prs.join('\n') || 'Sin PRs públicas en la búsqueda actual.'}
+
+### Commits públicos recientes
+
+${commits.join('\n') || 'Sin commits públicos en la búsqueda actual.'}
+
+### Lenguajes de los repositorios consultados
+
+Bytes de código en ${activity.analyzed} de ${activity.detected} repositorios detectados, con ${activity.privateLanguages} privados incluidos de forma agregada. Se incluyen repositorios archivados y forks, cuyas copias pueden repetir código. Se excluyen los lenguajes configurados como ruido. Estos bytes describen los repositorios, no la autoría de cada línea.
+
+${languageRows.length ? '| Lenguaje | Porcentaje | Bytes |\n|---|---:|---:|\n' + languageRows.join('\n') : 'Sin datos de lenguajes disponibles.'}
+
+${config.personal && config.includePrivate ? 'Consulta autenticada de repositorios accesibles al token personal.' : 'Los lenguajes se calculan sobre repositorios públicos. Las contribuciones privadas se cuentan cuando GitHub las expone de forma anónima.'}
+${activity.searchTruncated ? '\nLa búsqueda de actividad pública se ha limitado a las páginas más recientes.\n' : ''}
+### Contacto
+
+- Correo: ${escapeText(config.email)}
+- GitHub: ${link(user.login, user.html_url)}
+
+[Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
+
+<sub>Actualizado el ${now.toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })} (Europe/Madrid). Actualización programada cada día.</sub>
+`;
+}
+
+export async function main() {
+  const config = loadConfig();
+  const now = new Date();
+  const activity = await collect(config, createClient(config.token), now);
+  const next = buildReadme(activity, config);
+  if (!existsSync('README.md') || readFileSync('README.md', 'utf8') !== next) writeFileSync('README.md', next, 'utf8');
+  const summary = `Perfil actualizado. ${activity.stats.contributionCalendar.totalContributions} contribuciones, ` +
+    `${activity.stats.restrictedContributionsCount} privadas sin desglose. Lenguajes: ${activity.analyzed} repositorios, ` +
+    `${activity.privateLanguages} privados. Token personal: ${config.personal ? 'sí' : 'no'}.`;
+  console.log(summary);
+  if (process.env.GITHUB_STEP_SUMMARY) writeFileSync(process.env.GITHUB_STEP_SUMMARY, summary + '\n', { flag: 'a' });
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error: unknown) => {
+    console.error('No se ha podido actualizar el perfil. El README anterior se conserva.');
+    console.error(error instanceof ProfileError ? error.message : 'Respuesta inesperada o error local al generar el perfil.');
+    process.exitCode = 1;
   });
-
-  return [
-    "| Repo | Lenguaje | Último commit | Commits/mes | Tamaño |",
-    "|---|---|---|---|---|",
-    ...rows,
-  ].join("\n");
 }
-
-function prsRecientesList(prs: Awaited<ReturnType<typeof getRecentPRs>>): string {
-  if (!prs.length) return "_Sin PRs públicos recientes._";
-  return prs
-    .map(
-      (p) =>
-        `- ${mdLink(`#${p.number} ${esc(p.title)}`, p.url)} — \`${p.repo}\` — ${p.state.toUpperCase()} — ${fmtDate(
-          p.updated
-        )}`
-    )
-    .join("\n");
-}
-
-function commitsRecientesList(commits: Awaited<ReturnType<typeof getRecentCommits>>): string {
-  if (!commits.length) return "_Sin commits públicos recientes._";
-  return commits
-    .map(
-      (c) =>
-        `- ${mdLink(truncate(esc(c.message).toString(), 80), c.url)} — \`${c.repo}\` — ${fmtDate(c.created)}`
-    )
-    .join("\n");
-}
-
-function buildReadme(params: {
-  user: GitHubUser;
-  repos: GitHubRepo[];
-  langSorted: { lang: string; bytes: number; pct: number }[];
-  totalBytes: number;
-  analyzedRepos: number;
-  organizations: string[];
-  sourceCounts: {
-    ownedRepos: number;
-    authenticatedRepos: number;
-    prRepos: number;
-    commitRepos: number;
-    eventRepos: number;
-  };
-  prs: Awaited<ReturnType<typeof getRecentPRs>>;
-  commits: Awaited<ReturnType<typeof getRecentCommits>>;
-}) {
-  const { user, repos, langSorted, analyzedRepos, organizations, sourceCounts, prs, commits } = params;
-  const { name, bio, html_url, login } = user;
-  const displayName = name || login;
-
-  const typing = `
-<p align="left">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2300&pause=600&center=false&vCenter=true&repeat=true&width=720&lines=Systems+%26+Low-level+(C%2FC%2B%2B);Inteligencia+Artificial;Optimizaci%C3%B3n+y+Rendimiento;Aprendizaje+continuo" alt="typing" />
-</p>
-`.trim();
-
-  // ---- Stats nativas. La tabla de lenguajes ampliada se genera debajo con API propia. ----
-  const cardWidth = 720;
-  const cards = `
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=${login}&show_icons=true&include_all_commits=true&hide_title=true&theme=tokyonight&hide=stars,issues,contribs&card_width=${cardWidth}" height="190" alt="GitHub stats"/>
-</p>
-`.trim();
-
-  // 🐍 Snake
-  const snake = `
-### 🐍 Snake
-<p align="left">
-  <img src="https://raw.githubusercontent.com/${login}/${login}/main/assets/snake.svg" alt="snake"/>
-</p>
-`.trim();
-
-  // Lenguajes: oculta 0.0% (pct < 0.05)
-  const langRows = langSorted
-    .filter((x) => x.pct >= 0.05)
-    .map(({ lang, bytes, pct }) => `| ${esc(lang)} | ${fmtPct(pct)} | ${bytes.toLocaleString()} |`)
-    .join("\n");
-
-  const orgSummary = organizations.length ? organizations.map((org) => `\`${org}\``).join(", ") : "_sin organizaciones públicas detectadas_";
-  const langTable = langRows
-    ? `
-> Agregado de **bytes por lenguaje** en ${analyzedRepos} repos propios, contribuidos y/o accesibles por organización.
-> Fuentes detectadas: ${sourceCounts.ownedRepos} repos propios, ${sourceCounts.authenticatedRepos} repos accesibles por token, ${sourceCounts.prRepos} repos con PRs, ${sourceCounts.commitRepos} repos con commits y ${sourceCounts.eventRepos} repos por eventos públicos.
-> Organizaciones detectadas/configuradas: ${orgSummary}.
-
-| Lenguaje | % | Bytes |
-|---|---:|---:|
-${langRows}
-`.trim()
-    : "_Se llenará automáticamente con la actividad de repos propios, contribuidos y de organizaciones accesibles._";
-
-  const latestTable = latestReposTable(repos, login);
-  const updated = new Date().toLocaleString("es-ES", { timeZone: "Europe/Madrid" });
-
-  const md = `
-<!-- Profile: ${login} — dark, clean, compact -->
-<h1 align="left">${displayName}</h1>
-<p align="left">
-${bio ? esc(bio) : "Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguridad. Rendimiento."}
-</p>
-${typing}
-
----
-
-### ⚙️ Skills
-${renderSkillsGrid(ICONS, 6, 42)}
-
----
-
-### 📈 GitHub Stats
-${cards}
-
-${snake}
-
----
-
-### 🛠️ En curso (últimos 5 repos)
-${latestTable}
-
----
-
-### 🔀 PRs recientes
-${prsRecientesList(prs)}
-
----
-
-### 📝 Commits recientes
-${commitsRecientesList(commits)}
-
----
-
-### 🧠 Lenguajes más usados
-${langTable}
-
----
-
-### 📬 Contacto
-- Email: <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>
-- GitHub: ${mdLink(login, html_url)}
-
-<sub>Actualizado automáticamente el ${updated} (Europe/Madrid).</sub>
-`.trim();
-
-  return md;
-}
-
-// -------- Main --------
-async function main() {
-  if (INCLUDE_PRIVATE_REPOS && !HAS_PERSONAL_TOKEN) {
-    console.warn(
-      "INCLUDE_PRIVATE_REPOS=true requiere PROFILE_GITHUB_TOKEN o GH_TOKEN. Se omite la regeneracion para no perder la actividad privada ya publicada."
-    );
-    return;
-  }
-
-  console.log(`Generando README para ${USERNAME}…`);
-  const activity = await discoverActivityUniverse(USERNAME);
-  const { user, organizations, prItems, commitItems, sourceCounts } = activity;
-  const repos = activity.repos
-    .sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
-    .slice(0, MAX_LANGUAGE_REPOS);
-  const allowedRepoKeys = new Set(repos.map((repo) => repoKey(repo.full_name)));
-
-  console.log(
-    `Repos detectados: ${activity.repos.length}. Analizando lenguajes en ${repos.length}. Organizaciones: ${
-      organizations.length ? organizations.join(", ") : "ninguna publica/configurada"
-    }.`
-  );
-
-  // Agregado de lenguajes
-  const langTotals: LanguagesMap = {};
-  let analyzed = 0;
-  for (const r of repos) {
-    try {
-      const langs = await getRepoLanguages(r.languages_url);
-      for (const [lang, bytes] of Object.entries(langs)) {
-        if (EXCLUDED_LANGUAGES.has(lang.toLowerCase())) continue;
-        langTotals[lang] = (langTotals[lang] ?? 0) + Number(bytes);
-      }
-      analyzed++;
-      await sleep(60);
-    } catch (e) {
-      const msg = e instanceof Error ? e.message : String(e);
-      console.warn(`Lenguajes no leídos en ${r.full_name}: ${msg}`);
-    }
-  }
-
-  const totalBytes = Object.values(langTotals).reduce((a, b) => a + b, 0);
-  const langSorted = Object.entries(langTotals)
-    .map(([lang, bytes]) => ({
-      lang,
-      bytes,
-      pct: totalBytes ? (bytes * 100) / totalBytes : 0,
-    }))
-    .sort((a, b) => b.bytes - a.bytes);
-
-  // PRs y commits recientes
-  const prs = getRecentPRs(USERNAME, prItems, allowedRepoKeys, 5);
-  const commits = getRecentCommits(USERNAME, commitItems, allowedRepoKeys, 5);
-
-  const next = buildReadme({
-    user,
-    repos,
-    langSorted,
-    totalBytes,
-    analyzedRepos: analyzed,
-    organizations,
-    sourceCounts,
-    prs,
-    commits,
-  });
-
-  const path = "README.md";
-  const prev = existsSync(path) ? readFileSync(path, "utf8") : "";
-  if (prev.trim() !== next.trim()) {
-    writeFileSync(path, next, "utf8");
-    console.log("README.md actualizado.");
-  } else {
-    console.log("README.md sin cambios.");
-  }
-}
-
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});

@@ -2,78 +2,63 @@ name: Update profile README
 
 on:
   schedule:
-    # GitHub Actions usa UTC. Para cubrir cambios de horario (CET/CEST),
-    # disparamos a 07:11 y 08:11 UTC y filtramos por TZ=Europe/Madrid.
-    - cron: "11 7 * * 1"   # Lunes 07:11 UTC
-    - cron: "11 8 * * 1"   # Lunes 08:11 UTC
+    - cron: '17 7 * * *'
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
-      - ".github/workflows/update-readme.yml"
-      - "scripts/build_readme.ts"
+      - '.github/workflows/update-readme.yml'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-publish
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
-    env:
-      GITHUB_USERNAME: "GonxKZ"
-      CONTACT_EMAIL: "gonzalo_kzz@hotmail.com"
-      GITHUB_ORGS: "GPIC-Software,gii-is-DP1,IISSI2-IS-2021-2022,natillas-hub,ISPP-Grupo-7,SSIIGrupo7"
-      SEARCH_PAGES: "5"
-      MAX_LANGUAGE_REPOS: "180"
-      EXCLUDED_LANGUAGES: "Hack"
-      DO_RUN: "true"
-
     steps:
-      - name: Gate to 09:11 Europe/Madrid on scheduled runs
-        if: ${{ github.event_name == 'schedule' }}
-        run: |
-          if [ "$(TZ=Europe/Madrid date +'%H:%M')" = "09:11" ]; then
-            echo "OK: Europe/Madrid 09:11"
-          else
-            echo "No es 09:11 Europe/Madrid. Se omite ejecución."
-            echo "DO_RUN=false" >> $GITHUB_ENV
-          fi
-
-      - name: Checkout
-        if: env.DO_RUN == 'true'
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        if: env.DO_RUN == 'true'
-        uses: actions/setup-node@v4
+      - name: Descargar el repositorio
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Preparar Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: "20"
-
-      - name: Run build_readme.ts (ts-node)
-        if: env.DO_RUN == 'true'
+          node-version: '24'
+          cache: npm
+      - name: Instalar dependencias
+        run: npm ci --ignore-scripts
+      - name: Comprobar tipos y regresiones
+        run: |
+          npm run check
+          npm test
+      - name: Actualizar el perfil
         env:
-          # Optional: define PROFILE_GITHUB_TOKEN as a fine-grained PAT with read-only access
-          # to organization repositories. Private repos stay excluded unless INCLUDE_PRIVATE_REPOS=true.
           PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: ${{ env.GITHUB_USERNAME }}
-          GITHUB_ORGS: ${{ env.GITHUB_ORGS }}
-          INCLUDE_PRIVATE_REPOS: "true"
-          EXCLUDED_LANGUAGES: ${{ env.EXCLUDED_LANGUAGES }}
-          CONTACT_EMAIL: ${{ env.CONTACT_EMAIL }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          INCLUDE_PRIVATE_REPOS: 'true'
+          MAX_LANGUAGE_REPOS: '500'
+          SEARCH_PAGES: '3'
+          EXCLUDED_LANGUAGES: Hack
+        run: npm run build
+      - name: Publicar los cambios
+        if: github.ref == 'refs/heads/main'
         run: |
-          npx -y -p ts-node -p typescript -p @types/node ts-node \
-            --transpile-only \
-            --compiler-options '{"target":"ES2020","module":"commonjs","lib":["ES2020","DOM"],"types":["node"]}' \
-            scripts/build_readme.ts
-
-      - name: Commit changes if any
-        if: env.DO_RUN == 'true'
-        run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "chore(readme): auto-update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-            git push
-          else
-            echo "No changes in README.md"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo 'El perfil ya está actualizado.'
+            exit 0
           fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "chore(profile): refresh activity $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,5 +1,13 @@
 {
-  "devDependencies": {
-    "@types/node": "^24.3.1"
-  }
+  "name": "github-profile",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "build": "node scripts/build_readme.ts",
+    "test": "node --test tests/*.test.mjs",
+    "test:coverage": "node --experimental-test-coverage --test --test-coverage-include='scripts/*.ts' tests/*.test.mjs",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": { "@types/node": "^24.3.1", "typescript": "~5.9.3" }
 }
