@@ -1,83 +1,89 @@
-<!-- Profile: GonxKZ — dark, clean, compact -->
-<h1 align="left">GONZALO GARCÍA LAMA</h1>
-<p align="left">
-Ingeniero de Software · Low-level (C/C++), Inteligencia Artificial, Ciberseguridad. Rendimiento.
-</p>
-<p align="left">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2300&pause=600&center=false&vCenter=true&repeat=true&width=720&lines=Systems+%26+Low-level+(C%2FC%2B%2B);Inteligencia+Artificial;Optimizaci%C3%B3n+y+Rendimiento;Aprendizaje+continuo" alt="typing" />
-</p>
+<h1>GONZALO GARCÍA LAMA</h1>
 
----
+Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimiento.
 
-### ⚙️ Skills
+[![Actualización del perfil](https://github.com/GonxKZ/GonxKZ/actions/workflows/update-readme.yml/badge.svg)](https://github.com/GonxKZ/GonxKZ/actions/workflows/update-readme.yml)
+
+### Tecnologías
+
 <table><tbody><tr><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="42" height="42" alt="C++"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="42" height="42" alt="C"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" width="42" height="42" alt="Rust"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="42" height="42" alt="Python"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="42" height="42" alt="Java"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="42" height="42" alt="TypeScript"/></td></tr><tr><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="42" height="42" alt="JavaScript"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="42" height="42" alt="Bash"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="42" height="42" alt="React"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="42" height="42" alt="Next.js"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="42" height="42" alt="Bootstrap"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="42" height="42" alt="Tailwind CSS"/></td></tr><tr><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="42" height="42" alt="Django"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="42" height="42" alt="PyTorch"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="42" height="42" alt="TensorFlow"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" width="42" height="42" alt="OpenCV"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="42" height="42" alt="Docker"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="42" height="42" alt="Kubernetes"/></td></tr><tr><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="42" height="42" alt="Linux"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="42" height="42" alt="Nginx"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="42" height="42" alt="PostgreSQL"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="42" height="42" alt="MySQL"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="42" height="42" alt="MongoDB"/></td><td align="center" width="100" height="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="42" height="42" alt="Redis"/></td></tr></tbody></table>
 
----
+### Actividad en GitHub
 
-### 📈 GitHub Stats
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=GonxKZ&show_icons=true&include_all_commits=true&hide_title=true&theme=tokyonight&hide=stars,issues,contribs&card_width=720" height="190" alt="GitHub stats"/>
-</p>
+Del 08 oct 2025 al 08 oct 2026. Datos del calendario de contribuciones de GitHub.
 
-### 🐍 Snake
-<p align="left">
-  <img src="https://raw.githubusercontent.com/GonxKZ/GonxKZ/main/assets/snake.svg" alt="snake"/>
-</p>
+| Métrica | Contribuciones |
+|---|---:|
+| Total, incluidas las privadas que GitHub permite contabilizar | 17.763 |
+| Commits con desglose disponible | 14.683 |
+| Pull requests con desglose disponible | 963 |
+| Issues con desglose disponible | 1961 |
+| Revisiones de PR con desglose disponible | 151 |
+| Contribuciones privadas sin desglose | 0 |
 
----
+Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub no permite clasificarlas aquí como commits, PRs o issues. Los detalles de actividad que aparecen debajo son públicos.
 
-### 🛠️ En curso (últimos 5 repos)
-| Repo | Lenguaje | Último commit | Commits/mes | Tamaño |
-|---|---|---|---|---|
-| [GPIC-Software/AN4](https://github.com/GPIC-Software/AN4)<br/><sub>Repositorio privado detectado vía MCP.</sub> | Rust | 02 may 2026 | Privado | Privado |
-| [GPIC-Software/licitaciones-subvenciones](https://github.com/GPIC-Software/licitaciones-subvenciones)<br/><sub>Aplicación de Licitaciones + Subvenciones en bajo nivel y aplicación de escritorio a desarrollar</sub> | Rust | 28 abr 2026 | Privado | Privado |
-| [GPIC-Software/ERP-GPIC](https://github.com/GPIC-Software/ERP-GPIC)<br/><sub>CRM y ERP(futuro) de la propia empresa </sub> | Rust | 23 abr 2026 | Privado | Privado |
-| [GPIC-Software/gpic-web](https://github.com/GPIC-Software/gpic-web)<br/><sub>Página web NUEVA con Astro y React</sub> | TypeScript | 14 abr 2026 | Privado | Privado |
-| [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | ![lang](https://img.shields.io/github/languages/top/GonxKZ/atllashabita?style=flat-square) | ![last](https://img.shields.io/github/last-commit/GonxKZ/atllashabita?style=flat-square&label=%C3%BAltimo%20commit) | ![act](https://img.shields.io/github/commit-activity/m/GonxKZ/atllashabita?style=flat-square&label=commits%2Fmes) | ![size](https://img.shields.io/github/repo-size/GonxKZ/atllashabita?style=flat-square&label=size) |
+![Calendario de contribuciones animado](assets/snake.svg)
 
----
+### Repositorios públicos con actividad reciente
 
-### 🔀 PRs recientes
-- [#227 fix(clock): no ocultar errores de pausas en timeline](https://github.com/GPIC-Software/ERP-GPIC/pull/227) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
-- [#225 fix(api): propagar errores CORS del router sin panic runtime](https://github.com/GPIC-Software/ERP-GPIC/pull/225) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
-- [#223 fix(integrations): rechazar componentes inseguros en URLs de webhooks](https://github.com/GPIC-Software/ERP-GPIC/pull/223) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
-- [#221 fix(integraciones): validar webhooks de Teams Notifications](https://github.com/GPIC-Software/ERP-GPIC/pull/221) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
-- [#219 fix(integraciones): validar tenant del token endpoint Graph](https://github.com/GPIC-Software/ERP-GPIC/pull/219) — `GPIC-Software/ERP-GPIC` — CLOSED — 03 may 2026
+| Repositorio | Lenguaje principal | Último push |
+|---|---|---|
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 08 oct 2026 |
+| [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
+| [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
+| [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
+| [GonxKZ/transcriptor-video-audio](https://github.com/GonxKZ/transcriptor-video-audio) | Python | 09 sept 2025 |
 
----
+### PRs públicas recientes
 
-### 📝 Commits recientes
-- [feat(ci): expand quality security and cross-platform gates](https://github.com/GPIC-Software/ERP-GPIC/commit/6e5010177e89bae08c8a9b652174be06c03dd8b8) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
-- [refactor(web): modularize leave workspace](https://github.com/GPIC-Software/ERP-GPIC/commit/fc9ded3f1f37a6610f193080ebce088f8cfd6d1e) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
-- [refactor(web): modularize attendance reports workspace](https://github.com/GPIC-Software/ERP-GPIC/commit/45cf26b54d523a559b58cf132b5bca26275fa598) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
-- [refactor(web): modularize expenses workspace](https://github.com/GPIC-Software/ERP-GPIC/commit/3067ed604e3a5c36a95fa60548deee3735846b4c) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
-- [refactor(web): modularize kiosk route and stabilize sso backfill tests](https://github.com/GPIC-Software/ERP-GPIC/commit/e583b72a3be6eefd62526935f17b56893cab6f4b) — `GPIC-Software/ERP-GPIC` — 23 abr 2026
+- [#308 Publicar las exclusiones temporales de hechos contables](https://github.com/GonxKZ/mars-titan/pull/308) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
+- [#307 Conservar activos al excluir hechos contables con periodos futuros](https://github.com/GonxKZ/mars-titan/pull/307) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
+- [#306 Publicar el lector y la supervisión con máscaras históricas](https://github.com/GonxKZ/mars-titan/pull/306) · GonxKZ/mars-titan · Cerrada · 07 oct 2026
+- [#305 Leer y supervisar el corpus histórico con máscaras explícitas](https://github.com/GonxKZ/mars-titan/pull/305) · GonxKZ/mars-titan · Cerrada · 07 oct 2026
+- [#304 Publicar la preparación histórica con máscaras](https://github.com/GonxKZ/mars-titan/pull/304) · GonxKZ/mars-titan · Cerrada · 07 oct 2026
 
----
+### Commits públicos recientes
 
-### 🧠 Lenguajes más usados
-> Agregado de **bytes por lenguaje** en 18 repos públicos propios/contribuidos, excluyendo ruido de clasificación automática. Además, MCP detecta actividad privada en organizaciones con Rust y TypeScript.
-> Fuentes detectadas: 12 repos propios, 6 organizaciones por MCP, 146 PRs en `GPIC-Software`, 5 commits recientes privados revisados.
-> Organizaciones detectadas/configuradas: `GPIC-Software`, `gii-is-DP1`, `IISSI2-IS-2021-2022`, `natillas-hub`, `ISPP-Grupo-7`, `SSIIGrupo7`.
+- [chore(release): publish historical fact exclusions](https://github.com/GonxKZ/mars-titan/commit/44c6385fd59a975ccccc21704c17e3c9f768908d) · GonxKZ/mars-titan · 08 oct 2026
+- [chore(release): publish historical corpus readers](https://github.com/GonxKZ/mars-titan/commit/acb1dc9b0b3f973fe9e65377add13b6695887249) · GonxKZ/mars-titan · 07 oct 2026
+- [chore(release): publish historical mask preparation](https://github.com/GonxKZ/mars-titan/commit/c0e04e7bb0f78a3fe74b2ffd692cfde56c483244) · GonxKZ/mars-titan · 07 oct 2026
+- [chore(release): publish earlier Chinese factor evidence](https://github.com/GonxKZ/mars-titan/commit/2ee797a09ca703bfc1015da8a1453e0228a166de) · GonxKZ/mars-titan · 07 oct 2026
+- [chore(release): publish historical rate preparation](https://github.com/GonxKZ/mars-titan/commit/b55915c9059980fa30dc5827561d8514a51064f0) · GonxKZ/mars-titan · 07 oct 2026
 
-| Lenguaje | % | Bytes |
+### Lenguajes de los repositorios consultados
+
+Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos de forma agregada. Se incluyen repositorios archivados y forks, cuyas copias pueden repetir código. Se excluyen los lenguajes configurados como ruido. Estos bytes describen los repositorios, no la autoría de cada línea.
+
+| Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| C++ | 42.8% | 18.509.225 |
-| TypeScript | 42.7% | 18.465.233 |
-| Python | 4.8% | 2.089.105 |
-| JavaScript | 4.4% | 1.910.987 |
-| C | 1.8% | 775.503 |
-| Java | 1.3% | 561.105 |
-| Makefile | 0.9% | 372.502 |
-| CSS | 0.4% | 185.329 |
-| HTML | 0.4% | 165.942 |
-| CMake | 0.2% | 96.205 |
-| Shell | 0.2% | 81.061 |
+| TypeScript | 45.4% | 118.916.522 |
+| Rust | 24.5% | 64.214.567 |
+| JavaScript | 9.8% | 25.806.227 |
+| C++ | 7.7% | 20.122.702 |
+| Python | 5.3% | 13.885.856 |
+| Java | 2.1% | 5.586.483 |
+| Shell | 1.0% | 2.687.602 |
+| HTML | 0.8% | 2.004.472 |
+| PLpgSQL | 0.7% | 1.960.948 |
+| CSS | 0.7% | 1.954.552 |
+| PowerShell | 0.7% | 1.704.910 |
+| Fluent | 0.5% | 1.183.132 |
+| C | 0.3% | 780.350 |
+| Makefile | 0.1% | 387.631 |
+| C# | 0.1% | 345.796 |
+| CMake | 0.1% | 182.302 |
+| Astro | 0.1% | 132.536 |
 
----
+Consulta autenticada de repositorios accesibles al token personal.
 
-### 📬 Contacto
-- Email: <a href="mailto:gonzalo_kzz@hotmail.com">gonzalo_kzz@hotmail.com</a>
+La búsqueda de actividad pública se ha limitado a las páginas más recientes.
+
+### Contacto
+
+- Correo: gonzalo&#95;kzz@hotmail.com
 - GitHub: [GonxKZ](https://github.com/GonxKZ)
 
-<sub>Actualizado automáticamente el 3/5/2026, 17:06:09 (Europe/Madrid).</sub>
+[Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
+
+<sub>Actualizado el 8/10/2026, 0:18:25 (Europe/Madrid). Actualización programada cada día.</sub>
