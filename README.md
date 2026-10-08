@@ -14,10 +14,10 @@ Del 08 oct 2025 al 08 oct 2026. Datos del calendario de contribuciones de GitHub
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 17.763 |
-| Commits con desglose disponible | 14.683 |
-| Pull requests con desglose disponible | 963 |
-| Issues con desglose disponible | 1961 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 17.880 |
+| Commits con desglose disponible | 14.754 |
+| Pull requests con desglose disponible | 1004 |
+| Issues con desglose disponible | 1966 |
 | Revisiones de PR con desglose disponible | 151 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#308 Publicar las exclusiones temporales de hechos contables](https://github.com/GonxKZ/mars-titan/pull/308) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
-- [#307 Conservar activos al excluir hechos contables con periodos futuros](https://github.com/GonxKZ/mars-titan/pull/307) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
-- [#306 Publicar el lector y la supervisión con máscaras históricas](https://github.com/GonxKZ/mars-titan/pull/306) · GonxKZ/mars-titan · Cerrada · 07 oct 2026
-- [#305 Leer y supervisar el corpus histórico con máscaras explícitas](https://github.com/GonxKZ/mars-titan/pull/305) · GonxKZ/mars-titan · Cerrada · 07 oct 2026
-- [#304 Publicar la preparación histórica con máscaras](https://github.com/GonxKZ/mars-titan/pull/304) · GonxKZ/mars-titan · Cerrada · 07 oct 2026
+- [#335 feat(memory): publicar sesiones con banco episódico](https://github.com/GonxKZ/mars-titan/pull/335) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
+- [#334 Añadir referencias algebraicas para KLPO y la KL completa de PPO](https://github.com/GonxKZ/mars-titan/pull/334) · GonxKZ/mars-titan · Abierta · 08 oct 2026
+- [#296 Conservar el núcleo GRU con lectura episódica como referencia](https://github.com/GonxKZ/mars-titan/pull/296) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
+- [#311 Documentar la preparación histórica y sus paneles macro](https://github.com/GonxKZ/mars-titan/pull/311) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
+- [#312 Preparar vistas temporales desde 2000 con máscaras explícitas](https://github.com/GonxKZ/mars-titan/pull/312) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
 
 ### Commits públicos recientes
 
+- [chore(release): publish verified memory and data integration](https://github.com/GonxKZ/mars-titan/commit/e02a17818e7a26dc7b1ef55bbd05d7c395c7bb97) · GonxKZ/mars-titan · 08 oct 2026
+- [chore(release): publish financial and retention controls (#325)](https://github.com/GonxKZ/mars-titan/commit/c8648946d60ee074c07aa61c5cc894149dcfb4d9) · GonxKZ/mars-titan · 08 oct 2026
+- [chore(release): publish Titans and historical data components (#320)](https://github.com/GonxKZ/mars-titan/commit/bb384b23dc8127bb4c8903466ec55b432360efd1) · GonxKZ/mars-titan · 08 oct 2026
+- [chore(release): publish historical macro contexts](https://github.com/GonxKZ/mars-titan/commit/a6da5b57888dd7867b505f70f29c9bd4b33d4a0c) · GonxKZ/mars-titan · 08 oct 2026
 - [chore(release): publish historical fact exclusions](https://github.com/GonxKZ/mars-titan/commit/44c6385fd59a975ccccc21704c17e3c9f768908d) · GonxKZ/mars-titan · 08 oct 2026
-- [chore(release): publish historical corpus readers](https://github.com/GonxKZ/mars-titan/commit/acb1dc9b0b3f973fe9e65377add13b6695887249) · GonxKZ/mars-titan · 07 oct 2026
-- [chore(release): publish historical mask preparation](https://github.com/GonxKZ/mars-titan/commit/c0e04e7bb0f78a3fe74b2ffd692cfde56c483244) · GonxKZ/mars-titan · 07 oct 2026
-- [chore(release): publish earlier Chinese factor evidence](https://github.com/GonxKZ/mars-titan/commit/2ee797a09ca703bfc1015da8a1453e0228a166de) · GonxKZ/mars-titan · 07 oct 2026
-- [chore(release): publish historical rate preparation](https://github.com/GonxKZ/mars-titan/commit/b55915c9059980fa30dc5827561d8514a51064f0) · GonxKZ/mars-titan · 07 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,22 +57,22 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 45.4% | 118.916.522 |
-| Rust | 24.5% | 64.214.567 |
-| JavaScript | 9.8% | 25.806.227 |
-| C++ | 7.7% | 20.122.702 |
-| Python | 5.3% | 13.885.856 |
-| Java | 2.1% | 5.586.483 |
-| Shell | 1.0% | 2.687.602 |
-| HTML | 0.8% | 2.004.472 |
+| TypeScript | 45.2% | 118.916.522 |
+| Rust | 24.4% | 64.214.567 |
+| JavaScript | 9.8% | 25.820.652 |
+| C++ | 7.7% | 20.195.340 |
+| Python | 5.5% | 14.590.020 |
+| Java | 2.2% | 5.656.696 |
+| Shell | 1.0% | 2.696.166 |
+| HTML | 0.8% | 2.004.938 |
 | PLpgSQL | 0.7% | 1.960.948 |
-| CSS | 0.7% | 1.954.552 |
-| PowerShell | 0.7% | 1.704.910 |
-| Fluent | 0.5% | 1.183.132 |
+| CSS | 0.7% | 1.959.847 |
+| PowerShell | 0.6% | 1.704.910 |
+| Fluent | 0.4% | 1.183.132 |
 | C | 0.3% | 780.350 |
 | Makefile | 0.1% | 387.631 |
-| C# | 0.1% | 345.796 |
-| CMake | 0.1% | 182.302 |
+| C# | 0.1% | 351.429 |
+| CMake | 0.1% | 190.433 |
 | Astro | 0.1% | 132.536 |
 
 Consulta autenticada de repositorios accesibles al token personal.
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 8/10/2026, 0:18:25 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 8/10/2026, 16:34:23 (Europe/Madrid). Actualización programada cada día.</sub>
