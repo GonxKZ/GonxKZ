@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 08 oct 2025 al 08 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 09 oct 2025 al 09 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 17.880 |
-| Commits con desglose disponible | 14.754 |
-| Pull requests con desglose disponible | 1004 |
-| Issues con desglose disponible | 1966 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 18.982 |
+| Commits con desglose disponible | 15.778 |
+| Pull requests con desglose disponible | 1088 |
+| Issues con desglose disponible | 1960 |
 | Revisiones de PR con desglose disponible | 151 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 08 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 09 oct 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#335 feat(memory): publicar sesiones con banco episódico](https://github.com/GonxKZ/mars-titan/pull/335) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
-- [#334 Añadir referencias algebraicas para KLPO y la KL completa de PPO](https://github.com/GonxKZ/mars-titan/pull/334) · GonxKZ/mars-titan · Abierta · 08 oct 2026
-- [#296 Conservar el núcleo GRU con lectura episódica como referencia](https://github.com/GonxKZ/mars-titan/pull/296) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
-- [#311 Documentar la preparación histórica y sus paneles macro](https://github.com/GonxKZ/mars-titan/pull/311) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
-- [#312 Preparar vistas temporales desde 2000 con máscaras explícitas](https://github.com/GonxKZ/mars-titan/pull/312) · GonxKZ/mars-titan · Cerrada · 08 oct 2026
+- [#413 fix(data): compare dictionary-encoded price sessions when preparing residual targets](https://github.com/GonxKZ/mars-titan/pull/413) · GonxKZ/mars-titan · Cerrada · 09 oct 2026
+- [#412 feat(training): measure the M3 reader, add it to the prepared sections and to the CUDA checks](https://github.com/GonxKZ/mars-titan/pull/412) · GonxKZ/mars-titan · Cerrada · 09 oct 2026
+- [#411 feat(training): accumulate the CM-v1 C penalty by flow blocks with the shared Titans-MAC recipe](https://github.com/GonxKZ/mars-titan/pull/411) · GonxKZ/mars-titan · Cerrada · 09 oct 2026
+- [#410 feat(memory): define and implement the M3 episodic write policy](https://github.com/GonxKZ/mars-titan/pull/410) · GonxKZ/mars-titan · Cerrada · 09 oct 2026
+- [#409 feat(training): measure MARS-TITAN and CM-v1 in throughput and prepare their declaration in A and B](https://github.com/GonxKZ/mars-titan/pull/409) · GonxKZ/mars-titan · Cerrada · 09 oct 2026
 
 ### Commits públicos recientes
 
-- [chore(release): publish verified memory and data integration](https://github.com/GonxKZ/mars-titan/commit/e02a17818e7a26dc7b1ef55bbd05d7c395c7bb97) · GonxKZ/mars-titan · 08 oct 2026
-- [chore(release): publish financial and retention controls (#325)](https://github.com/GonxKZ/mars-titan/commit/c8648946d60ee074c07aa61c5cc894149dcfb4d9) · GonxKZ/mars-titan · 08 oct 2026
-- [chore(release): publish Titans and historical data components (#320)](https://github.com/GonxKZ/mars-titan/commit/bb384b23dc8127bb4c8903466ec55b432360efd1) · GonxKZ/mars-titan · 08 oct 2026
-- [chore(release): publish historical macro contexts](https://github.com/GonxKZ/mars-titan/commit/a6da5b57888dd7867b505f70f29c9bd4b33d4a0c) · GonxKZ/mars-titan · 08 oct 2026
-- [chore(release): publish historical fact exclusions](https://github.com/GonxKZ/mars-titan/commit/44c6385fd59a975ccccc21704c17e3c9f768908d) · GonxKZ/mars-titan · 08 oct 2026
+- [chore(release): publish the campaign families, policy levels and status documentation (#408)](https://github.com/GonxKZ/mars-titan/commit/7e717cb7d91b03d4e7449c876d9ef083613cfcee) · GonxKZ/mars-titan · 09 oct 2026
+- [chore(release): publish the masked 2000 campaign pipeline (#402)](https://github.com/GonxKZ/mars-titan/commit/efa0a1a350699959d5fda5df66abc84ac4f898c8) · GonxKZ/mars-titan · 09 oct 2026
+- [chore(release): publish historical inputs and mature-error memory](https://github.com/GonxKZ/mars-titan/commit/11edb3ec2a7cc33affed6c165c5fd57d140fefe8) · GonxKZ/mars-titan · 09 oct 2026
+- [docs(cm): publish source verification audit](https://github.com/GonxKZ/mars-titan/commit/754cdefcf4111a2e73ce508cbfc45ad8783ff2b4) · GonxKZ/mars-titan · 09 oct 2026
+- [chore(release): publish verified RL and benchmark components](https://github.com/GonxKZ/mars-titan/commit/1a1ada81b0de651a1f4d6cef926d993c107b5919) · GonxKZ/mars-titan · 09 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,23 +57,22 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 45.2% | 118.916.522 |
-| Rust | 24.4% | 64.214.567 |
-| JavaScript | 9.8% | 25.820.652 |
-| C++ | 7.7% | 20.195.340 |
-| Python | 5.5% | 14.590.020 |
-| Java | 2.2% | 5.656.696 |
-| Shell | 1.0% | 2.696.166 |
-| HTML | 0.8% | 2.004.938 |
+| TypeScript | 45.9% | 126.272.092 |
+| Rust | 23.5% | 64.719.049 |
+| JavaScript | 9.5% | 26.108.239 |
+| C++ | 7.5% | 20.631.837 |
+| Python | 6.4% | 17.587.695 |
+| Java | 2.1% | 5.680.061 |
+| Shell | 1.0% | 2.695.462 |
+| CSS | 0.8% | 2.256.291 |
+| HTML | 0.7% | 2.005.302 |
 | PLpgSQL | 0.7% | 1.960.948 |
-| CSS | 0.7% | 1.959.847 |
-| PowerShell | 0.6% | 1.704.910 |
+| PowerShell | 0.7% | 1.800.600 |
 | Fluent | 0.4% | 1.183.132 |
-| C | 0.3% | 780.350 |
+| C | 0.3% | 782.847 |
 | Makefile | 0.1% | 387.631 |
 | C# | 0.1% | 351.429 |
-| CMake | 0.1% | 190.433 |
-| Astro | 0.1% | 132.536 |
+| CMake | 0.1% | 210.471 |
 
 Consulta autenticada de repositorios accesibles al token personal.
 
@@ -86,4 +85,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 8/10/2026, 16:34:23 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 9/10/2026, 16:21:24 (Europe/Madrid). Actualización programada cada día.</sub>
