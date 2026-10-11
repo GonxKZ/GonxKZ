@@ -10,15 +10,15 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 10 oct 2025 al 10 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 11 oct 2025 al 11 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 19.272 |
-| Commits con desglose disponible | 15.960 |
-| Pull requests con desglose disponible | 1152 |
-| Issues con desglose disponible | 1999 |
-| Revisiones de PR con desglose disponible | 156 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 19.716 |
+| Commits con desglose disponible | 16.344 |
+| Pull requests con desglose disponible | 1185 |
+| Issues con desglose disponible | 2009 |
+| Revisiones de PR con desglose disponible | 173 |
 | Contribuciones privadas sin desglose | 0 |
 
 Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub no permite clasificarlas aquí como commits, PRs o issues. Los detalles de actividad que aparecen debajo son públicos.
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#511 chore(release): publish the campaign stages in the observatory and the data source provenance](https://github.com/GonxKZ/mars-titan/pull/511) · GonxKZ/mars-titan · Cerrada · 10 oct 2026
-- [#510 feat(data): make public source captures idempotent and reconcile the catalog with them](https://github.com/GonxKZ/mars-titan/pull/510) · GonxKZ/mars-titan · Cerrada · 10 oct 2026
-- [#501 test(training): inventory every learning hold guard and prove fitting sites are reachable only through them](https://github.com/GonxKZ/mars-titan/pull/501) · GonxKZ/mars-titan · Abierta · 10 oct 2026
-- [#504 test(posttraining): CUDA checks of the reader and candidate adapters, first&#95;read and the candidate warm-up](https://github.com/GonxKZ/mars-titan/pull/504) · GonxKZ/mars-titan · Abierta · 10 oct 2026
-- [#506 test(parity): check adapters, scores, static CQR and QR-DQN against external references](https://github.com/GonxKZ/mars-titan/pull/506) · GonxKZ/mars-titan · Abierta · 10 oct 2026
+- [#545 test(simulation): compare the frozen policy evaluation on CPU and cuda:0 with declared tolerances](https://github.com/GonxKZ/mars-titan/pull/545) · GonxKZ/mars-titan · Abierta · 10 oct 2026
+- [#526 feat(hardware): run MARS-TITAN on linux-aarch64 for the DGX GB10 with declared hardware profiles](https://github.com/GonxKZ/mars-titan/pull/526) · GonxKZ/mars-titan · Abierta · 10 oct 2026
+- [#531 feat(targets): diagnose coverage, stability and remaining exposure of the residual label](https://github.com/GonxKZ/mars-titan/pull/531) · GonxKZ/mars-titan · Cerrada · 10 oct 2026
+- [#534 feat(data): add a pretraining-free control encoder and its declared sensitivity](https://github.com/GonxKZ/mars-titan/pull/534) · GonxKZ/mars-titan · Cerrada · 10 oct 2026
+- [#544 test(native): exclude CTest tests that apply optimizer steps in every preset under the learning hold](https://github.com/GonxKZ/mars-titan/pull/544) · GonxKZ/mars-titan · Cerrada · 10 oct 2026
 
 ### Commits públicos recientes
 
-- [chore(release): publish the campaign stages in the observatory and the data source provenance (#511)](https://github.com/GonxKZ/mars-titan/commit/e16c2928019fb014d7aadddd5624e13686dab1ca) · GonxKZ/mars-titan · 10 oct 2026
-- [chore(release): publish the staged walk-forward of campaign A v2, the shared financial conventions a](https://github.com/GonxKZ/mars-titan/commit/822ecfaaa0a5604b854115a982987b3f2c4a69b6) · GonxKZ/mars-titan · 10 oct 2026
-- [chore(release): publish campaign A v2, adapter variety, campaign kernels and the integration compone](https://github.com/GonxKZ/mars-titan/commit/476f8049e7244ea55e504da47b29651212276770) · GonxKZ/mars-titan · 10 oct 2026
-- [chore(release): publish the integrity bench, complete walk-forward evaluation and comparison matrix ](https://github.com/GonxKZ/mars-titan/commit/6541d94a160e38e5874cd2ef26748c4d9b7ede0a) · GonxKZ/mars-titan · 10 oct 2026
-- [chore(release): publish the campaign families, policy levels and status documentation (#408)](https://github.com/GonxKZ/mars-titan/commit/7e717cb7d91b03d4e7449c876d9ef083613cfcee) · GonxKZ/mars-titan · 09 oct 2026
+- [chore(release): merge develop into main with its full history (#535)](https://github.com/GonxKZ/mars-titan/commit/8212f72dfd138272c1afc8927fb1949f39440eee) · GonxKZ/mars-titan · 10 oct 2026
+- [chore(release): publish the XGBoost fit matrix measurement and the evaluation-only readers (#533)](https://github.com/GonxKZ/mars-titan/commit/e733d247368aa5621ac2926d55c65dbef090b698) · GonxKZ/mars-titan · 10 oct 2026
+- [fix(simulation): accept only evaluation segments fitted before their start when reading real tapes (](https://github.com/GonxKZ/mars-titan/commit/9c841e862a63685f5fcc926d74b316dbd992d0cc) · GonxKZ/mars-titan · 10 oct 2026
+- [perf(training): measure the XGBoost fit matrix build without rounds against its memory plan (#521)](https://github.com/GonxKZ/mars-titan/commit/0858196804435d407abff08df24fc835ffe04836) · GonxKZ/mars-titan · 10 oct 2026
+- [chore(release): publish the online Transformer control with bank labels and the chain label limit fr](https://github.com/GonxKZ/mars-titan/commit/20f1e6868f5f9b37422e49a9c63963ec3417a503) · GonxKZ/mars-titan · 10 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,15 +57,15 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 45.0% | 126.272.092 |
-| Rust | 23.1% | 64.719.049 |
-| JavaScript | 9.4% | 26.364.990 |
-| Python | 7.7% | 21.490.509 |
-| C++ | 7.5% | 20.902.708 |
-| Java | 2.3% | 6.578.484 |
+| TypeScript | 44.9% | 126.272.092 |
+| Rust | 23.0% | 64.719.049 |
+| JavaScript | 9.4% | 26.399.571 |
+| Python | 7.8% | 22.040.619 |
+| C++ | 7.4% | 20.903.341 |
+| Java | 2.4% | 6.796.971 |
 | Shell | 1.0% | 2.695.462 |
-| CSS | 0.8% | 2.265.626 |
-| HTML | 0.7% | 2.010.717 |
+| CSS | 0.8% | 2.269.822 |
+| HTML | 0.7% | 2.011.694 |
 | PLpgSQL | 0.7% | 1.960.948 |
 | PowerShell | 0.6% | 1.800.600 |
 | Fluent | 0.4% | 1.183.132 |
@@ -85,4 +85,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 10/10/2026, 15:39:17 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 11/10/2026, 16:01:36 (Europe/Madrid). Actualización programada cada día.</sub>
