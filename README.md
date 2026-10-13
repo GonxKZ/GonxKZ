@@ -10,15 +10,15 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 12 oct 2025 al 12 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 13 oct 2025 al 13 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 19.716 |
-| Commits con desglose disponible | 16.344 |
-| Pull requests con desglose disponible | 1185 |
-| Issues con desglose disponible | 2009 |
-| Revisiones de PR con desglose disponible | 173 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 26.088 |
+| Commits con desglose disponible | 22.645 |
+| Pull requests con desglose disponible | 1225 |
+| Issues con desglose disponible | 2022 |
+| Revisiones de PR con desglose disponible | 191 |
 | Contribuciones privadas sin desglose | 0 |
 
 Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub no permite clasificarlas aquí como commits, PRs o issues. Los detalles de actividad que aparecen debajo son públicos.
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 10 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 13 oct 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,11 +37,11 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#545 test(simulation): compare the frozen policy evaluation on CPU and cuda:0 with declared tolerances](https://github.com/GonxKZ/mars-titan/pull/545) · GonxKZ/mars-titan · Abierta · 10 oct 2026
-- [#526 feat(hardware): run MARS-TITAN on linux-aarch64 for the DGX GB10 with declared hardware profiles](https://github.com/GonxKZ/mars-titan/pull/526) · GonxKZ/mars-titan · Abierta · 10 oct 2026
-- [#531 feat(targets): diagnose coverage, stability and remaining exposure of the residual label](https://github.com/GonxKZ/mars-titan/pull/531) · GonxKZ/mars-titan · Cerrada · 10 oct 2026
-- [#534 feat(data): add a pretraining-free control encoder and its declared sensitivity](https://github.com/GonxKZ/mars-titan/pull/534) · GonxKZ/mars-titan · Cerrada · 10 oct 2026
-- [#544 test(native): exclude CTest tests that apply optimizer steps in every preset under the learning hold](https://github.com/GonxKZ/mars-titan/pull/544) · GonxKZ/mars-titan · Cerrada · 10 oct 2026
+- [#586 feat(data): build the v3.1 edition catalog and declared subsets with a causal liquidity universe](https://github.com/GonxKZ/mars-titan/pull/586) · GonxKZ/mars-titan · Abierta · 13 oct 2026
+- [#585 feat(evaluation): apply the seed band to the PT4, PT5 and PT6 declarations](https://github.com/GonxKZ/mars-titan/pull/585) · GonxKZ/mars-titan · Abierta · 13 oct 2026
+- [#584 feat(simulation): compare every policy episode with the zero-cost future-information bound of its tape](https://github.com/GonxKZ/mars-titan/pull/584) · GonxKZ/mars-titan · Abierta · 13 oct 2026
+- [#583 feat(posttraining): add replay controls to the staged continuation with repetition of new rows as the discarding control](https://github.com/GonxKZ/mars-titan/pull/583) · GonxKZ/mars-titan · Abierta · 13 oct 2026
+- [#582 feat(training): add the temporal distillation with in-sample teacher targets, its declared contrast and measured cost](https://github.com/GonxKZ/mars-titan/pull/582) · GonxKZ/mars-titan · Abierta · 13 oct 2026
 
 ### Commits públicos recientes
 
@@ -57,17 +57,17 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 44.9% | 126.272.092 |
-| Rust | 23.0% | 64.719.049 |
-| JavaScript | 9.4% | 26.399.571 |
-| Python | 7.8% | 22.040.619 |
-| C++ | 7.4% | 20.903.341 |
-| Java | 2.4% | 6.796.971 |
-| Shell | 1.0% | 2.695.462 |
-| CSS | 0.8% | 2.269.822 |
-| HTML | 0.7% | 2.011.694 |
-| PLpgSQL | 0.7% | 1.960.948 |
-| PowerShell | 0.6% | 1.800.600 |
+| TypeScript | 41.3% | 128.637.563 |
+| Rust | 28.3% | 88.194.347 |
+| JavaScript | 9.0% | 28.017.205 |
+| Python | 7.6% | 23.667.969 |
+| C++ | 6.7% | 20.903.341 |
+| Java | 2.4% | 7.404.500 |
+| Shell | 0.9% | 2.898.209 |
+| CSS | 0.7% | 2.321.567 |
+| PLpgSQL | 0.7% | 2.226.361 |
+| HTML | 0.6% | 2.013.216 |
+| PowerShell | 0.6% | 1.982.891 |
 | Fluent | 0.4% | 1.183.132 |
 | C | 0.3% | 782.847 |
 | Makefile | 0.1% | 387.631 |
@@ -85,4 +85,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 12/10/2026, 18:43:11 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 13/10/2026, 17:01:52 (Europe/Madrid). Actualización programada cada día.</sub>
