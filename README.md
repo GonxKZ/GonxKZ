@@ -10,13 +10,13 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 16 oct 2025 al 16 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 17 oct 2025 al 17 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 27.823 |
-| Commits con desglose disponible | 24.222 |
-| Pull requests con desglose disponible | 1317 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 27.938 |
+| Commits con desglose disponible | 24.333 |
+| Pull requests con desglose disponible | 1321 |
 | Issues con desglose disponible | 2058 |
 | Revisiones de PR con desglose disponible | 221 |
 | Contribuciones privadas sin desglose | 0 |
@@ -57,16 +57,16 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 39.4% | 129.034.742 |
-| Rust | 29.5% | 96.406.586 |
-| Python | 8.7% | 28.609.639 |
-| JavaScript | 8.6% | 28.089.775 |
-| C++ | 6.5% | 21.136.415 |
-| Java | 2.7% | 8.705.837 |
-| Shell | 0.9% | 2.925.894 |
+| TypeScript | 39.3% | 129.035.053 |
+| Rust | 29.6% | 97.211.864 |
+| Python | 8.8% | 28.711.385 |
+| JavaScript | 8.6% | 28.104.094 |
+| C++ | 6.4% | 21.136.415 |
+| Java | 2.7% | 8.729.569 |
+| Shell | 0.9% | 2.927.670 |
 | PLpgSQL | 0.7% | 2.335.074 |
 | CSS | 0.7% | 2.302.012 |
-| HTML | 0.6% | 2.018.674 |
+| HTML | 0.6% | 2.019.581 |
 | PowerShell | 0.6% | 1.995.406 |
 | Fluent | 0.4% | 1.183.132 |
 | C | 0.2% | 782.847 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 16/10/2026, 14:23:46 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 17/10/2026, 13:35:38 (Europe/Madrid). Actualización programada cada día.</sub>
