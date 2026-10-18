@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 17 oct 2025 al 17 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 18 oct 2025 al 18 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 27.938 |
-| Commits con desglose disponible | 24.333 |
-| Pull requests con desglose disponible | 1321 |
-| Issues con desglose disponible | 2058 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 28.023 |
+| Commits con desglose disponible | 24.401 |
+| Pull requests con desglose disponible | 1334 |
+| Issues con desglose disponible | 2062 |
 | Revisiones de PR con desglose disponible | 221 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 16 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 18 oct 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#643 chore(release): merge develop 3ca85a28 into main with its full history](https://github.com/GonxKZ/mars-titan/pull/643) · GonxKZ/mars-titan · Cerrada · 16 oct 2026
-- [#642 docs(research): add the measured event-path rates of the memory families to the campaign hours (#403)](https://github.com/GonxKZ/mars-titan/pull/642) · GonxKZ/mars-titan · Cerrada · 16 oct 2026
-- [#641 perf(training): validate the next event in the prefetch thread while the current one computes (#638)](https://github.com/GonxKZ/mars-titan/pull/641) · GonxKZ/mars-titan · Cerrada · 16 oct 2026
-- [#640 docs(reports): record the full-path rounds of the consolidation kernels and codec panels (#547, #628)](https://github.com/GonxKZ/mars-titan/pull/640) · GonxKZ/mars-titan · Cerrada · 16 oct 2026
-- [#639 test(tooling): run make test-fast with three pytest-xdist workers (#491)](https://github.com/GonxKZ/mars-titan/pull/639) · GonxKZ/mars-titan · Cerrada · 16 oct 2026
+- [#658 Aclarar los tamaños predeterminados y máximos del lote y estado](https://github.com/GonxKZ/mars-titan/pull/658) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
+- [#657 Reducir la serialización repetida del estado de Titans](https://github.com/GonxKZ/mars-titan/pull/657) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
+- [#659 Publicar la optimización del recuento del estado de Titans](https://github.com/GonxKZ/mars-titan/pull/659) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
+- [#655 Ejecutar y documentar el microensayo de memoria y postentrenamiento](https://github.com/GonxKZ/mars-titan/pull/655) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
+- [#656 Publicar las evidencias del microensayo de memoria](https://github.com/GonxKZ/mars-titan/pull/656) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
 
 ### Commits públicos recientes
 
-- [chore(release): merge develop 3ca85a28 into main with its full history (#643)](https://github.com/GonxKZ/mars-titan/commit/756931d981dd9d04eb299a6e9226344ad781e7e3) · GonxKZ/mars-titan · 16 oct 2026
-- [docs(research): add the measured event-path rates of the memory families to the campaign hours (#403](https://github.com/GonxKZ/mars-titan/commit/3ca85a28507e19bd1ceb45f1eccc7c67f49553f9) · GonxKZ/mars-titan · 16 oct 2026
-- [perf(training): validate the next event in the prefetch thread while the current one computes (#638)](https://github.com/GonxKZ/mars-titan/commit/696992ada5cd80ab1eadbba5f3374923e1c8ed32) · GonxKZ/mars-titan · 16 oct 2026
-- [docs(reports): record the full-path rounds of the consolidation kernels and codec panels (#547, #628](https://github.com/GonxKZ/mars-titan/commit/6e2a18de2c23056c0117a6d5bf2f3f7c93713f9a) · GonxKZ/mars-titan · 16 oct 2026
-- [test(tooling): run make test-fast with three pytest-xdist workers (#491)](https://github.com/GonxKZ/mars-titan/commit/9ac1f0f1c00eeb9f69757a7ac65594cbf0feb4c4) · GonxKZ/mars-titan · 16 oct 2026
+- [perf(titans): publish verified state metadata sizing (#659)](https://github.com/GonxKZ/mars-titan/commit/01e854c0acbb32c988a541fb436d2a6673047737) · GonxKZ/mars-titan · 18 oct 2026
+- [docs(titans): clarify financial batch and state limits (#658)](https://github.com/GonxKZ/mars-titan/commit/7402e60601b618d34f3ce97d98ced8af4c96c283) · GonxKZ/mars-titan · 18 oct 2026
+- [docs(titans): align state budget limit with its contract](https://github.com/GonxKZ/mars-titan/commit/8b9ab4dea139cac7a3d5c403b52ade3c0fe1bf02) · GonxKZ/mars-titan · 18 oct 2026
+- [docs(titans): distinguish default and maximum batch size](https://github.com/GonxKZ/mars-titan/commit/44eab763625519cd8e3d33bba89e3c67a757e081) · GonxKZ/mars-titan · 18 oct 2026
+- [perf(titans): integrate exact state metadata sizing (#657)](https://github.com/GonxKZ/mars-titan/commit/b5f9be4fcf530db6e9b0bd279b589406dd05793d) · GonxKZ/mars-titan · 18 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,22 +57,22 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 39.3% | 129.035.053 |
-| Rust | 29.6% | 97.211.864 |
-| Python | 8.8% | 28.711.385 |
-| JavaScript | 8.6% | 28.104.094 |
-| C++ | 6.4% | 21.136.415 |
+| TypeScript | 39.3% | 129.037.158 |
+| Rust | 29.7% | 97.578.189 |
+| Python | 8.8% | 28.945.689 |
+| JavaScript | 8.6% | 28.119.005 |
+| C++ | 6.4% | 21.152.309 |
 | Java | 2.7% | 8.729.569 |
-| Shell | 0.9% | 2.927.670 |
+| Shell | 0.9% | 2.936.995 |
 | PLpgSQL | 0.7% | 2.335.074 |
 | CSS | 0.7% | 2.302.012 |
-| HTML | 0.6% | 2.019.581 |
+| HTML | 0.6% | 2.019.734 |
 | PowerShell | 0.6% | 1.995.406 |
 | Fluent | 0.4% | 1.183.132 |
 | C | 0.2% | 782.847 |
-| Makefile | 0.1% | 391.773 |
+| Makefile | 0.1% | 393.396 |
 | C# | 0.1% | 351.429 |
-| CMake | 0.1% | 229.185 |
+| CMake | 0.1% | 232.732 |
 | TeX | 0.1% | 185.805 |
 
 Consulta autenticada de repositorios accesibles al token personal.
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 17/10/2026, 13:35:38 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 18/10/2026, 14:02:52 (Europe/Madrid). Actualización programada cada día.</sub>
