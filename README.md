@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 18 oct 2025 al 18 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 19 oct 2025 al 19 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 28.023 |
-| Commits con desglose disponible | 24.401 |
-| Pull requests con desglose disponible | 1334 |
-| Issues con desglose disponible | 2062 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 28.622 |
+| Commits con desglose disponible | 24.982 |
+| Pull requests con desglose disponible | 1347 |
+| Issues con desglose disponible | 2067 |
 | Revisiones de PR con desglose disponible | 221 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 18 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 19 oct 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#658 Aclarar los tamaños predeterminados y máximos del lote y estado](https://github.com/GonxKZ/mars-titan/pull/658) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
-- [#657 Reducir la serialización repetida del estado de Titans](https://github.com/GonxKZ/mars-titan/pull/657) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
-- [#659 Publicar la optimización del recuento del estado de Titans](https://github.com/GonxKZ/mars-titan/pull/659) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
-- [#655 Ejecutar y documentar el microensayo de memoria y postentrenamiento](https://github.com/GonxKZ/mars-titan/pull/655) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
-- [#656 Publicar las evidencias del microensayo de memoria](https://github.com/GonxKZ/mars-titan/pull/656) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
+- [#668 Añadir rutas acotadas de consulta y una puerta de utilidad](https://github.com/GonxKZ/mars-titan/pull/668) · GonxKZ/mars-titan · Abierta · 19 oct 2026
+- [#678 Publicar las correcciones numéricas y su conciliación en main](https://github.com/GonxKZ/mars-titan/pull/678) · GonxKZ/mars-titan · Cerrada · 19 oct 2026
+- [#677 Conciliar los 12.273 casos de la batería entre revisiones](https://github.com/GonxKZ/mars-titan/pull/677) · GonxKZ/mars-titan · Cerrada · 19 oct 2026
+- [#676 Fijar el backward de los JVP de C sin cambiar B](https://github.com/GonxKZ/mars-titan/pull/676) · GonxKZ/mars-titan · Cerrada · 19 oct 2026
+- [#666 Identificar la disposición de QKV para conservar las trayectorias al congelar](https://github.com/GonxKZ/mars-titan/pull/666) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
 
 ### Commits públicos recientes
 
-- [perf(titans): publish verified state metadata sizing (#659)](https://github.com/GonxKZ/mars-titan/commit/01e854c0acbb32c988a541fb436d2a6673047737) · GonxKZ/mars-titan · 18 oct 2026
-- [docs(titans): clarify financial batch and state limits (#658)](https://github.com/GonxKZ/mars-titan/commit/7402e60601b618d34f3ce97d98ced8af4c96c283) · GonxKZ/mars-titan · 18 oct 2026
-- [docs(titans): align state budget limit with its contract](https://github.com/GonxKZ/mars-titan/commit/8b9ab4dea139cac7a3d5c403b52ade3c0fe1bf02) · GonxKZ/mars-titan · 18 oct 2026
-- [docs(titans): distinguish default and maximum batch size](https://github.com/GonxKZ/mars-titan/commit/44eab763625519cd8e3d33bba89e3c67a757e081) · GonxKZ/mars-titan · 18 oct 2026
-- [perf(titans): integrate exact state metadata sizing (#657)](https://github.com/GonxKZ/mars-titan/commit/b5f9be4fcf530db6e9b0bd279b589406dd05793d) · GonxKZ/mars-titan · 18 oct 2026
+- [chore(release): promote numerical fixes and validation evidence (#678)](https://github.com/GonxKZ/mars-titan/commit/7163587b33f6cadfafeaff38a57de96b149a6842) · GonxKZ/mars-titan · 19 oct 2026
+- [docs(validation): reconcile the final CUDA case (#677)](https://github.com/GonxKZ/mars-titan/commit/082f7f40a334c062990d25549c16191a4540dde6) · GonxKZ/mars-titan · 19 oct 2026
+- [docs(validation): reconcile the final CUDA test case](https://github.com/GonxKZ/mars-titan/commit/f331af2ee4814410a79ec9eb67db6eb986d9eab5) · GonxKZ/mars-titan · 19 oct 2026
+- [fix(stability): serialize JVP graph construction for repeatable gradients (#676)](https://github.com/GonxKZ/mars-titan/commit/4e7e0f78dd1a0b7f91658742d7bee4e50455d70b) · GonxKZ/mars-titan · 19 oct 2026
+- [test(titans): record final CUDA parity and paired JVP cost](https://github.com/GonxKZ/mars-titan/commit/718d0bc2e758fffd47d8519d62bc07e4475e0aad) · GonxKZ/mars-titan · 19 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,20 +57,20 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 39.3% | 129.037.158 |
-| Rust | 29.7% | 97.578.189 |
-| Python | 8.8% | 28.945.689 |
-| JavaScript | 8.6% | 28.119.005 |
+| TypeScript | 38.8% | 129.039.531 |
+| Rust | 30.3% | 100.677.970 |
+| Python | 8.8% | 29.339.697 |
+| JavaScript | 8.6% | 28.453.330 |
 | C++ | 6.4% | 21.152.309 |
-| Java | 2.7% | 8.729.569 |
-| Shell | 0.9% | 2.936.995 |
-| PLpgSQL | 0.7% | 2.335.074 |
+| Java | 2.6% | 8.729.569 |
+| Shell | 0.9% | 2.971.817 |
+| PLpgSQL | 0.7% | 2.373.045 |
 | CSS | 0.7% | 2.302.012 |
 | HTML | 0.6% | 2.019.734 |
-| PowerShell | 0.6% | 1.995.406 |
+| PowerShell | 0.6% | 2.009.310 |
 | Fluent | 0.4% | 1.183.132 |
 | C | 0.2% | 782.847 |
-| Makefile | 0.1% | 393.396 |
+| Makefile | 0.1% | 393.507 |
 | C# | 0.1% | 351.429 |
 | CMake | 0.1% | 232.732 |
 | TeX | 0.1% | 185.805 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 18/10/2026, 14:02:52 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 19/10/2026, 16:39:22 (Europe/Madrid). Actualización programada cada día.</sub>
