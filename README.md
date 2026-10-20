@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 19 oct 2025 al 19 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 20 oct 2025 al 20 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 28.622 |
-| Commits con desglose disponible | 24.982 |
-| Pull requests con desglose disponible | 1347 |
-| Issues con desglose disponible | 2067 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 29.607 |
+| Commits con desglose disponible | 26.009 |
+| Pull requests con desglose disponible | 1349 |
+| Issues con desglose disponible | 2023 |
 | Revisiones de PR con desglose disponible | 221 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 19 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 20 oct 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#668 Añadir rutas acotadas de consulta y una puerta de utilidad](https://github.com/GonxKZ/mars-titan/pull/668) · GonxKZ/mars-titan · Abierta · 19 oct 2026
+- [#681 Añadir variantes de escritura y captura neuronal con controles independientes](https://github.com/GonxKZ/mars-titan/pull/681) · GonxKZ/mars-titan · Abierta · 20 oct 2026
+- [#668 Añadir rutas acotadas de consulta y una puerta de utilidad](https://github.com/GonxKZ/mars-titan/pull/668) · GonxKZ/mars-titan · Cerrada · 19 oct 2026
+- [#679 Publicar el estudio de refinamientos y su verificación](https://github.com/GonxKZ/mars-titan/pull/679) · GonxKZ/mars-titan · Cerrada · 19 oct 2026
 - [#678 Publicar las correcciones numéricas y su conciliación en main](https://github.com/GonxKZ/mars-titan/pull/678) · GonxKZ/mars-titan · Cerrada · 19 oct 2026
 - [#677 Conciliar los 12.273 casos de la batería entre revisiones](https://github.com/GonxKZ/mars-titan/pull/677) · GonxKZ/mars-titan · Cerrada · 19 oct 2026
-- [#676 Fijar el backward de los JVP de C sin cambiar B](https://github.com/GonxKZ/mars-titan/pull/676) · GonxKZ/mars-titan · Cerrada · 19 oct 2026
-- [#666 Identificar la disposición de QKV para conservar las trayectorias al congelar](https://github.com/GonxKZ/mars-titan/pull/666) · GonxKZ/mars-titan · Cerrada · 18 oct 2026
 
 ### Commits públicos recientes
 
-- [chore(release): promote numerical fixes and validation evidence (#678)](https://github.com/GonxKZ/mars-titan/commit/7163587b33f6cadfafeaff38a57de96b149a6842) · GonxKZ/mars-titan · 19 oct 2026
-- [docs(validation): reconcile the final CUDA case (#677)](https://github.com/GonxKZ/mars-titan/commit/082f7f40a334c062990d25549c16191a4540dde6) · GonxKZ/mars-titan · 19 oct 2026
-- [docs(validation): reconcile the final CUDA test case](https://github.com/GonxKZ/mars-titan/commit/f331af2ee4814410a79ec9eb67db6eb986d9eab5) · GonxKZ/mars-titan · 19 oct 2026
-- [fix(stability): serialize JVP graph construction for repeatable gradients (#676)](https://github.com/GonxKZ/mars-titan/commit/4e7e0f78dd1a0b7f91658742d7bee4e50455d70b) · GonxKZ/mars-titan · 19 oct 2026
-- [test(titans): record final CUDA parity and paired JVP cost](https://github.com/GonxKZ/mars-titan/commit/718d0bc2e758fffd47d8519d62bc07e4475e0aad) · GonxKZ/mars-titan · 19 oct 2026
+- [chore(release): publish evaluated refinement routes (#679)](https://github.com/GonxKZ/mars-titan/commit/8ac951af7fc4600c317d67aaa4bd8f4370c13059) · GonxKZ/mars-titan · 19 oct 2026
+- [feat(refinement): add measured bounded route selection (#668)](https://github.com/GonxKZ/mars-titan/commit/54f799fc6c9a10fa09f30c065664478cb90e1b03) · GonxKZ/mars-titan · 19 oct 2026
+- [docs(validation): record refinement integration checks](https://github.com/GonxKZ/mars-titan/commit/191fa11f8e11c5bfce319f973295b59a0823d184) · GonxKZ/mars-titan · 19 oct 2026
+- [chore(refinement): integrate reviewed numerical controls](https://github.com/GonxKZ/mars-titan/commit/073f6e39ff9cffb362915375d888d8c96c1b3c27) · GonxKZ/mars-titan · 19 oct 2026
+- [docs(research): publish complete refinement study](https://github.com/GonxKZ/mars-titan/commit/4b81c369a7b02a5c21a3a51ab458f3cc1a3f7668) · GonxKZ/mars-titan · 19 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,18 +57,18 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 38.8% | 129.039.531 |
-| Rust | 30.3% | 100.677.970 |
-| Python | 8.8% | 29.339.697 |
-| JavaScript | 8.6% | 28.453.330 |
-| C++ | 6.4% | 21.152.309 |
+| TypeScript | 38.0% | 129.049.278 |
+| Rust | 31.2% | 105.704.365 |
+| Python | 8.9% | 30.053.466 |
+| JavaScript | 8.6% | 29.077.825 |
+| C++ | 6.2% | 21.152.309 |
 | Java | 2.6% | 8.729.569 |
-| Shell | 0.9% | 2.971.817 |
-| PLpgSQL | 0.7% | 2.373.045 |
-| CSS | 0.7% | 2.302.012 |
+| Shell | 0.9% | 2.994.746 |
+| PLpgSQL | 0.7% | 2.494.623 |
+| CSS | 0.7% | 2.302.022 |
+| PowerShell | 0.6% | 2.042.904 |
 | HTML | 0.6% | 2.019.734 |
-| PowerShell | 0.6% | 2.009.310 |
-| Fluent | 0.4% | 1.183.132 |
+| Fluent | 0.3% | 1.183.132 |
 | C | 0.2% | 782.847 |
 | Makefile | 0.1% | 393.507 |
 | C# | 0.1% | 351.429 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 19/10/2026, 16:39:22 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 20/10/2026, 14:42:48 (Europe/Madrid). Actualización programada cada día.</sub>
