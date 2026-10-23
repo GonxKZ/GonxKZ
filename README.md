@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 22 oct 2025 al 22 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 23 oct 2025 al 23 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 30.673 |
-| Commits con desglose disponible | 27.029 |
-| Pull requests con desglose disponible | 1388 |
-| Issues con desglose disponible | 2031 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 30.814 |
+| Commits con desglose disponible | 27.149 |
+| Pull requests con desglose disponible | 1407 |
+| Issues con desglose disponible | 2033 |
 | Revisiones de PR con desglose disponible | 221 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 22 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 23 oct 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#708 Conectar el controlador de mecanismos y el puente episódico regional](https://github.com/GonxKZ/mars-titan/pull/708) · GonxKZ/mars-titan · Abierta · 22 oct 2026
-- [#717 docs(data): aclarar la paridad de caché de la edición v3.1](https://github.com/GonxKZ/mars-titan/pull/717) · GonxKZ/mars-titan · Cerrada · 22 oct 2026
-- [#718 docs(release): publicar la revisión de paridad de v3.1](https://github.com/GonxKZ/mars-titan/pull/718) · GonxKZ/mars-titan · Cerrada · 22 oct 2026
-- [#715 fix(observatory): excluir publicadores sobre el mismo checkout](https://github.com/GonxKZ/mars-titan/pull/715) · GonxKZ/mars-titan · Cerrada · 22 oct 2026
-- [#716 chore(release): promover el bloqueo del publicador a main](https://github.com/GonxKZ/mars-titan/pull/716) · GonxKZ/mars-titan · Cerrada · 22 oct 2026
+- [#733 Publicar el contraste de propuestas con trayectorias nativas](https://github.com/GonxKZ/mars-titan/pull/733) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
+- [#732 Contrastar propuestas finitas mediante trayectorias nativas independientes](https://github.com/GonxKZ/mars-titan/pull/732) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
+- [#731 Añadir KronLSTM y el control vectorial como codificadores opcionales](https://github.com/GonxKZ/mars-titan/pull/731) · GonxKZ/mars-titan · Abierta · 23 oct 2026
+- [#730 Incorporar Dust como estimador experimental del predictor](https://github.com/GonxKZ/mars-titan/pull/730) · GonxKZ/mars-titan · Abierta · 23 oct 2026
+- [#727 Publicar la composición de jerarquías](https://github.com/GonxKZ/mars-titan/pull/727) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
 
 ### Commits públicos recientes
 
-- [docs(release): publish edition parity review](https://github.com/GonxKZ/mars-titan/commit/57e87b5f540c50296fa218b1fc05ac6118cf1b9f) · GonxKZ/mars-titan · 22 oct 2026
-- [docs(data): integrate edition parity scope review](https://github.com/GonxKZ/mars-titan/commit/3f8f3bbaf82b2efd68e977f231fd44939820e297) · GonxKZ/mars-titan · 22 oct 2026
-- [docs(data): clarify edition parity review scope](https://github.com/GonxKZ/mars-titan/commit/82b53c4030299f2c3df0fc6fcdfabb6cbe252124) · GonxKZ/mars-titan · 22 oct 2026
-- [chore(release): promote observatory publisher locking to main](https://github.com/GonxKZ/mars-titan/commit/1655f836520c39721bdc9b53f2c89e68c149a314) · GonxKZ/mars-titan · 22 oct 2026
-- [fix(observatory): serialize publishers on shared data checkouts](https://github.com/GonxKZ/mars-titan/commit/ee331cc3bd0676b51695f32371405499699b7b13) · GonxKZ/mars-titan · 22 oct 2026
+- [feat(proposals): publish bounded native trajectory contrasts](https://github.com/GonxKZ/mars-titan/commit/1b7ae54c98c47c1eeb33b79e2e60c97b114de35e) · GonxKZ/mars-titan · 23 oct 2026
+- [feat(titans): publish hierarchical bridge composition](https://github.com/GonxKZ/mars-titan/commit/08c62d73d0cdf2d6bb6521bbd81b6383dc2c6e15) · GonxKZ/mars-titan · 23 oct 2026
+- [feat(titans): integrate hierarchical bridge composition](https://github.com/GonxKZ/mars-titan/commit/37898cd637612407f5728115cb78792bce056e53) · GonxKZ/mars-titan · 23 oct 2026
+- [docs(experiments): record composed hierarchy validation](https://github.com/GonxKZ/mars-titan/commit/6e9ec2ccdb0bec3456388eb79148d371871a12d9) · GonxKZ/mars-titan · 23 oct 2026
+- [feat(benchmarks): add composed hierarchy cost probe](https://github.com/GonxKZ/mars-titan/commit/478b0892ae36f4cd4c02b9c132729a3c8a905dfd) · GonxKZ/mars-titan · 23 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,15 +57,15 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 37.3% | 129.049.336 |
-| Rust | 32.1% | 111.122.207 |
-| Python | 8.8% | 30.569.487 |
-| JavaScript | 8.4% | 29.191.655 |
+| TypeScript | 37.0% | 129.049.336 |
+| Rust | 31.9% | 111.122.207 |
+| Python | 9.5% | 32.984.418 |
+| JavaScript | 8.4% | 29.209.658 |
 | C++ | 6.1% | 21.152.309 |
-| Java | 2.7% | 9.351.141 |
+| Java | 2.7% | 9.373.846 |
 | Shell | 0.9% | 2.996.091 |
-| PLpgSQL | 0.8% | 2.607.328 |
-| CSS | 0.7% | 2.302.022 |
+| PLpgSQL | 0.7% | 2.607.328 |
+| CSS | 0.7% | 2.305.182 |
 | PowerShell | 0.6% | 2.058.125 |
 | HTML | 0.6% | 2.022.774 |
 | Fluent | 0.3% | 1.183.132 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 22/10/2026, 14:57:38 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 23/10/2026, 14:36:58 (Europe/Madrid). Actualización programada cada día.</sub>
