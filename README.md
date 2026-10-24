@@ -10,15 +10,15 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 23 oct 2025 al 23 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 24 oct 2025 al 24 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 30.814 |
-| Commits con desglose disponible | 27.149 |
-| Pull requests con desglose disponible | 1407 |
-| Issues con desglose disponible | 2033 |
-| Revisiones de PR con desglose disponible | 221 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 30.899 |
+| Commits con desglose disponible | 27.193 |
+| Pull requests con desglose disponible | 1430 |
+| Issues con desglose disponible | 2046 |
+| Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
 Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub no permite clasificarlas aquí como commits, PRs o issues. Los detalles de actividad que aparecen debajo son públicos.
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#733 Publicar el contraste de propuestas con trayectorias nativas](https://github.com/GonxKZ/mars-titan/pull/733) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
-- [#732 Contrastar propuestas finitas mediante trayectorias nativas independientes](https://github.com/GonxKZ/mars-titan/pull/732) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
-- [#731 Añadir KronLSTM y el control vectorial como codificadores opcionales](https://github.com/GonxKZ/mars-titan/pull/731) · GonxKZ/mars-titan · Abierta · 23 oct 2026
-- [#730 Incorporar Dust como estimador experimental del predictor](https://github.com/GonxKZ/mars-titan/pull/730) · GonxKZ/mars-titan · Abierta · 23 oct 2026
-- [#727 Publicar la composición de jerarquías](https://github.com/GonxKZ/mars-titan/pull/727) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
+- [#755 docs(diagrams): add archify diagrams of the models and study variants](https://github.com/GonxKZ/mars-titan/pull/755) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
+- [#754 test(training): describe the redirected hold read by the nonlinear bridge benchmark](https://github.com/GonxKZ/mars-titan/pull/754) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
+- [#752 test(training): declare the learning hold lowering of window variants and regional benchmarks](https://github.com/GonxKZ/mars-titan/pull/752) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
+- [#744 feat(evaluation): diagnose scale and shrinkage of saved pilot predictions (phase 0)](https://github.com/GonxKZ/mars-titan/pull/744) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
+- [#741 Acotar los episodios RL por su cinta y exigir grupos completos](https://github.com/GonxKZ/mars-titan/pull/741) · GonxKZ/mars-titan · Cerrada · 23 oct 2026
 
 ### Commits públicos recientes
 
-- [feat(proposals): publish bounded native trajectory contrasts](https://github.com/GonxKZ/mars-titan/commit/1b7ae54c98c47c1eeb33b79e2e60c97b114de35e) · GonxKZ/mars-titan · 23 oct 2026
-- [feat(titans): publish hierarchical bridge composition](https://github.com/GonxKZ/mars-titan/commit/08c62d73d0cdf2d6bb6521bbd81b6383dc2c6e15) · GonxKZ/mars-titan · 23 oct 2026
-- [feat(titans): integrate hierarchical bridge composition](https://github.com/GonxKZ/mars-titan/commit/37898cd637612407f5728115cb78792bce056e53) · GonxKZ/mars-titan · 23 oct 2026
-- [docs(experiments): record composed hierarchy validation](https://github.com/GonxKZ/mars-titan/commit/6e9ec2ccdb0bec3456388eb79148d371871a12d9) · GonxKZ/mars-titan · 23 oct 2026
-- [feat(benchmarks): add composed hierarchy cost probe](https://github.com/GonxKZ/mars-titan/commit/478b0892ae36f4cd4c02b9c132729a3c8a905dfd) · GonxKZ/mars-titan · 23 oct 2026
+- [chore(release): publish Dust, KronLSTM and adaptive bridge stopping (#740)](https://github.com/GonxKZ/mars-titan/commit/1a6cd2c73011bd89f8d5d7a577143155dcf2c643) · GonxKZ/mars-titan · 23 oct 2026
+- [chore(release): reconcile main publication history](https://github.com/GonxKZ/mars-titan/commit/9f464101fb56c2955056ca98fdced2a16ed3145a) · GonxKZ/mars-titan · 23 oct 2026
+- [fix(tests): merge fast suite recovery (#739)](https://github.com/GonxKZ/mars-titan/commit/a27d34b4ed5d7540de81a617519043e612ff09d8) · GonxKZ/mars-titan · 23 oct 2026
+- [test(suite): mark native refinement tests and keep module names unique](https://github.com/GonxKZ/mars-titan/commit/f19341445232c42c014ac84b236651df73e938d8) · GonxKZ/mars-titan · 23 oct 2026
+- [build(make): run proposal and benchmark tests in the CPU suite](https://github.com/GonxKZ/mars-titan/commit/9a45b631f1b265fbf70ac6163b05abd556317810) · GonxKZ/mars-titan · 23 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,21 +57,21 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 37.0% | 129.049.336 |
-| Rust | 31.9% | 111.122.207 |
-| Python | 9.5% | 32.984.418 |
-| JavaScript | 8.4% | 29.209.658 |
+| TypeScript | 36.9% | 129.049.336 |
+| Rust | 31.8% | 111.122.207 |
+| Python | 9.6% | 33.571.832 |
+| JavaScript | 8.4% | 29.211.705 |
 | C++ | 6.1% | 21.152.309 |
-| Java | 2.7% | 9.373.846 |
+| Java | 2.7% | 9.483.945 |
 | Shell | 0.9% | 2.996.091 |
 | PLpgSQL | 0.7% | 2.607.328 |
-| CSS | 0.7% | 2.305.182 |
+| CSS | 0.7% | 2.305.316 |
 | PowerShell | 0.6% | 2.058.125 |
 | HTML | 0.6% | 2.022.774 |
 | Fluent | 0.3% | 1.183.132 |
 | C | 0.2% | 782.847 |
 | TeX | 0.1% | 424.593 |
-| Makefile | 0.1% | 393.507 |
+| Makefile | 0.1% | 393.528 |
 | C# | 0.1% | 351.429 |
 | CMake | 0.1% | 232.732 |
 
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 23/10/2026, 14:36:58 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 24/10/2026, 13:58:53 (Europe/Madrid). Actualización programada cada día.</sub>
