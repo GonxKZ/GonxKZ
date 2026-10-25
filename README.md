@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 24 oct 2025 al 24 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 25 oct 2025 al 25 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 30.899 |
-| Commits con desglose disponible | 27.193 |
-| Pull requests con desglose disponible | 1430 |
-| Issues con desglose disponible | 2046 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 30.932 |
+| Commits con desglose disponible | 27.219 |
+| Pull requests con desglose disponible | 1434 |
+| Issues con desglose disponible | 2049 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -57,16 +57,16 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 36.9% | 129.049.336 |
-| Rust | 31.8% | 111.122.207 |
-| Python | 9.6% | 33.571.832 |
-| JavaScript | 8.4% | 29.211.705 |
-| C++ | 6.1% | 21.152.309 |
-| Java | 2.7% | 9.483.945 |
-| Shell | 0.9% | 2.996.091 |
-| PLpgSQL | 0.7% | 2.607.328 |
-| CSS | 0.7% | 2.305.316 |
-| PowerShell | 0.6% | 2.058.125 |
+| TypeScript | 36.2% | 130.843.829 |
+| Rust | 33.0% | 119.291.393 |
+| Python | 9.6% | 34.690.222 |
+| JavaScript | 8.1% | 29.343.201 |
+| C++ | 5.9% | 21.152.309 |
+| Java | 2.6% | 9.486.625 |
+| Shell | 0.9% | 3.107.922 |
+| PLpgSQL | 0.8% | 2.932.084 |
+| CSS | 0.6% | 2.324.547 |
+| PowerShell | 0.6% | 2.098.069 |
 | HTML | 0.6% | 2.022.774 |
 | Fluent | 0.3% | 1.183.132 |
 | C | 0.2% | 782.847 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 24/10/2026, 13:58:53 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 25/10/2026, 13:33:31 (Europe/Madrid). Actualización programada cada día.</sub>
