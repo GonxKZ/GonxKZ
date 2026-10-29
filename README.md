@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 28 oct 2025 al 28 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 29 oct 2025 al 29 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 32.148 |
-| Commits con desglose disponible | 28.332 |
-| Pull requests con desglose disponible | 1522 |
-| Issues con desglose disponible | 2064 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 32.258 |
+| Commits con desglose disponible | 28.407 |
+| Pull requests con desglose disponible | 1554 |
+| Issues con desglose disponible | 2067 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 28 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 29 oct 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,11 +37,11 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#759 Actualizar main con la preparación de la criba y los controles de evaluación](https://github.com/GonxKZ/mars-titan/pull/759) · GonxKZ/mars-titan · Abierta · 28 oct 2026
-- [#800 fix(memory): recapture the proximal reads of the legacy trace after the contiguous layout](https://github.com/GonxKZ/mars-titan/pull/800) · GonxKZ/mars-titan · Cerrada · 28 oct 2026
-- [#799 feat(models): add the holographic network H1 with its H2 and H3 ablations](https://github.com/GonxKZ/mars-titan/pull/799) · GonxKZ/mars-titan · Cerrada · 28 oct 2026
-- [#798 feat(evaluation): choose one epoch per screening group with the validation session IC](https://github.com/GonxKZ/mars-titan/pull/798) · GonxKZ/mars-titan · Cerrada · 28 oct 2026
-- [#797 feat(evaluation): add the AdaNormalHedge core, the version arbiter and the model combination](https://github.com/GonxKZ/mars-titan/pull/797) · GonxKZ/mars-titan · Cerrada · 28 oct 2026
+- [#759 Actualizar main con la preparación de la criba y los controles de evaluación](https://github.com/GonxKZ/mars-titan/pull/759) · GonxKZ/mars-titan · Abierta · 29 oct 2026
+- [#811 feat(memory): add the mature calendar periods R2 and the familiarity gate R3](https://github.com/GonxKZ/mars-titan/pull/811) · GonxKZ/mars-titan · Cerrada · 29 oct 2026
+- [#810 feat(models): add the fractal shared operator C3 with its four controls](https://github.com/GonxKZ/mars-titan/pull/810) · GonxKZ/mars-titan · Cerrada · 29 oct 2026
+- [#809 feat(models): add the axial attention C2 over the time of each region and across regions](https://github.com/GonxKZ/mars-titan/pull/809) · GonxKZ/mars-titan · Cerrada · 29 oct 2026
+- [#808 fix(benchmarks): write the cost receipts with atomic&#95;json and check the destination first](https://github.com/GonxKZ/mars-titan/pull/808) · GonxKZ/mars-titan · Cerrada · 29 oct 2026
 
 ### Commits públicos recientes
 
@@ -57,17 +57,17 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 36.6% | 135.826.009 |
-| Rust | 33.0% | 122.595.299 |
-| Python | 9.6% | 35.628.096 |
-| JavaScript | 7.9% | 29.424.301 |
+| TypeScript | 36.5% | 135.847.080 |
+| Rust | 33.0% | 122.864.498 |
+| Python | 9.7% | 36.045.535 |
+| JavaScript | 7.9% | 29.455.367 |
 | C++ | 5.7% | 21.152.309 |
-| Java | 2.6% | 9.801.337 |
+| Java | 2.7% | 9.929.618 |
 | Shell | 0.8% | 3.125.987 |
-| PLpgSQL | 0.8% | 3.068.667 |
-| CSS | 0.6% | 2.353.334 |
+| PLpgSQL | 0.8% | 3.068.827 |
+| CSS | 0.6% | 2.366.093 |
 | PowerShell | 0.6% | 2.109.767 |
-| HTML | 0.5% | 2.022.774 |
+| HTML | 0.5% | 2.022.787 |
 | Fluent | 0.3% | 1.183.132 |
 | C | 0.2% | 782.847 |
 | TeX | 0.1% | 424.593 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 28/10/2026, 14:59:46 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 29/10/2026, 15:15:30 (Europe/Madrid). Actualización programada cada día.</sub>
