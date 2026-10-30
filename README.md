@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 29 oct 2025 al 29 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 30 oct 2025 al 30 oct 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 32.258 |
-| Commits con desglose disponible | 28.407 |
-| Pull requests con desglose disponible | 1554 |
-| Issues con desglose disponible | 2067 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 32.380 |
+| Commits con desglose disponible | 28.465 |
+| Pull requests con desglose disponible | 1616 |
+| Issues con desglose disponible | 2069 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 29 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 30 oct 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,11 +37,11 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#759 Actualizar main con la preparación de la criba y los controles de evaluación](https://github.com/GonxKZ/mars-titan/pull/759) · GonxKZ/mars-titan · Abierta · 29 oct 2026
-- [#811 feat(memory): add the mature calendar periods R2 and the familiarity gate R3](https://github.com/GonxKZ/mars-titan/pull/811) · GonxKZ/mars-titan · Cerrada · 29 oct 2026
-- [#810 feat(models): add the fractal shared operator C3 with its four controls](https://github.com/GonxKZ/mars-titan/pull/810) · GonxKZ/mars-titan · Cerrada · 29 oct 2026
-- [#809 feat(models): add the axial attention C2 over the time of each region and across regions](https://github.com/GonxKZ/mars-titan/pull/809) · GonxKZ/mars-titan · Cerrada · 29 oct 2026
-- [#808 fix(benchmarks): write the cost receipts with atomic&#95;json and check the destination first](https://github.com/GonxKZ/mars-titan/pull/808) · GonxKZ/mars-titan · Cerrada · 29 oct 2026
+- [#759 Actualizar main con la preparación de la criba y los controles de evaluación](https://github.com/GonxKZ/mars-titan/pull/759) · GonxKZ/mars-titan · Abierta · 30 oct 2026
+- [#817 feat(experiments): integrate A4, C5, D2, F2 and F3 into the variant screening (#746)](https://github.com/GonxKZ/mars-titan/pull/817) · GonxKZ/mars-titan · Cerrada · 30 oct 2026
+- [#815 feat(training): declare deterministic algorithms in the three recipes](https://github.com/GonxKZ/mars-titan/pull/815) · GonxKZ/mars-titan · Cerrada · 30 oct 2026
+- [#814 test(benchmarks): cover the warmup, the gradient guard and the command line of the core variants cost](https://github.com/GonxKZ/mars-titan/pull/814) · GonxKZ/mars-titan · Cerrada · 30 oct 2026
+- [#812 feat(models): add the asset group memberships H4 with their controls](https://github.com/GonxKZ/mars-titan/pull/812) · GonxKZ/mars-titan · Cerrada · 30 oct 2026
 
 ### Commits públicos recientes
 
@@ -59,10 +59,10 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 |---|---:|---:|
 | TypeScript | 36.5% | 135.847.080 |
 | Rust | 33.0% | 122.864.498 |
-| Python | 9.7% | 36.045.535 |
+| Python | 9.7% | 36.114.403 |
 | JavaScript | 7.9% | 29.455.367 |
 | C++ | 5.7% | 21.152.309 |
-| Java | 2.7% | 9.929.618 |
+| Java | 2.7% | 9.989.579 |
 | Shell | 0.8% | 3.125.987 |
 | PLpgSQL | 0.8% | 3.068.827 |
 | CSS | 0.6% | 2.366.093 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 29/10/2026, 15:15:30 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 30/10/2026, 15:06:17 (Europe/Madrid). Actualización programada cada día.</sub>
