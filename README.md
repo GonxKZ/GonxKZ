@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 31 oct 2025 al 31 oct 2026. Datos del calendario de contribuciones de GitHub.
+Del 01 nov 2025 al 01 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 32.450 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 32.452 |
 | Commits con desglose disponible | 28.495 |
-| Pull requests con desglose disponible | 1655 |
-| Issues con desglose disponible | 2070 |
+| Pull requests con desglose disponible | 1656 |
+| Issues con desglose disponible | 2071 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 31 oct 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 01 nov 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,7 +37,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#830 Añadir dos señales a las puertas de escritura y olvido de Titans](https://github.com/GonxKZ/mars-titan/pull/830) · GonxKZ/mars-titan · Abierta · 31 oct 2026
+- [#830 Añadir dos señales a las puertas de escritura y olvido de Titans](https://github.com/GonxKZ/mars-titan/pull/830) · GonxKZ/mars-titan · Abierta · 01 nov 2026
 - [#829 Compartir el contexto N2 entre la sesión, E2 y las propuestas de mecanismos](https://github.com/GonxKZ/mars-titan/pull/829) · GonxKZ/mars-titan · Abierta · 31 oct 2026
 - [#828 Conectar el libro de fallos maduros con la sesión y las acciones](https://github.com/GonxKZ/mars-titan/pull/828) · GonxKZ/mars-titan · Abierta · 31 oct 2026
 - [#826 Integrar los votos por área de H1 con los controles de P1](https://github.com/GonxKZ/mars-titan/pull/826) · GonxKZ/mars-titan · Abierta · 31 oct 2026
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 31/10/2026, 14:38:03 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 1/11/2026, 15:15:31 (Europe/Madrid). Actualización programada cada día.</sub>
