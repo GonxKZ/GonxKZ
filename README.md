@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 03 nov 2025 al 03 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 04 nov 2025 al 04 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 32.532 |
-| Commits con desglose disponible | 28.561 |
-| Pull requests con desglose disponible | 1668 |
-| Issues con desglose disponible | 2073 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 32.910 |
+| Commits con desglose disponible | 28.916 |
+| Pull requests con desglose disponible | 1684 |
+| Issues con desglose disponible | 2080 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 01 nov 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 04 nov 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
+- [#835 Publicar las correcciones numéricas y de dependencias verificadas](https://github.com/GonxKZ/mars-titan/pull/835) · GonxKZ/mars-titan · Cerrada · 04 nov 2026
+- [#759 Actualizar main con la preparación de la criba y los controles de evaluación](https://github.com/GonxKZ/mars-titan/pull/759) · GonxKZ/mars-titan · Cerrada · 04 nov 2026
+- [#834 Actualizar seis dependencias con correcciones de seguridad](https://github.com/GonxKZ/mars-titan/pull/834) · GonxKZ/mars-titan · Cerrada · 04 nov 2026
+- [#833 Corregir entradas, recorte de memoria y reserva de checkpoints](https://github.com/GonxKZ/mars-titan/pull/833) · GonxKZ/mars-titan · Cerrada · 04 nov 2026
 - [#830 Añadir dos señales a las puertas de escritura y olvido de Titans](https://github.com/GonxKZ/mars-titan/pull/830) · GonxKZ/mars-titan · Abierta · 01 nov 2026
-- [#829 Compartir el contexto N2 entre la sesión, E2 y las propuestas de mecanismos](https://github.com/GonxKZ/mars-titan/pull/829) · GonxKZ/mars-titan · Abierta · 31 oct 2026
-- [#828 Conectar el libro de fallos maduros con la sesión y las acciones](https://github.com/GonxKZ/mars-titan/pull/828) · GonxKZ/mars-titan · Abierta · 31 oct 2026
-- [#826 Integrar los votos por área de H1 con los controles de P1](https://github.com/GonxKZ/mars-titan/pull/826) · GonxKZ/mars-titan · Abierta · 31 oct 2026
-- [#759 Actualizar main con la preparación de la criba y los controles de evaluación](https://github.com/GonxKZ/mars-titan/pull/759) · GonxKZ/mars-titan · Abierta · 31 oct 2026
 
 ### Commits públicos recientes
 
-- [chore(release): publish Dust, KronLSTM and adaptive bridge stopping (#740)](https://github.com/GonxKZ/mars-titan/commit/1a6cd2c73011bd89f8d5d7a577143155dcf2c643) · GonxKZ/mars-titan · 23 oct 2026
-- [chore(release): reconcile main publication history](https://github.com/GonxKZ/mars-titan/commit/9f464101fb56c2955056ca98fdced2a16ed3145a) · GonxKZ/mars-titan · 23 oct 2026
-- [fix(tests): merge fast suite recovery (#739)](https://github.com/GonxKZ/mars-titan/commit/a27d34b4ed5d7540de81a617519043e612ff09d8) · GonxKZ/mars-titan · 23 oct 2026
-- [test(suite): mark native refinement tests and keep module names unique](https://github.com/GonxKZ/mars-titan/commit/f19341445232c42c014ac84b236651df73e938d8) · GonxKZ/mars-titan · 23 oct 2026
-- [build(make): run proposal and benchmark tests in the CPU suite](https://github.com/GonxKZ/mars-titan/commit/9a45b631f1b265fbf70ac6163b05abd556317810) · GonxKZ/mars-titan · 23 oct 2026
+- [chore(release): publish verified fixes (#835)](https://github.com/GonxKZ/mars-titan/commit/22cff247f1661db9ad77961c9676db6c80ebf44f) · GonxKZ/mars-titan · 04 nov 2026
+- [fix(deps): update vulnerable dependency versions (#834)](https://github.com/GonxKZ/mars-titan/commit/46e289ec6d11d2068b3dedae3edcc2022ffc7685) · GonxKZ/mars-titan · 04 nov 2026
+- [fix(core): preserve numerical inputs and checkpoint budgets (#833)](https://github.com/GonxKZ/mars-titan/commit/d9a7df65bc4bd4b8532d8f975b41dfd0983bdb40) · GonxKZ/mars-titan · 04 nov 2026
+- [refactor(models): separate financial configuration validation (#827)](https://github.com/GonxKZ/mars-titan/commit/5d7f554067a91a42e1f94a5c578b6116fd109e25) · GonxKZ/mars-titan · 31 oct 2026
+- [docs(config): record validation parity after develop integration](https://github.com/GonxKZ/mars-titan/commit/12ad92f76137572faaed3a0852d43c34b860e79c) · GonxKZ/mars-titan · 31 oct 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,13 +57,13 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 36.5% | 135.847.080 |
-| Rust | 33.0% | 122.864.498 |
-| Python | 9.8% | 36.645.334 |
-| JavaScript | 7.9% | 29.455.367 |
-| C++ | 5.7% | 21.152.309 |
-| Java | 2.7% | 10.085.204 |
-| Shell | 0.8% | 3.125.987 |
+| TypeScript | 36.1% | 135.847.080 |
+| Rust | 32.7% | 122.864.498 |
+| Python | 10.6% | 39.879.426 |
+| JavaScript | 7.8% | 29.459.687 |
+| C++ | 5.6% | 21.164.606 |
+| Java | 2.7% | 10.096.996 |
+| Shell | 0.8% | 3.127.600 |
 | PLpgSQL | 0.8% | 3.068.827 |
 | CSS | 0.6% | 2.366.093 |
 | PowerShell | 0.6% | 2.109.767 |
@@ -73,7 +73,7 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 | TeX | 0.1% | 424.593 |
 | Makefile | 0.1% | 393.528 |
 | C# | 0.1% | 351.429 |
-| CMake | 0.1% | 232.732 |
+| CMake | 0.1% | 233.654 |
 
 Consulta autenticada de repositorios accesibles al token personal.
 
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 3/11/2026, 16:04:58 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 4/11/2026, 16:24:15 (Europe/Madrid). Actualización programada cada día.</sub>
