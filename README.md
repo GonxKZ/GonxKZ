@@ -10,13 +10,13 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 04 nov 2025 al 04 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 05 nov 2025 al 05 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 32.910 |
-| Commits con desglose disponible | 28.916 |
-| Pull requests con desglose disponible | 1684 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 32.918 |
+| Commits con desglose disponible | 28.921 |
+| Pull requests con desglose disponible | 1687 |
 | Issues con desglose disponible | 2080 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
@@ -59,10 +59,10 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 |---|---:|---:|
 | TypeScript | 36.1% | 135.847.080 |
 | Rust | 32.7% | 122.864.498 |
-| Python | 10.6% | 39.879.426 |
+| Python | 10.6% | 39.894.387 |
 | JavaScript | 7.8% | 29.459.687 |
 | C++ | 5.6% | 21.164.606 |
-| Java | 2.7% | 10.096.996 |
+| Java | 2.7% | 10.111.158 |
 | Shell | 0.8% | 3.127.600 |
 | PLpgSQL | 0.8% | 3.068.827 |
 | CSS | 0.6% | 2.366.093 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 4/11/2026, 16:24:15 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 5/11/2026, 16:26:18 (Europe/Madrid). Actualización programada cada día.</sub>
