@@ -10,12 +10,12 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 07 nov 2025 al 07 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 08 nov 2025 al 08 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 33.202 |
-| Commits con desglose disponible | 29.181 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 33.164 |
+| Commits con desglose disponible | 29.143 |
 | Pull requests con desglose disponible | 1711 |
 | Issues con desglose disponible | 2080 |
 | Revisiones de PR con desglose disponible | 226 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 7/11/2026, 14:58:54 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 8/11/2026, 15:16:29 (Europe/Madrid). Actualización programada cada día.</sub>
