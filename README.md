@@ -10,13 +10,13 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 09 nov 2025 al 09 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 10 nov 2025 al 10 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 33.136 |
-| Commits con desglose disponible | 29.115 |
-| Pull requests con desglose disponible | 1711 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 34.368 |
+| Commits con desglose disponible | 30.343 |
+| Pull requests con desglose disponible | 1715 |
 | Issues con desglose disponible | 2080 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
@@ -57,16 +57,16 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 36.0% | 135.847.080 |
-| Rust | 32.6% | 122.864.498 |
-| Python | 10.8% | 40.693.666 |
-| JavaScript | 7.8% | 29.576.246 |
-| C++ | 5.6% | 21.164.606 |
-| Java | 2.8% | 10.559.374 |
-| Shell | 0.8% | 3.128.140 |
-| PLpgSQL | 0.8% | 3.068.827 |
-| CSS | 0.6% | 2.368.885 |
-| PowerShell | 0.6% | 2.109.767 |
+| TypeScript | 37.0% | 151.500.721 |
+| Rust | 32.8% | 134.197.310 |
+| Python | 10.4% | 42.682.701 |
+| JavaScript | 7.8% | 31.722.875 |
+| C++ | 5.2% | 21.164.606 |
+| Java | 2.6% | 10.591.044 |
+| Shell | 0.8% | 3.226.237 |
+| PLpgSQL | 0.8% | 3.221.045 |
+| CSS | 0.6% | 2.396.910 |
+| PowerShell | 0.6% | 2.366.726 |
 | HTML | 0.5% | 2.030.141 |
 | Fluent | 0.3% | 1.183.132 |
 | C | 0.2% | 782.847 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 9/11/2026, 18:27:07 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 10/11/2026, 16:34:07 (Europe/Madrid). Actualización programada cada día.</sub>
