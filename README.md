@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 12 nov 2025 al 12 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 13 nov 2025 al 13 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 35.936 |
-| Commits con desglose disponible | 31.853 |
-| Pull requests con desglose disponible | 1773 |
-| Issues con desglose disponible | 2080 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 36.182 |
+| Commits con desglose disponible | 32.046 |
+| Pull requests con desglose disponible | 1825 |
+| Issues con desglose disponible | 2081 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 04 nov 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 13 nov 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -57,17 +57,17 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 37.2% | 154.041.919 |
-| Rust | 32.6% | 135.186.989 |
-| Python | 10.4% | 42.933.819 |
-| JavaScript | 7.7% | 31.819.938 |
+| TypeScript | 37.0% | 154.041.919 |
+| Rust | 32.5% | 135.186.989 |
+| Python | 10.5% | 43.815.664 |
+| JavaScript | 7.7% | 31.870.867 |
 | C++ | 5.1% | 21.164.606 |
-| Java | 2.8% | 11.701.029 |
+| Java | 3.1% | 13.047.155 |
 | Shell | 0.8% | 3.230.011 |
 | PLpgSQL | 0.8% | 3.225.737 |
-| CSS | 0.6% | 2.514.837 |
+| CSS | 0.6% | 2.518.484 |
 | PowerShell | 0.6% | 2.366.726 |
-| HTML | 0.5% | 2.030.265 |
+| HTML | 0.5% | 2.030.431 |
 | Fluent | 0.3% | 1.183.132 |
 | C | 0.2% | 782.847 |
 | TeX | 0.1% | 424.593 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 12/11/2026, 16:57:48 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 13/11/2026, 16:22:23 (Europe/Madrid). Actualización programada cada día.</sub>
