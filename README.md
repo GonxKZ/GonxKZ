@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 13 nov 2025 al 13 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 14 nov 2025 al 14 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 36.182 |
-| Commits con desglose disponible | 32.046 |
-| Pull requests con desglose disponible | 1825 |
-| Issues con desglose disponible | 2081 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 36.200 |
+| Commits con desglose disponible | 32.054 |
+| Pull requests con desglose disponible | 1833 |
+| Issues con desglose disponible | 2083 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 13 nov 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 14 nov 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#835 Publicar las correcciones numéricas y de dependencias verificadas](https://github.com/GonxKZ/mars-titan/pull/835) · GonxKZ/mars-titan · Cerrada · 04 nov 2026
-- [#759 Actualizar main con la preparación de la criba y los controles de evaluación](https://github.com/GonxKZ/mars-titan/pull/759) · GonxKZ/mars-titan · Cerrada · 04 nov 2026
-- [#834 Actualizar seis dependencias con correcciones de seguridad](https://github.com/GonxKZ/mars-titan/pull/834) · GonxKZ/mars-titan · Cerrada · 04 nov 2026
-- [#833 Corregir entradas, recorte de memoria y reserva de checkpoints](https://github.com/GonxKZ/mars-titan/pull/833) · GonxKZ/mars-titan · Cerrada · 04 nov 2026
-- [#830 Añadir dos señales a las puertas de escritura y olvido de Titans](https://github.com/GonxKZ/mars-titan/pull/830) · GonxKZ/mars-titan · Abierta · 01 nov 2026
+- [#845 Registrar el arranque local y el alcance de la memoria medida](https://github.com/GonxKZ/mars-titan/pull/845) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#846 Publicar el registro del arranque local de la campaña](https://github.com/GonxKZ/mars-titan/pull/846) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#844 Publicar la campaña equilibrada y el análisis de resultados portables](https://github.com/GonxKZ/mars-titan/pull/844) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#843 Repartir la campaña por año y semilla y reunir resultados sin pesos](https://github.com/GonxKZ/mars-titan/pull/843) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#842 Corregir las redirecciones con tres barras de Tornado](https://github.com/GonxKZ/mars-titan/pull/842) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
 
 ### Commits públicos recientes
 
-- [chore(release): publish verified fixes (#835)](https://github.com/GonxKZ/mars-titan/commit/22cff247f1661db9ad77961c9676db6c80ebf44f) · GonxKZ/mars-titan · 04 nov 2026
-- [fix(deps): update vulnerable dependency versions (#834)](https://github.com/GonxKZ/mars-titan/commit/46e289ec6d11d2068b3dedae3edcc2022ffc7685) · GonxKZ/mars-titan · 04 nov 2026
-- [fix(core): preserve numerical inputs and checkpoint budgets (#833)](https://github.com/GonxKZ/mars-titan/commit/d9a7df65bc4bd4b8532d8f975b41dfd0983bdb40) · GonxKZ/mars-titan · 04 nov 2026
-- [refactor(models): separate financial configuration validation (#827)](https://github.com/GonxKZ/mars-titan/commit/5d7f554067a91a42e1f94a5c578b6116fd109e25) · GonxKZ/mars-titan · 31 oct 2026
-- [docs(config): record validation parity after develop integration](https://github.com/GonxKZ/mars-titan/commit/12ad92f76137572faaed3a0852d43c34b860e79c) · GonxKZ/mars-titan · 31 oct 2026
+- [chore(release): publish campaign launch record](https://github.com/GonxKZ/mars-titan/commit/ed45ceb4740bfb23d91b427306e0a92272ea2710) · GonxKZ/mars-titan · 14 nov 2026
+- [docs(campaign): record local launch and measurement scope (#836)](https://github.com/GonxKZ/mars-titan/commit/6ee0d353e9577515b032840b974bb414b8761df4) · GonxKZ/mars-titan · 14 nov 2026
+- [chore(release): publish balanced comparison campaign](https://github.com/GonxKZ/mars-titan/commit/83a75cffc90ca68296e148692fb27c68acf3a80d) · GonxKZ/mars-titan · 14 nov 2026
+- [feat(campaign): balance matched training and portable evaluation (#836)](https://github.com/GonxKZ/mars-titan/commit/557e78ee4920065bad38cde30cb574a0a0cb744c) · GonxKZ/mars-titan · 14 nov 2026
+- [fix(deps): require Tornado redirect validation patch (#841)](https://github.com/GonxKZ/mars-titan/commit/b7b1da8d60916a93964ccb519fc304dde866dd12) · GonxKZ/mars-titan · 14 nov 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -58,9 +58,9 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
 | TypeScript | 37.0% | 154.041.919 |
-| Rust | 32.5% | 135.186.989 |
-| Python | 10.5% | 43.815.664 |
-| JavaScript | 7.7% | 31.870.867 |
+| Rust | 32.4% | 135.186.989 |
+| Python | 10.6% | 44.256.138 |
+| JavaScript | 7.6% | 31.870.867 |
 | C++ | 5.1% | 21.164.606 |
 | Java | 3.1% | 13.047.155 |
 | Shell | 0.8% | 3.230.011 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 13/11/2026, 16:22:23 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 14/11/2026, 15:07:27 (Europe/Madrid). Actualización programada cada día.</sub>
