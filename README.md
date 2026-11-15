@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 14 nov 2025 al 14 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 15 nov 2025 al 15 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 36.200 |
-| Commits con desglose disponible | 32.054 |
-| Pull requests con desglose disponible | 1833 |
-| Issues con desglose disponible | 2083 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 36.213 |
+| Commits con desglose disponible | 32.060 |
+| Pull requests con desglose disponible | 1839 |
+| Issues con desglose disponible | 2084 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#845 Registrar el arranque local y el alcance de la memoria medida](https://github.com/GonxKZ/mars-titan/pull/845) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
-- [#846 Publicar el registro del arranque local de la campaña](https://github.com/GonxKZ/mars-titan/pull/846) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
-- [#844 Publicar la campaña equilibrada y el análisis de resultados portables](https://github.com/GonxKZ/mars-titan/pull/844) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
-- [#843 Repartir la campaña por año y semilla y reunir resultados sin pesos](https://github.com/GonxKZ/mars-titan/pull/843) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
-- [#842 Corregir las redirecciones con tres barras de Tornado](https://github.com/GonxKZ/mars-titan/pull/842) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#852 Corregir la raíz de índices de las campañas heredadas](https://github.com/GonxKZ/mars-titan/pull/852) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#853 Publicar la corrección de los índices heredados](https://github.com/GonxKZ/mars-titan/pull/853) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#850 Explicar el kit ZIP ampliado del segundo ordenador](https://github.com/GonxKZ/mars-titan/pull/850) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#851 Publicar las instrucciones del kit del segundo equipo](https://github.com/GonxKZ/mars-titan/pull/851) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
+- [#848 Acelerar LightGBM con GPU y conservar los resultados de la campaña](https://github.com/GonxKZ/mars-titan/pull/848) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
 
 ### Commits públicos recientes
 
-- [chore(release): publish campaign launch record](https://github.com/GonxKZ/mars-titan/commit/ed45ceb4740bfb23d91b427306e0a92272ea2710) · GonxKZ/mars-titan · 14 nov 2026
-- [docs(campaign): record local launch and measurement scope (#836)](https://github.com/GonxKZ/mars-titan/commit/6ee0d353e9577515b032840b974bb414b8761df4) · GonxKZ/mars-titan · 14 nov 2026
-- [chore(release): publish balanced comparison campaign](https://github.com/GonxKZ/mars-titan/commit/83a75cffc90ca68296e148692fb27c68acf3a80d) · GonxKZ/mars-titan · 14 nov 2026
-- [feat(campaign): balance matched training and portable evaluation (#836)](https://github.com/GonxKZ/mars-titan/commit/557e78ee4920065bad38cde30cb574a0a0cb744c) · GonxKZ/mars-titan · 14 nov 2026
-- [fix(deps): require Tornado redirect validation patch (#841)](https://github.com/GonxKZ/mars-titan/commit/b7b1da8d60916a93964ccb519fc304dde866dd12) · GonxKZ/mars-titan · 14 nov 2026
+- [chore(release): publish inherited index compatibility fix](https://github.com/GonxKZ/mars-titan/commit/1bd4096104716626ff99869efd98f390ce1b666f) · GonxKZ/mars-titan · 14 nov 2026
+- [fix(campaign): preserve regular inherited index directories (#847)](https://github.com/GonxKZ/mars-titan/commit/9bf42199b355f68334f1514fb8355c1f1edffd34) · GonxKZ/mars-titan · 14 nov 2026
+- [chore(release): publish transfer kit instructions](https://github.com/GonxKZ/mars-titan/commit/a87ddc20771521073b9dc20380e97b3bdb0a6534) · GonxKZ/mars-titan · 14 nov 2026
+- [docs(campaign): explain the expanded transfer kit (#847)](https://github.com/GonxKZ/mars-titan/commit/ef26b1610e64adf695cd8ee8c2af062b400302da) · GonxKZ/mars-titan · 14 nov 2026
+- [chore(release): publish GPU campaign execution](https://github.com/GonxKZ/mars-titan/commit/eb01b883e8e6ec912e2cda85f738fd2525584d19) · GonxKZ/mars-titan · 14 nov 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -59,7 +59,7 @@ Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos 
 |---|---:|---:|
 | TypeScript | 37.0% | 154.041.919 |
 | Rust | 32.4% | 135.186.989 |
-| Python | 10.6% | 44.256.138 |
+| Python | 10.6% | 44.295.923 |
 | JavaScript | 7.6% | 31.870.867 |
 | C++ | 5.1% | 21.164.606 |
 | Java | 3.1% | 13.047.155 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 14/11/2026, 15:07:27 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 15/11/2026, 15:44:44 (Europe/Madrid). Actualización programada cada día.</sub>
