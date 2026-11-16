@@ -10,12 +10,12 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 15 nov 2025 al 15 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 16 nov 2025 al 16 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 36.213 |
-| Commits con desglose disponible | 32.060 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 38.156 |
+| Commits con desglose disponible | 34.002 |
 | Pull requests con desglose disponible | 1839 |
 | Issues con desglose disponible | 2084 |
 | Revisiones de PR con desglose disponible | 226 |
@@ -53,27 +53,27 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### Lenguajes de los repositorios consultados
 
-Bytes de código en 64 de 64 repositorios detectados, con 35 privados incluidos de forma agregada. Se incluyen repositorios archivados y forks, cuyas copias pueden repetir código. Se excluyen los lenguajes configurados como ruido. Estos bytes describen los repositorios, no la autoría de cada línea.
+Bytes de código en 65 de 65 repositorios detectados, con 36 privados incluidos de forma agregada. Se incluyen repositorios archivados y forks, cuyas copias pueden repetir código. Se excluyen los lenguajes configurados como ruido. Estos bytes describen los repositorios, no la autoría de cada línea.
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 37.0% | 154.041.919 |
-| Rust | 32.4% | 135.186.989 |
-| Python | 10.6% | 44.295.923 |
-| JavaScript | 7.6% | 31.870.867 |
-| C++ | 5.1% | 21.164.606 |
-| Java | 3.1% | 13.047.155 |
-| Shell | 0.8% | 3.230.011 |
-| PLpgSQL | 0.8% | 3.225.737 |
-| CSS | 0.6% | 2.518.484 |
-| PowerShell | 0.6% | 2.366.726 |
-| HTML | 0.5% | 2.030.431 |
+| TypeScript | 35.6% | 154.041.919 |
+| Rust | 31.2% | 135.192.331 |
+| Python | 11.7% | 50.445.550 |
+| JavaScript | 7.5% | 32.435.826 |
+| Java | 5.1% | 22.233.153 |
+| C++ | 4.9% | 21.170.550 |
+| Shell | 0.7% | 3.246.371 |
+| PLpgSQL | 0.7% | 3.225.737 |
+| CSS | 0.6% | 2.587.493 |
+| PowerShell | 0.5% | 2.366.726 |
+| HTML | 0.5% | 2.060.423 |
 | Fluent | 0.3% | 1.183.132 |
 | C | 0.2% | 782.847 |
 | TeX | 0.1% | 424.593 |
 | Makefile | 0.1% | 393.528 |
-| C# | 0.1% | 351.429 |
-| CMake | 0.1% | 233.654 |
+| C# | 0.1% | 357.062 |
+| CMake | 0.1% | 234.831 |
 
 Consulta autenticada de repositorios accesibles al token personal.
 
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 15/11/2026, 15:44:44 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 16/11/2026, 17:58:41 (Europe/Madrid). Actualización programada cada día.</sub>
