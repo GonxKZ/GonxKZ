@@ -10,7 +10,7 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 16 nov 2025 al 16 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 17 nov 2025 al 17 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 16/11/2026, 17:58:41 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 17/11/2026, 17:52:43 (Europe/Madrid). Actualización programada cada día.</sub>
