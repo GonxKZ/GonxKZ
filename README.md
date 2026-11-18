@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 17 nov 2025 al 17 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 18 nov 2025 al 18 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 38.156 |
-| Commits con desglose disponible | 34.002 |
-| Pull requests con desglose disponible | 1839 |
-| Issues con desglose disponible | 2084 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 38.173 |
+| Commits con desglose disponible | 34.014 |
+| Pull requests con desglose disponible | 1843 |
+| Issues con desglose disponible | 2085 |
 | Revisiones de PR con desglose disponible | 226 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 14 nov 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 18 nov 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
+- [#857 Reutilizar el calentamiento de validación con el padre congelado](https://github.com/GonxKZ/mars-titan/pull/857) · GonxKZ/mars-titan · Cerrada · 18 nov 2026
+- [#858 Publicar la revisión CUDA de los lectores y su análisis en dos equipos](https://github.com/GonxKZ/mars-titan/pull/858) · GonxKZ/mars-titan · Cerrada · 18 nov 2026
+- [#854 Aplicar el presupuesto de RAM a cada trabajo de la comparación](https://github.com/GonxKZ/mars-titan/pull/854) · GonxKZ/mars-titan · Cerrada · 17 nov 2026
+- [#855 Publicar la admisión de RAM por trabajo de PC1](https://github.com/GonxKZ/mars-titan/pull/855) · GonxKZ/mars-titan · Cerrada · 17 nov 2026
 - [#852 Corregir la raíz de índices de las campañas heredadas](https://github.com/GonxKZ/mars-titan/pull/852) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
-- [#853 Publicar la corrección de los índices heredados](https://github.com/GonxKZ/mars-titan/pull/853) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
-- [#850 Explicar el kit ZIP ampliado del segundo ordenador](https://github.com/GonxKZ/mars-titan/pull/850) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
-- [#851 Publicar las instrucciones del kit del segundo equipo](https://github.com/GonxKZ/mars-titan/pull/851) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
-- [#848 Acelerar LightGBM con GPU y conservar los resultados de la campaña](https://github.com/GonxKZ/mars-titan/pull/848) · GonxKZ/mars-titan · Cerrada · 14 nov 2026
 
 ### Commits públicos recientes
 
-- [chore(release): publish inherited index compatibility fix](https://github.com/GonxKZ/mars-titan/commit/1bd4096104716626ff99869efd98f390ce1b666f) · GonxKZ/mars-titan · 14 nov 2026
-- [fix(campaign): preserve regular inherited index directories (#847)](https://github.com/GonxKZ/mars-titan/commit/9bf42199b355f68334f1514fb8355c1f1edffd34) · GonxKZ/mars-titan · 14 nov 2026
-- [chore(release): publish transfer kit instructions](https://github.com/GonxKZ/mars-titan/commit/a87ddc20771521073b9dc20380e97b3bdb0a6534) · GonxKZ/mars-titan · 14 nov 2026
-- [docs(campaign): explain the expanded transfer kit (#847)](https://github.com/GonxKZ/mars-titan/commit/ef26b1610e64adf695cd8ee8c2af062b400302da) · GonxKZ/mars-titan · 14 nov 2026
-- [chore(release): publish GPU campaign execution](https://github.com/GonxKZ/mars-titan/commit/eb01b883e8e6ec912e2cda85f738fd2525584d19) · GonxKZ/mars-titan · 14 nov 2026
+- [chore(release): publish verified resident validation warmup (#858)](https://github.com/GonxKZ/mars-titan/commit/fed9187bf91eab570778d3b5e73ffeea03c50513) · GonxKZ/mars-titan · 18 nov 2026
+- [perf(training): reuse verified CUDA validation warmup (#857)](https://github.com/GonxKZ/mars-titan/commit/b0436a8961ab511b2a9b73dedf33d379b5341ca7) · GonxKZ/mars-titan · 18 nov 2026
+- [docs(campaign): document measured CUDA warmup and two-machine recovery](https://github.com/GonxKZ/mars-titan/commit/4110090f8e754d04b56ad94aad3eb05583a57ada) · GonxKZ/mars-titan · 18 nov 2026
+- [fix(campaign): prepare regular inherited parents for the pinned runtime](https://github.com/GonxKZ/mars-titan/commit/7ec2018ab81f4f72ee325d99b495f4fed7b6c845) · GonxKZ/mars-titan · 18 nov 2026
+- [test(benchmarks): isolate the PyTorch thread pool for cost measurements](https://github.com/GonxKZ/mars-titan/commit/52a637c0e2192942f5cf17a94a3f86b5acaac585) · GonxKZ/mars-titan · 18 nov 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -59,7 +59,7 @@ Bytes de código en 65 de 65 repositorios detectados, con 36 privados incluidos 
 |---|---:|---:|
 | TypeScript | 35.6% | 154.041.919 |
 | Rust | 31.2% | 135.192.331 |
-| Python | 11.7% | 50.445.550 |
+| Python | 11.7% | 50.501.877 |
 | JavaScript | 7.5% | 32.435.826 |
 | Java | 5.1% | 22.233.153 |
 | C++ | 4.9% | 21.170.550 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 17/11/2026, 17:52:43 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 18/11/2026, 17:26:06 (Europe/Madrid). Actualización programada cada día.</sub>
