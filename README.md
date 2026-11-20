@@ -10,15 +10,15 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 19 nov 2025 al 19 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 20 nov 2025 al 20 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 38.205 |
-| Commits con desglose disponible | 34.036 |
-| Pull requests con desglose disponible | 1850 |
-| Issues con desglose disponible | 2088 |
-| Revisiones de PR con desglose disponible | 226 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 38.244 |
+| Commits con desglose disponible | 34.062 |
+| Pull requests con desglose disponible | 1857 |
+| Issues con desglose disponible | 2093 |
+| Revisiones de PR con desglose disponible | 227 |
 | Contribuciones privadas sin desglose | 0 |
 
 Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub no permite clasificarlas aquí como commits, PRs o issues. Los detalles de actividad que aparecen debajo son públicos.
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 19 nov 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 20 nov 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
-- [#867 Comparar en la RTX 4070 los kernels y las comprobaciones de Titans de PC2](https://github.com/GonxKZ/mars-titan/pull/867) · GonxKZ/mars-titan · Cerrada · 19 nov 2026
-- [#868 Publicar la comparación de los kernels de PC2 en la RTX 4070](https://github.com/GonxKZ/mars-titan/pull/868) · GonxKZ/mars-titan · Cerrada · 19 nov 2026
-- [#866 Verificar los kernels de Titans de PC2 junto a las entradas de PC1](https://github.com/GonxKZ/mars-titan/pull/866) · GonxKZ/mars-titan · Abierta · 19 nov 2026
-- [#863 Usar entradas verificadas en la comparación y conservar sus checkpoints](https://github.com/GonxKZ/mars-titan/pull/863) · GonxKZ/mars-titan · Cerrada · 19 nov 2026
-- [#864 Publicar las entradas verificadas y la guía de actualización de PC2](https://github.com/GonxKZ/mars-titan/pull/864) · GonxKZ/mars-titan · Cerrada · 19 nov 2026
+- [#878 Medir el coste de la máscara, la repetición y el lector de PC1](https://github.com/GonxKZ/mars-titan/pull/878) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
+- [#879 Publicar las mediciones y los controles de rendimiento del recorrido cronológico](https://github.com/GonxKZ/mars-titan/pull/879) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
+- [#874 Comprimir las nuevas predicciones de PC1 y las partes de trazas del ZIP](https://github.com/GonxKZ/mars-titan/pull/874) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
+- [#876 Activar trazas cualificadas en PC1 y conservar los checkpoints y sus resultados](https://github.com/GonxKZ/mars-titan/pull/876) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
+- [#871 Validar las filas y la cobertura de memoria de los resultados de comparación](https://github.com/GonxKZ/mars-titan/pull/871) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
 
 ### Commits públicos recientes
 
-- [chore(release): publish Ada kernel evaluation for the comparison (#868)](https://github.com/GonxKZ/mars-titan/commit/974b48e62b1f518438ef34b8a835e60d810a6b3e) · GonxKZ/mars-titan · 19 nov 2026
-- [test(performance): qualify PC2 Titans kernels on Ada (#867)](https://github.com/GonxKZ/mars-titan/commit/262f9a1f9d2e15bef47043da57559733481cfafc) · GonxKZ/mars-titan · 19 nov 2026
-- [docs(performance): record Ada timings and checkpoint parity for PC2 kernels](https://github.com/GonxKZ/mars-titan/commit/d4dff3e03b759212dbdfba35e80bc7cf8445bebc) · GonxKZ/mars-titan · 19 nov 2026
-- [test(benchmarks): isolate kernels from input and parameter preparation](https://github.com/GonxKZ/mars-titan/commit/c6ebb7fd61c2f32902b608aa9b9011a4f7bddd61) · GonxKZ/mars-titan · 19 nov 2026
-- [test(benchmarks): compare PC2 Titans kernels on Ada with pinned sources](https://github.com/GonxKZ/mars-titan/commit/ec1cb45536bfcfc35b5e32dc069ce0683aefe6b0) · GonxKZ/mars-titan · 19 nov 2026
+- [chore(release): publish chronological performance evidence (#879)](https://github.com/GonxKZ/mars-titan/commit/2f3ae7e3b40714570123a70cc0ed2b73e932a1dd) · GonxKZ/mars-titan · 20 nov 2026
+- [perf(benchmarks): publish verified PC1 replay and data path measurements (#878)](https://github.com/GonxKZ/mars-titan/commit/b85134aecff4ddd349c8d3984fa81e99fb9c8b94) · GonxKZ/mars-titan · 20 nov 2026
+- [chore(integration): align replay benchmarks with the released campaign](https://github.com/GonxKZ/mars-titan/commit/260ce4e1c545ae55759b656fb15c203902bc4512) · GonxKZ/mars-titan · 20 nov 2026
+- [test(performance): reproduce frozen parent graph state and error checks](https://github.com/GonxKZ/mars-titan/commit/80be9ee9b980b628971da6cb6a28f9e17818275f) · GonxKZ/mars-titan · 20 nov 2026
+- [fix(benchmarks): verify packed input contents before CPU replay](https://github.com/GonxKZ/mars-titan/commit/bfb078b4bcde338073d79988d4e2e5663749eb6c) · GonxKZ/mars-titan · 20 nov 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -59,7 +59,7 @@ Bytes de código en 65 de 65 repositorios detectados, con 36 privados incluidos 
 |---|---:|---:|
 | TypeScript | 35.6% | 154.041.919 |
 | Rust | 31.2% | 135.192.331 |
-| Python | 11.7% | 50.643.571 |
+| Python | 11.7% | 50.813.566 |
 | JavaScript | 7.5% | 32.435.826 |
 | Java | 5.1% | 22.233.153 |
 | C++ | 4.9% | 21.170.550 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 19/11/2026, 17:32:27 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 20/11/2026, 17:07:30 (Europe/Madrid). Actualización programada cada día.</sub>
