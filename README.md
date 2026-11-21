@@ -10,15 +10,15 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 20 nov 2025 al 20 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 21 nov 2025 al 21 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 38.244 |
-| Commits con desglose disponible | 34.062 |
-| Pull requests con desglose disponible | 1857 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 38.249 |
+| Commits con desglose disponible | 34.064 |
+| Pull requests con desglose disponible | 1859 |
 | Issues con desglose disponible | 2093 |
-| Revisiones de PR con desglose disponible | 227 |
+| Revisiones de PR con desglose disponible | 228 |
 | Contribuciones privadas sin desglose | 0 |
 
 Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub no permite clasificarlas aquí como commits, PRs o issues. Los detalles de actividad que aparecen debajo son públicos.
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 20 nov 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 21 nov 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -37,19 +37,19 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 ### PRs públicas recientes
 
+- [#882 Publicar la cola de PC1 con GPU compartida y sus medidas](https://github.com/GonxKZ/mars-titan/pull/882) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
+- [#881 perf(campaign): share the PC1 GPU between comparison jobs that fit together](https://github.com/GonxKZ/mars-titan/pull/881) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
 - [#878 Medir el coste de la máscara, la repetición y el lector de PC1](https://github.com/GonxKZ/mars-titan/pull/878) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
 - [#879 Publicar las mediciones y los controles de rendimiento del recorrido cronológico](https://github.com/GonxKZ/mars-titan/pull/879) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
 - [#874 Comprimir las nuevas predicciones de PC1 y las partes de trazas del ZIP](https://github.com/GonxKZ/mars-titan/pull/874) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
-- [#876 Activar trazas cualificadas en PC1 y conservar los checkpoints y sus resultados](https://github.com/GonxKZ/mars-titan/pull/876) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
-- [#871 Validar las filas y la cobertura de memoria de los resultados de comparación](https://github.com/GonxKZ/mars-titan/pull/871) · GonxKZ/mars-titan · Cerrada · 20 nov 2026
 
 ### Commits públicos recientes
 
+- [chore(release): publish the shared GPU queue of PC1 (#882)](https://github.com/GonxKZ/mars-titan/commit/949929cfde504b216dab16e86c54761b70230172) · GonxKZ/mars-titan · 20 nov 2026
+- [perf(campaign): share the PC1 GPU between comparison jobs that fit together (#881)](https://github.com/GonxKZ/mars-titan/commit/655c39ff6dec47b327e291c8b55baa25d1df089e) · GonxKZ/mars-titan · 20 nov 2026
 - [chore(release): publish chronological performance evidence (#879)](https://github.com/GonxKZ/mars-titan/commit/2f3ae7e3b40714570123a70cc0ed2b73e932a1dd) · GonxKZ/mars-titan · 20 nov 2026
 - [perf(benchmarks): publish verified PC1 replay and data path measurements (#878)](https://github.com/GonxKZ/mars-titan/commit/b85134aecff4ddd349c8d3984fa81e99fb9c8b94) · GonxKZ/mars-titan · 20 nov 2026
 - [chore(integration): align replay benchmarks with the released campaign](https://github.com/GonxKZ/mars-titan/commit/260ce4e1c545ae55759b656fb15c203902bc4512) · GonxKZ/mars-titan · 20 nov 2026
-- [test(performance): reproduce frozen parent graph state and error checks](https://github.com/GonxKZ/mars-titan/commit/80be9ee9b980b628971da6cb6a28f9e17818275f) · GonxKZ/mars-titan · 20 nov 2026
-- [fix(benchmarks): verify packed input contents before CPU replay](https://github.com/GonxKZ/mars-titan/commit/bfb078b4bcde338073d79988d4e2e5663749eb6c) · GonxKZ/mars-titan · 20 nov 2026
 
 ### Lenguajes de los repositorios consultados
 
@@ -57,9 +57,9 @@ Bytes de código en 65 de 65 repositorios detectados, con 36 privados incluidos 
 
 | Lenguaje | Porcentaje | Bytes |
 |---|---:|---:|
-| TypeScript | 35.6% | 154.041.919 |
+| TypeScript | 35.5% | 154.041.919 |
 | Rust | 31.2% | 135.192.331 |
-| Python | 11.7% | 50.813.566 |
+| Python | 11.7% | 50.906.254 |
 | JavaScript | 7.5% | 32.435.826 |
 | Java | 5.1% | 22.233.153 |
 | C++ | 4.9% | 21.170.550 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 20/11/2026, 17:07:30 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 21/11/2026, 16:20:07 (Europe/Madrid). Actualización programada cada día.</sub>
