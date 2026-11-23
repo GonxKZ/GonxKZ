@@ -10,14 +10,14 @@ Ingeniero de software. C/C++, inteligencia artificial, ciberseguridad y rendimie
 
 ### Actividad en GitHub
 
-Del 22 nov 2025 al 22 nov 2026. Datos del calendario de contribuciones de GitHub.
+Del 23 nov 2025 al 23 nov 2026. Datos del calendario de contribuciones de GitHub.
 
 | Métrica | Contribuciones |
 |---|---:|
-| Total, incluidas las privadas que GitHub permite contabilizar | 38.249 |
+| Total, incluidas las privadas que GitHub permite contabilizar | 38.251 |
 | Commits con desglose disponible | 34.064 |
 | Pull requests con desglose disponible | 1859 |
-| Issues con desglose disponible | 2093 |
+| Issues con desglose disponible | 2095 |
 | Revisiones de PR con desglose disponible | 228 |
 | Contribuciones privadas sin desglose | 0 |
 
@@ -29,7 +29,7 @@ Las contribuciones privadas sin desglose ya están incluidas en el total. GitHub
 
 | Repositorio | Lenguaje principal | Último push |
 |---|---|---|
-| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 22 nov 2026 |
+| [GonxKZ/mars-titan](https://github.com/GonxKZ/mars-titan) | Python | 23 nov 2026 |
 | [GonxKZ/atllashabita](https://github.com/GonxKZ/atllashabita) | TypeScript | 20 jul 2026 |
 | [GonxKZ/MACARENA-IAJ](https://github.com/GonxKZ/MACARENA-IAJ) | Python | 12 mar 2026 |
 | [GonxKZ/ecc-learning-engine](https://github.com/GonxKZ/ecc-learning-engine) | C++ | 13 sept 2025 |
@@ -86,4 +86,4 @@ La búsqueda de actividad pública se ha limitado a las páginas más recientes.
 
 [Funcionamiento y límites de las estadísticas](docs/actualizacion.md).
 
-<sub>Actualizado el 22/11/2026, 16:16:11 (Europe/Madrid). Actualización programada cada día.</sub>
+<sub>Actualizado el 23/11/2026, 20:13:08 (Europe/Madrid). Actualización programada cada día.</sub>
